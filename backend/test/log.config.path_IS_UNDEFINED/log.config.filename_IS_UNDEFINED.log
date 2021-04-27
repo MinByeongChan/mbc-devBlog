@@ -1,272 +1,60 @@
-DEBUG 21-04-23 17:00:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:00:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:01:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:01:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:01:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:01:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:02:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:02:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:02:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:02:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:03:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:03:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:03:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:03:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:04:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:04:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:04:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:04:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:05:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:05:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:05:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:05:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:06:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:06:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:06:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:06:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:07:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:07:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:07:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:07:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:08:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:08:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:08:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:08:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:09:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:09:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:09:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:09:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-INFO  21-04-23 17:09:51[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-INFO  21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:519] - Detected StandardServletMultipartResolver
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:543] - Detected AcceptHeaderLocaleResolver
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:568] - Detected FixedThemeResolver
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:718] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a4e524
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:782] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@14b8a751
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:542] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-INFO  21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 3 ms
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [StatisticsInitiator:101] - Statistics initialized [enabled=false]
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:09:51 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:09:51[http-nio-8080-exec-1] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:10:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:10:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:10:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:10:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:11:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:11:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:11:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:11:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:12:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:12:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:12:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:12:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:13:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:13:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:13:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:13:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:14:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:14:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:14:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:14:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:15:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:15:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:15:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:15:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:16:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:16:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:16:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:16:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:17:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:17:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:17:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:17:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:17:54 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:17:54[http-nio-8080-exec-2] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:18:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:18:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:18:17 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:17[http-nio-8080-exec-3] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:18:22 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:18:22[http-nio-8080-exec-4] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:18:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:18:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:19:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:19:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:19:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:19:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:20:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:20:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:20:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:20:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:20:46 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:20:46[http-nio-8080-exec-5] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:21:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:21:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:21:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:21:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:22:10 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:22:10[http-nio-8080-exec-7] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:22:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:22:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:22:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:22:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:23:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:23:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:23:26 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:23:26[http-nio-8080-exec-8] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:23:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:23:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:24:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:24:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:24:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:24:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [DispatcherServlet:91] - GET "/", parameters={}
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [WelcomePageHandlerMapping:522] - Mapped to ParameterizableViewController [view="forward:index.html"]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [ContentNegotiatingViewResolver:349] - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [InternalResourceView:309] - View name 'forward:', model {}
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [InternalResourceView:169] - Forwarding to [index.html]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [DispatcherServlet:91] - "FORWARD" dispatch for GET "/index.html", parameters={}
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [DispatcherServlet:1127] - Exiting from "FORWARD" dispatch, status 200
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-9] [DispatcherServlet:1131] - Completed 200 OK
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [DispatcherServlet:91] - GET "/favicon.ico", parameters={}
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [DispatcherServlet:91] - "ERROR" dispatch for GET "/error", parameters={}
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [HttpEntityMethodProcessor:268] - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:24:52 KST 2021, status=404, error=Not Found, message=, path=/favicon.ico}]
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:24:52[http-nio-8080-exec-10] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:25:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:25:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [DispatcherServlet:91] - POST "/api/ip", parameters={}
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [SimpleUrlHandlerMapping:522] - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [ResourceHttpRequestHandler:525] - Resource not found
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [DispatcherServlet:1131] - Completed 404 NOT_FOUND
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [DispatcherServlet:91] - "ERROR" dispatch for POST "/error", parameters={}
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [RequestMappingHandlerMapping:522] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:86] - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [HttpEntityMethodProcessor:268] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [HttpEntityMethodProcessor:91] - Writing [{timestamp=Fri Apr 23 17:25:17 KST 2021, status=404, error=Not Found, message=, path=/api/ip}]
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [OpenEntityManagerInViewInterceptor:111] - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-DEBUG 21-04-23 17:25:17[http-nio-8080-exec-1] [DispatcherServlet:1127] - Exiting from "ERROR" dispatch, status 404
-DEBUG 21-04-23 17:25:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:25:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:26:16[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:26:16[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-DEBUG 21-04-23 17:26:46[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:26:46[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-INFO  21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159] - Application shutdown requested.
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [AnnotationConfigServletWebServerApplicationContext:1049] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31fa1761, started on Fri Apr 23 16:59:43 KST 2021
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483647
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [DefaultLifecycleProcessor:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483646
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [DefaultLifecycleProcessor:238] - Bean 'webServerStartStop' completed its stop procedure
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [AnnotationMBeanExporter:452] - Unregistering JMX-exposed beans on shutdown
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [AnnotationMBeanExporter:186] - Unregistering JMX-exposed beans
-INFO  21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-INFO  21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [SessionFactoryImpl:792] - HHH000031: Closing
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [TypeConfiguration$Scope:350] - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3b4355d2] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4db3250b]
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [AbstractServiceRegistryImpl:419] - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [BootstrapServiceRegistryImpl:295] - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
-INFO  21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [HikariPool:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ea76430: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@115d9baf: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@74beeb50: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@20862862: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@c8f063d: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@717264e0: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7295e5f5: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@634116fd: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@178b4a46: (connection evicted)
-DEBUG 21-04-23 17:26:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@753c7933: (connection evicted)
-DEBUG 21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [HikariPool:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-INFO  21-04-23 17:26:53[RMI TCP Connection(30)-127.0.0.1] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+DEBUG 21-04-27 15:44:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:44:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:45:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:45:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:45:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:45:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:46:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:46:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:46:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:46:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:47:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:47:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:47:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:47:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:48:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:48:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:48:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:48:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:49:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:49:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:49:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:49:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:50:02[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2a5c611a: (connection has passed maxLifetime)
+DEBUG 21-04-27 15:50:02[HikariPool-1 connection adder] [HikariPool:728] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7cb0be4e
+DEBUG 21-04-27 15:50:19[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:50:19[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:50:49[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:50:49[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-04-27 15:50:53[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7418f240: (connection has passed maxLifetime)
+DEBUG 21-04-27 15:50:53[HikariPool-1 connection adder] [HikariPool:728] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1938dfd8
+DEBUG 21-04-27 15:51:01[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4e84714b: (connection has passed maxLifetime)
+DEBUG 21-04-27 15:51:01[HikariPool-1 connection adder] [HikariPool:728] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@354fed4
+INFO  21-04-27 15:51:02[RMI TCP Connection(615)-127.0.0.1] [SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159] - Application shutdown requested.
+DEBUG 21-04-27 15:51:02[RMI TCP Connection(615)-127.0.0.1] [AnnotationConfigServletWebServerApplicationContext:1049] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31fa1761, started on Mon Apr 26 16:31:34 KST 2021
+DEBUG 21-04-27 15:51:02[RMI TCP Connection(615)-127.0.0.1] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483647
+DEBUG 21-04-27 15:51:02[RMI TCP Connection(615)-127.0.0.1] [DefaultLifecycleProcessor:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
+DEBUG 21-04-27 15:51:02[RMI TCP Connection(615)-127.0.0.1] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483646
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [DefaultLifecycleProcessor:238] - Bean 'webServerStartStop' completed its stop procedure
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [AnnotationMBeanExporter:452] - Unregistering JMX-exposed beans on shutdown
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [AnnotationMBeanExporter:186] - Unregistering JMX-exposed beans
+INFO  21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [SessionFactoryImpl:792] - HHH000031: Closing
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [TypeConfiguration$Scope:350] - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3093ba70] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1293d747]
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [AbstractServiceRegistryImpl:419] - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [BootstrapServiceRegistryImpl:295] - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+INFO  21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [HikariPool:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@404386eb: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@447c1a3b: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@17e8cd0: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6c1dbb9d: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@30b50c2b: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@143c65c4: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6151739f: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7cb0be4e: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1938dfd8: (connection evicted)
+DEBUG 21-04-27 15:51:03[HikariPool-1 connection closer] [PoolBase:134] - HikariPool-1 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@354fed4: (connection evicted)
+DEBUG 21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [HikariPool:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+INFO  21-04-27 15:51:03[RMI TCP Connection(615)-127.0.0.1] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.

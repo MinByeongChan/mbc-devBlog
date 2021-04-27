@@ -1,13 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {
-  faGithubSquare,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-  faEnvelopeSquare,
-  faHome,
-  faPhoneSquareAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare, faHome, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import TextDefault from '../components/ui/TextDefault';
@@ -43,7 +37,7 @@ const IntroWrapper = styled.div`
     .content-item2 {
       flex-direction: column;
       align-items: flex-start;
-    };
+    }
   } ;
 `;
 const IntroItem = styled.li`
@@ -55,13 +49,13 @@ const IntroItem = styled.li`
     width: 25px;
     height: 25px;
     margin-right: 12px;
-  };
+  }
   .content-icon {
     display: inline;
     width: 22px;
-    height: 22px;  
+    height: 22px;
     margin: 0 6px;
-  };
+  }
 `;
 const ProfileImg = styled.img`
   width: 220px;
@@ -137,7 +131,6 @@ const AboutLayout = () => {
             <IntroCompo />
           </ContentTitleWrapper>
           {/* Introduction - 끝 */}
-
 
           {/* Skill - 시작 */}
           <ContentTitleWrapper title="Skill.">
