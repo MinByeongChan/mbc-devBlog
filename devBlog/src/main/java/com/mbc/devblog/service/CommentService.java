@@ -1,16 +1,14 @@
 package com.mbc.devblog.service;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
+import com.mbc.devblog.repository.CommentRepository;
+import com.mbc.devblog.vo.Comment;
+
 import java.util.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.mbc.devblog.repository.CommentRepository;
-import com.mbc.devblog.vo.Comment;
 
 @Service
 public class CommentService {
