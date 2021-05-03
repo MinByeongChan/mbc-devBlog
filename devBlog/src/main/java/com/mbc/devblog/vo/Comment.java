@@ -1,8 +1,10 @@
 package com.mbc.devblog.vo;
 
-import java.time.OffsetDateTime;
-
+import java.sql.Timestamp;
 import javax.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import lombok.*;
 
 @Getter
@@ -14,22 +16,28 @@ public class Comment {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
 
-	@Column(nullable = false)
+	@Column(name = "name", nullable = false)
 	String name;
 
-	@Column(nullable = false)
+	@Column(name = "message", nullable = false)
 	String message;
 
-	@Column(nullable = true)
+	@Column(name = "password", nullable = true)
 	String password;
 
-	@Column(nullable = true)
+	@Column(name = "secret", nullable = true)
 	int secret;
-	
-	@Column(columnDefinition = "DATETIME default CURRENT_TIMESTAMP")
-	OffsetDateTime created_at;
 
-	public Comment() {}
+	@Column(name = "created_at")
+	@CreationTimestamp
+	Timestamp created_at;
+
+	@Column(name = "modified_at")
+	@UpdateTimestamp
+	Timestamp modified_at;
+
+	public Comment() {
+	}
 
 	public Comment(String name, String password, String message, int secret) {
 		this.name = name;
@@ -70,11 +78,11 @@ public class Comment {
 		this.password = password;
 	}
 
-	public OffsetDateTime getCreated_at() {
+	public Timestamp getCreated_at() {
 		return created_at;
 	}
 
-	public void setCreated_at(OffsetDateTime created_at) {
+	public void setCreated_at(Timestamp created_at) {
 		this.created_at = created_at;
 	}
 
@@ -84,6 +92,14 @@ public class Comment {
 
 	public void setSecret(int secret) {
 		this.secret = secret;
+	}
+
+	public Timestamp getModified_at() {
+		return modified_at;
+	}
+
+	public void setModified_at(Timestamp modified_at) {
+		this.modified_at = modified_at;
 	}
 
 	public String print() {
