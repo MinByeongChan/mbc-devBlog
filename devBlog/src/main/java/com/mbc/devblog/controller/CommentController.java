@@ -32,9 +32,6 @@ public class CommentController {
 	@RequestMapping(value = "/001", method = RequestMethod.GET)
 	public List<Comment> getAllComments() {
 		List<Comment> comments = commentService.findAll();
-
-		logger.info(comments.toString());
-
 		return comments;
 	}
 
@@ -47,7 +44,9 @@ public class CommentController {
 
 	@ResponseBody
 	@RequestMapping(value = "/002", method = RequestMethod.POST)
-	public ResponseEntity<Comment> saveComment(@RequestBody String jsonStr) {
+	public ResponseEntity<JSONObject> saveComment(@RequestBody String jsonStr) {
+		HashMap<String,String> hm = new HashMap<String,String>();
+
 		try {
 			JSONParser parser = new JSONParser();
 			Object obj = parser.parse(jsonStr);
@@ -64,45 +63,61 @@ public class CommentController {
 			logger.info(String.valueOf(secret));
 
 			Comment comment = new Comment(name, password, message, secret);
-
-			return new ResponseEntity<Comment>(commentService.save(comment), HttpStatus.OK);
+			commentService.save(comment);
+			
+			hm.put("rc", "1");
+			
 		} catch (Exception e) {
+			hm.put("rc", "0");
 			logger.error(e.toString());
-
 		}
 
-		return null;
+		return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
 	}
-	
+
 	@ResponseBody
 	@PutMapping(value = "/003", produces = { MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<Comment> updateComment2(@RequestBody String jsonStr) {
+	public ResponseEntity<JSONObject> updateComment2(@RequestBody String jsonStr) {
+		HashMap<String,String> hm = new HashMap<String,String>();
 		try {
 			JSONParser parser = new JSONParser();
 			Object object = parser.parse(jsonStr);
 			JSONObject jsonObj = (JSONObject) object;
-			
+
 			Long id = Long.parseLong(jsonObj.get("id").toString());
 			String name;
 			String message;
 			String password;
 			Integer secret;
-			
-			Optional<Comment> currComment = commentService.findById(id);			
 
+			Optional<Comment> currComment = commentService.findById(id);
+
+			// 패스워드 검증
+			if (jsonObj.get("password") != null) {
+				password = jsonObj.get("password").toString();
+	
+				logger.info("기존 pwd : "+currComment.get().getPassword());
+				logger.info("param pwd : "+password);
+				System.out.println("pwd 검증 : "+password != currComment.get().getPassword() );
+
+				if(!password.equals(currComment.get().getPassword())) {
+					hm.put("rc", "0");
+					hm.put("msg", "패스워드가 일치하지 않습니다.");
+
+					return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
+				}else {
+					currComment.get().setPassword(password);					
+				}
+			}
+			
 			if (jsonObj.get("name") != null) {
 				name = jsonObj.get("name").toString();
-				currComment.get().setName(name);				
+				currComment.get().setName(name);
 			}
 
 			if (jsonObj.get("message") != null) {
 				message = jsonObj.get("message").toString();
-				currComment.get().setMessage(message);			
-			}
-
-			if (jsonObj.get("password") != null) {
-				password = jsonObj.get("password").toString();
-				currComment.get().setPassword(password);				
+				currComment.get().setMessage(message);
 			}
 
 			if (jsonObj.get("secret") != null) {
@@ -111,14 +126,15 @@ public class CommentController {
 			}
 
 			commentService.updateById(id, currComment.get());
-			return new ResponseEntity<Comment>(currComment.get(), HttpStatus.OK);
+			hm.put("rc", "1");
 		} catch (Exception err) {
+			hm.put("rc", "0");
 			err.printStackTrace();
 		}
 
-		return null;
+		return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
 	}
-	
+
 	@ResponseBody
 	@PutMapping(value = "/003/{id}", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<Comment> updateComment(@PathVariable("id") Long id, Comment comment) {
@@ -147,10 +163,20 @@ public class CommentController {
 
 	@ResponseBody
 	@DeleteMapping(value = "/004/{id}", produces = { MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<Void> deleteComment(@PathVariable Long id) {
-		logger.info("id : " + id.toString());
-		commentService.deleteById(id);
-		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
+	public ResponseEntity<JSONObject> deleteComment(@PathVariable Long id) {
+		HashMap<String,String> hm = new HashMap<String,String>();
+		
+		try {
+			
+			logger.info("id : " + id.toString());
+			commentService.deleteById(id);
+			hm.put("rc", "1");
+			
+		}catch(Exception e) {
+			hm.put("rc", "0");
+			e.printStackTrace();
+		}
+		return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
 	}
 
 }

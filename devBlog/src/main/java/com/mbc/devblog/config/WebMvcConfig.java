@@ -9,6 +9,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
 			.allowedOrigins("http://localhost:3000", "https://mbc-dev-blog.vercel.app")
+			.allowedMethods("GET", "POST", "PUT", "DELETE")
 			.maxAge(3000);
 	}
 }

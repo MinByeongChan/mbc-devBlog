@@ -36,6 +36,9 @@ public class Comment {
 	@UpdateTimestamp
 	Timestamp modified_at;
 
+	public Comment() {
+	}
+
 	public Comment(String name, String password, String message, int secret) {
 		this.name = name;
 		this.password = password;
