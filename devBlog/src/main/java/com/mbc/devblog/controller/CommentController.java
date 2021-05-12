@@ -45,7 +45,7 @@ public class CommentController {
 	@ResponseBody
 	@RequestMapping(value = "/002", method = RequestMethod.POST)
 	public ResponseEntity<JSONObject> saveComment(@RequestBody String jsonStr) {
-		HashMap<String,String> hm = new HashMap<String,String>();
+		HashMap<String, String> hm = new HashMap<String, String>();
 
 		try {
 			JSONParser parser = new JSONParser();
@@ -55,18 +55,19 @@ public class CommentController {
 			String name = jsonObj.get("name").toString();
 			String password = jsonObj.get("password").toString();
 			String message = jsonObj.get("message").toString();
-			int secret = Integer.parseInt(jsonObj.get("secret").toString());
+			int secret = 0;
+//			int secret = Integer.parseInt(jsonObj.get("secret").toString());
 
 			logger.info(name);
 			logger.info(password);
 			logger.info(message);
-			logger.info(String.valueOf(secret));
+//			logger.info(String.valueOf(secret));
 
 			Comment comment = new Comment(name, password, message, secret);
 			commentService.save(comment);
-			
+
 			hm.put("rc", "1");
-			
+
 		} catch (Exception e) {
 			hm.put("rc", "0");
 			logger.error(e.toString());
@@ -78,7 +79,7 @@ public class CommentController {
 	@ResponseBody
 	@PutMapping(value = "/003", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<JSONObject> updateComment2(@RequestBody String jsonStr) {
-		HashMap<String,String> hm = new HashMap<String,String>();
+		HashMap<String, String> hm = new HashMap<String, String>();
 		try {
 			JSONParser parser = new JSONParser();
 			Object object = parser.parse(jsonStr);
@@ -88,28 +89,28 @@ public class CommentController {
 			String name;
 			String message;
 			String password;
-			Integer secret;
+//			Integer secret;
 
 			Optional<Comment> currComment = commentService.findById(id);
 
 			// 패스워드 검증
 			if (jsonObj.get("password") != null) {
 				password = jsonObj.get("password").toString();
-	
-				logger.info("기존 pwd : "+currComment.get().getPassword());
-				logger.info("param pwd : "+password);
-				System.out.println("pwd 검증 : "+password != currComment.get().getPassword() );
 
-				if(!password.equals(currComment.get().getPassword())) {
+				logger.info("기존 pwd : " + currComment.get().getPassword());
+				logger.info("param pwd : " + password);
+				System.out.println("pwd 검증 : " + password != currComment.get().getPassword());
+
+				if (!password.equals(currComment.get().getPassword())) {
 					hm.put("rc", "0");
 					hm.put("msg", "패스워드가 일치하지 않습니다.");
 
 					return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
-				}else {
-					currComment.get().setPassword(password);					
+				} else {
+					currComment.get().setPassword(password);
 				}
 			}
-			
+
 			if (jsonObj.get("name") != null) {
 				name = jsonObj.get("name").toString();
 				currComment.get().setName(name);
@@ -120,10 +121,10 @@ public class CommentController {
 				currComment.get().setMessage(message);
 			}
 
-			if (jsonObj.get("secret") != null) {
-				secret = Integer.parseInt(jsonObj.get("secret").toString());
-				currComment.get().setSecret(secret);
-			}
+//			if (jsonObj.get("secret") != null) {
+//				secret = Integer.parseInt(jsonObj.get("secret").toString());
+				currComment.get().setSecret(0);
+//			}
 
 			commentService.updateById(id, currComment.get());
 			hm.put("rc", "1");
@@ -150,7 +151,7 @@ public class CommentController {
 			if (comment.getPassword() != null)
 				currComment.get().setPassword(comment.getPassword());
 
-			currComment.get().setSecret(comment.getSecret());
+//			currComment.get().setSecret(comment.getSecret());
 
 			commentService.updateById(id, currComment.get());
 			return new ResponseEntity<Comment>(currComment.get(), HttpStatus.OK);
@@ -161,22 +162,61 @@ public class CommentController {
 		return null;
 	}
 
-	@ResponseBody
-	@DeleteMapping(value = "/004/{id}", produces = { MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<JSONObject> deleteComment(@PathVariable Long id) {
-		HashMap<String,String> hm = new HashMap<String,String>();
+	@RequestMapping(value = "/004", method = RequestMethod.POST)
+	public ResponseEntity<JSONObject> deleteComment(@RequestBody String jsonStr) {
+		HashMap<String, String> hm = new HashMap<String, String>();
+		Long paramId;
+		String paramPwd;
 		
 		try {
-			
-			logger.info("id : " + id.toString());
-			commentService.deleteById(id);
-			hm.put("rc", "1");
-			
-		}catch(Exception e) {
+			JSONParser parser = new JSONParser();
+			Object obj = parser.parse(jsonStr);
+			JSONObject jsonObj = (JSONObject) obj;
+
+			paramId = Long.parseLong(jsonObj.get("id").toString());
+			paramPwd = jsonObj.get("password").toString();
+
+			Optional<Comment> currComment = commentService.findById(paramId);
+
+			// 패스워드 검증
+			String currPwd = currComment.get().getPassword();
+			logger.info("기존 pwd : " + currPwd);
+			logger.info("param pwd : " + paramPwd);
+
+			// 패스워드가 일치 할 경우
+			if (currPwd.equals(paramPwd)) {
+				hm.put("rc", "1");
+				commentService.deleteById(paramId);
+			} else {
+				// 패스워드가 일치 하지 않을 경우
+				hm.put("rc", "0");
+				hm.put("msg", "패스워드가 일치하지 않습니다.");
+			}
+
+			return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
+		} catch (Exception e) {
 			hm.put("rc", "0");
-			e.printStackTrace();
+			logger.error(e.toString());
 		}
 		return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
 	}
+
+//	@ResponseBody
+//	@DeleteMapping(value = "/004/{id}", produces = { MediaType.APPLICATION_JSON_VALUE })
+//	public ResponseEntity<JSONObject> deleteComment2(@PathVariable Long id) {
+//		HashMap<String, String> hm = new HashMap<String, String>();
+//
+//		try {
+//
+//			logger.info("id : " + id.toString());
+//			commentService.deleteById(id);
+//			hm.put("rc", "1");
+//
+//		} catch (Exception e) {
+//			hm.put("rc", "0");
+//			e.printStackTrace();
+//		}
+//		return new ResponseEntity<JSONObject>(new JSONObject(hm), HttpStatus.OK);
+//	}
 
 }
