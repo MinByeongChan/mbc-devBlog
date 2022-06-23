@@ -1,12 +1,15 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-continue */
 import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 
+import { faEraser, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useRouter } from 'next/router';
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
 import { PostItems } from '../utils/Content';
 import { fontSize, fontWeight } from '../utils/StyleTheme';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEraser, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { useRouter } from 'next/router';
 
 import { isEmpty } from '../utils/Utility';
 import GalleryWrapper from './GalleryWrapper';
@@ -96,9 +99,21 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
     router.query.search !== undefined ? router.query.search.toString() : '',
   );
 
-  // 검색 필드 onChange
-  const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    searhFiltering(e.target.value);
+  // 문자열 검증 함수
+  const textVerify = (input: any) => {
+    for (const i in input) {
+      const ascii = input[i].charCodeAt(0);
+      if (ascii >= 48 && ascii <= 57) {
+        continue;
+      } else if (ascii >= 65 && ascii <= 90) {
+        continue;
+      } else if (ascii >= 97 && ascii <= 122) {
+        continue;
+      } else {
+        return false;
+      }
+    }
+    return true;
   };
 
   const onClickRemove = () => {
@@ -107,7 +122,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
   // 검색 필터링 함수
   const searhFiltering = (value: string) => {
-    let inputVal = value;
+    const inputVal = value;
     setSearch(inputVal);
 
     // 문자열 검증
@@ -124,15 +139,20 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
           const tags = !isEmpty(data.tags) ? data.tags.toString() : '';
 
           return (
-            title.match(new RegExp(inputVal, 'i')) !== null ||
-            desc.match(new RegExp(inputVal, 'i')) !== null ||
-            tags.match(new RegExp(inputVal, 'i')) !== null
+            title.match(new RegExp(inputVal, 'i')) !== null
+            || desc.match(new RegExp(inputVal, 'i')) !== null
+            || tags.match(new RegExp(inputVal, 'i')) !== null
           );
         }),
       );
     } else {
       setSearchList([]);
     }
+  };
+
+  // 검색 필드 onChange
+  const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    searhFiltering(e.target.value);
   };
 
   useEffect(() => {
@@ -176,23 +196,6 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
       )}
     </Layout>
   );
-};
-
-// 문자열 검증 함수
-const textVerify = (input: any) => {
-  for (let i in input) {
-    let ascii = input[i].charCodeAt(0);
-    if (ascii >= 48 && ascii <= 57) {
-      continue;
-    } else if (ascii >= 65 && ascii <= 90) {
-      continue;
-    } else if (ascii >= 97 && ascii <= 122) {
-      continue;
-    } else {
-      return false;
-    }
-  }
-  return true;
 };
 
 export default BlogGallery;
