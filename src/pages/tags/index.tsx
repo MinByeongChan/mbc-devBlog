@@ -1,27 +1,24 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 
-import { Main } from '../../templates/Main';
 import { Meta } from '../../layout/Meta';
 import TagLayout from '../../layout/TagLayout';
+import { Main } from '../../templates/Main';
 import { getAllPosts } from '../../utils/Content';
-
-export type ITagProps = {
-  tags: ITag[];
-};
 
 export interface ITag {
   name: string;
   cnt: number;
 }
-
-const Tags: React.FC<ITagProps> = (props: ITagProps) => {
-  return (
-    <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-      <TagLayout tags={props.tags} />
-    </Main>
-  );
+export type ITagProps = {
+  tags: ITag[];
 };
+
+const Tags: React.FC<ITagProps> = (props: ITagProps) => (
+  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+    <TagLayout tags={props.tags} />
+  </Main>
+);
 
 export const getStaticProps: GetStaticProps<ITagProps> = async () => {
   const posts = getAllPosts(['title', 'date', 'description', 'slug', 'tags']);
@@ -56,13 +53,11 @@ export const getStaticProps: GetStaticProps<ITagProps> = async () => {
   });
 
   // 태그 배열 정렬
-  tags.sort((a, b) => {
-    return b.cnt - a.cnt;
-  });
+  tags.sort((a, b) => b.cnt - a.cnt);
 
   return {
     props: {
-      tags: tags,
+      tags,
     },
   };
 };
