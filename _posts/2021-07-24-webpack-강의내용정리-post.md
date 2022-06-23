@@ -1,8 +1,8 @@
 ---
 title: '[Webpack] 강의내용 정리'
 description: ""
-date: '2021-05-30'
-modified_date: '2021-05-30'
+date: '2021-07-24'
+modified_date: '2021-07-24'
 tags: [WEB, 프론트엔드, 기술면접]
 ---
 
