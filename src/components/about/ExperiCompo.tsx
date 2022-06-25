@@ -6,43 +6,19 @@ const ExperiCompo = () => (
   <>
     <div>
       <TextDefault size="md" weight="light" lineHeight="md">
-        2020. 02 - 현재
-      </TextDefault>
-    </div>
-    <TextDefault size="xg" weight="bold" lineHeight="lg">
-      KSNET, 서울 (WEB/APP 개발)
-    </TextDefault>
-    <ListItems>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o 모바일파트에서 웹앱 및 웹페이지 개발
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o KSTA Mobile 개발, KSNET VAN 가맹점 매출정보 확인 앱.
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o 테크넷 개발, KSNET 기술본부 개발 이슈관리 및 영업지원 웹 페이지 개발.
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React, CRA, JavaScript
-        </TextDefault>
-      </ListItem>
-    </ListItems>
-
-    <div style={{ marginTop: '20px' }}>
-      <TextDefault size="md" weight="light" lineHeight="md">
         2021. 09 - 현재
       </TextDefault>
     </div>
-    <TextDefault size="xg" weight="bold" lineHeight="lg">
-      코웨이, 서울 (프론트엔드 개발)
-    </TextDefault>
+    <div>
+      <TextDefault size="xg" weight="bold" lineHeight="lg">
+        코웨이
+      </TextDefault>
+      <span> </span>
+      <TextDefault size="xg" lineHeight="lg">
+        | 서울 (프론트엔드 개발)
+      </TextDefault>
+    </div>
+
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
@@ -62,6 +38,44 @@ const ExperiCompo = () => (
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
           o 기술스택: React, TypeScript, vite, webpack, React-Query, jotai
+        </TextDefault>
+      </ListItem>
+    </ListItems>
+
+    <div style={{ marginTop: '20px' }}>
+      <TextDefault size="md" weight="light" lineHeight="md">
+        2020. 02 - 2021.09
+      </TextDefault>
+    </div>
+    <div>
+      <TextDefault size="xg" weight="bold" lineHeight="lg">
+        KSNET
+      </TextDefault>
+      <span> </span>
+      <TextDefault size="xg" lineHeight="lg">
+        | 서울 (WEB/APP 개발)
+      </TextDefault>
+    </div>
+
+    <ListItems>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 모바일파트에서 웹앱 및 웹페이지 개발
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o KSTA Mobile 개발, KSNET VAN 가맹점 매출정보 확인 앱.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 테크넷 개발, KSNET 기술본부 개발 이슈관리 및 영업지원 웹 페이지 개발.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 기술스택: React, CRA, JavaScript
         </TextDefault>
       </ListItem>
     </ListItems>

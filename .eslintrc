@@ -19,6 +19,10 @@
     "react/jsx-wrap-multilines": "off",
     "no-plusplus": "off",
     "import/no-cycle": "off",
+    "operator-linebreak": "off",
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/indent": "off",
     "import/order": [
       "error",
       {

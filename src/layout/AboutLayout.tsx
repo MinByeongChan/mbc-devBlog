@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare, faHome, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import EduCompo from '../components/about/EduCompo';
 import ExperiCompo from '../components/about/ExperiCompo';
 import IntroCompo from '../components/about/IntroCompo';
 import ProjectCompo from '../components/about/ProjectCompo';
 import SkillCompo from '../components/about/SkillCompo';
 import TextDefault from '../components/ui/TextDefault';
+import { fontSize, fontWeight } from '../utils/StyleTheme';
 import ContentTitleWrapper from './about/ContentTitleWrapper';
 
 const AboutLayout = () => (
@@ -42,19 +42,18 @@ const AboutLayout = () => (
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <FontAwesomeIcon className="intro-icon" icon={faPhoneSquareAlt} />
               <TextDefault size="lg" lineHeight="md">
                 <a href="tel:01077020481">(+82) 010-7702-0481</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <FontAwesomeIcon className="intro-icon" icon={faEnvelopeSquare} />
+              <Pre>m </Pre>
               <TextDefault size="lg" lineHeight="md">
                 <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <FontAwesomeIcon className="intro-icon" icon={faHome} />
+              <Pre>h </Pre>
               <TextDefault size="lg" lineHeight="md">
                 <a href="https://mbc-dev-blog.vercel.app">https://mbc-dev-blog.vercel.app</a>
               </TextDefault>
@@ -158,6 +157,11 @@ const ProfileImg = styled.img`
     width: 200px;
     height: 200px;
   } ;
+`;
+const Pre = styled.pre`
+  font-size: ${fontSize.lg};
+  font-weight: ${fontWeight.bold};
+  margin: 0;
 `;
 
 export default AboutLayout;

@@ -1,22 +1,6 @@
+import React, { CSSProperties, ReactNode } from 'react';
 import styled from '@emotion/styled';
-import React, { ReactNode } from 'react';
 import { color as fontColor, fontSize, fontWeight, lineHeight as lh } from '../../utils/StyleTheme';
-
-const TextDefault = (props: ITextDefault) => {
-  const { children, size, color, weight, lineHeight, letterSpacing } = props;
-
-  return (
-    <Text
-      size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
-      color={color ? fontColor[`${color}`] : ''}
-      weight={weight ? fontWeight[`${weight}`] : fontWeight[`${fontWeight.normal}`]}
-      lineHeight={lineHeight ? lh[`${lineHeight}`] : lh[`${lh.md}`]}
-      letterSpacing={letterSpacing}
-    >
-      {children}
-    </Text>
-  );
-};
 
 interface ITextDefault {
   size?: string;
@@ -25,7 +9,25 @@ interface ITextDefault {
   lineHeight?: string;
   letterSpacing?: string;
   children?: ReactNode;
+  style?: CSSProperties;
 }
+
+const TextDefault = (props: ITextDefault) => {
+  const { children, size, color, weight, lineHeight, letterSpacing, style } = props;
+
+  return (
+    <Text
+      size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
+      color={color ? fontColor[`${color}`] : ''}
+      weight={weight ? fontWeight[`${weight}`] : fontWeight[`${fontWeight.normal}`]}
+      lineHeight={lineHeight ? lh[`${lineHeight}`] : lh[`${lh.md}`]}
+      letterSpacing={letterSpacing}
+      style={style}
+    >
+      {children}
+    </Text>
+  );
+};
 
 const Text = styled.span`
   font-size: ${(props: ITextDefault) => props.size};

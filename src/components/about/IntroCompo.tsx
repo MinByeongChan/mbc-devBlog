@@ -25,26 +25,14 @@ const IntroCompo = () => (
 
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
-        o
-      </TextDefault>
-      <img className="content-icon" src="/assets/images/about/coding.svg" alt="" />
-      <TextDefault size="md" lineHeight="md" weight="light">
-        팀원들과 코드로 소통할 수 있는 클린코드를 지향합니다.
-      </TextDefault>
-      <TextDefault size="md" lineHeight="md" weight="light">
-        최근에는 가독성 높고 유지보수성이 좋은 코드를 짜기위해 노력하고 있습니다.
+        o 팀원들과 코드로 소통할 수 있는 클린코드를 지향합니다. 최근에는 가독성 높고 유지보수성이
+        좋은 코드를 짜기위해 노력하고 있습니다.
       </TextDefault>
     </IntroItem>
 
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
-        o 프론트엔드 개발 분야에서
-      </TextDefault>
-      <TextDefault size="md" lineHeight="md" weight="bold">
-        스페셜리스트가
-      </TextDefault>
-      <TextDefault size="md" lineHeight="md" weight="light">
-        되는 것을 목표로 하고 있습니다.
+        o 기술 트렌드를 놓치지 않는 것, 그리고 기본을 중요하게 생각합니다.
       </TextDefault>
     </IntroItem>
 
@@ -56,15 +44,7 @@ const IntroCompo = () => (
 
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
-        o
-      </TextDefault>
-      <img className="content-icon" src="/assets/images/about/coffee-cup.svg" alt="" />
-      <TextDefault size="md" lineHeight="md" weight="light">
-        직접 내려먹는 커피와
-      </TextDefault>
-      <img className="content-icon" src="/assets/images/about/cycling.svg" alt="" />
-      <TextDefault size="md" lineHeight="md" weight="light">
-        싸이클, 헬스 운동을 것을 좋아합니다.
+        o 직접 내려먹는 커피와 싸이클, 헬스 운동을 좋아합니다.
       </TextDefault>
     </IntroItem>
   </ul>
