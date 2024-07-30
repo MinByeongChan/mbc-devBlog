@@ -1,38 +1,67 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "ES2020",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "strict": true,
     "alwaysStrict": true,
     "strictNullChecks": true,
-
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "allowUnreachableCode": false,
-    "noFallthroughCasesInSwitch": true,
-
-    "target": "es5",
+    "target": "ESNext",
     "outDir": "dist",
     "declaration": true,
     "sourceMap": true,
-
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
     "jsx": "preserve",
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      // "@/*": ["./src/*"],
+      // "@/services/model": ["./src/services/openapi/src/model"],
+      // "@/services/api/*": ["./src/services/openapi/src/api/*"],
+      // "@public/*": ["./public/*"],
+      // "@assets": ["./src/assets"],
+      // "@assets/*": ["./src/assets/*"],
+      // "@components": ["./src/components"],
+      // "@components/*": ["./src/components/*"],
+      // "@constants": ["./src/constants"],
+      // "@constants/*": ["./src/constants/*"],
+      // "@store": ["./src/store"],
+      // "@store/*": ["./src/store/*"],
+      // "@types": ["./src/types"],
+      // "@types/*": ["./src/types/*"],
+      // "@utils": ["./src/utils"],
+      // "@utils/*": ["./src/utils/*"]
+    },
   },
-  "exclude": ["./dist/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": [
+    "./dist/**/*",
+    "./node_modules/**/*"
+  ],
+  "include": [
+    "src",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

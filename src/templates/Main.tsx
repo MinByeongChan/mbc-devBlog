@@ -2,12 +2,12 @@ import React, { ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 
-import Navbar from '../navigation/Navbar';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { Provider } from 'react-redux';
+import { color, fontSize, fontWeight } from '../utils/StyleTheme';
+import Navbar from '../navigation/Navbar';
 import { store } from '../modules/configureStore';
 import ModalProvider from '../modal/ModalProvider';
 
@@ -30,7 +30,7 @@ const BottomWrapper = styled.footer`
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     padding: 40px 20px;
-  } ;
+  }
 `;
 const BottomContainer = styled.div`
   max-width: 1200px;

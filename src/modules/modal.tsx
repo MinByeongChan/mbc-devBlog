@@ -23,7 +23,7 @@ export const closeModal = () => ({
  * @param {state action}
  * @description 모달 state 관리
  */
-export default function modal(state = initState, action: any) {
+export default function modal(action: any, state = initState) {
   const { type, payload } = action;
 
   switch (type) {

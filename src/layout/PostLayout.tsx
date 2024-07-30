@@ -2,18 +2,18 @@ import React from 'react';
 import { format } from 'date-fns';
 import styled from '@emotion/styled';
 import { color, fontSize, fontWeight } from '../utils/StyleTheme';
-import { Content } from '../content/Content';
 import { Config } from '../utils/Config';
 import Utterances from '../components/comment/Utterances';
 import TextDefault from '../components/ui/TextDefault';
+import Markdown from '../components/Markdown';
 
 type IPostProps = {
   title: string;
-  description: string;
   date: string;
-  modified_date: string;
-  image: string;
   content: string;
+  // description: string;
+  // modified_date: string;
+  // image: string;
 };
 
 const Layout = styled.div(() => ({
@@ -45,7 +45,7 @@ const TitleContainer = styled.div`
     .title {
       font-size: ${fontSize.h3};
     }
-  } ;
+  }
 `;
 
 const SubTitleContainer = styled.div`
@@ -88,7 +88,7 @@ const PostContainer = styled.div`
   @media screen and (min-width: 0px) and (max-width: 768px) {
     width: 100%;
     max-width: none;
-  } ;
+  }
 `;
 const CommentTitleContainer = styled.div`
   margin: 50px 0 20px 0;
@@ -112,12 +112,7 @@ const PostLayout = (props: IPostProps) => {
         </SubTitleContainer>
 
         <PostContainer>
-          <Content>
-            <div
-              // eslint-disable-next-line react/no-danger
-              dangerouslySetInnerHTML={{ __html: props.content }}
-            />
-          </Content>
+          <Markdown content={props.content} />
         </PostContainer>
 
         {/* 댓글 컨테이너 - 시작 */}

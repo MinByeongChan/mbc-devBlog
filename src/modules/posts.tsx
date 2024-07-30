@@ -29,8 +29,10 @@ const initState: IReducerPost = {
   searchList: [],
 };
 
-const posts = (state = initState, action: any) => {
+const posts = (action: any, state = initState) => {
   const { type, payload } = action;
+  const inputVal = payload;
+
   switch (type) {
     case SET_POSTS:
       return {
@@ -38,13 +40,6 @@ const posts = (state = initState, action: any) => {
         postList: payload,
       };
     case SEARCH_POSTS:
-      let inputVal = payload;
-
-      // 문자열 검증
-      if (!textVerify(inputVal)) {
-        return { ...state };
-      }
-
       if (inputVal.length > 0) {
         const tmp = state.postList.filter((data) => {
           const title = data.title.toString();
@@ -59,32 +54,14 @@ const posts = (state = initState, action: any) => {
         });
 
         return { ...state, searchList: tmp };
-      } else {
-        return { ...state, searchList: initState.searchList };
       }
+      return { ...state, searchList: initState.searchList };
+
     case RESET_POSTS:
       return state;
     default:
       return state;
   }
-};
-
-// 문자열 검증 함수
-const textVerify = (input: any) => {
-  for (let i in input) {
-    let ascii = input[i].charCodeAt(0);
-    console.log('ascii', ascii);
-    if (ascii >= 48 && ascii <= 57) {
-      continue;
-    } else if (ascii >= 65 && ascii <= 90) {
-      continue;
-    } else if (ascii >= 97 && ascii <= 122) {
-      continue;
-    } else {
-      return false;
-    }
-  }
-  return true;
 };
 
 export default posts;

@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps<ITagProps> = async () => {
           });
         } else {
           // tag가 존재하면 기존 태그 오브젝트의 cnt 추가
-          tags[idx].cnt++;
+          tags[idx].cnt += 1;
         }
       });
     }

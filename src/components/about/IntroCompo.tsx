@@ -2,6 +2,24 @@ import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
 
+const IntroItem = styled.li`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .intro-icon {
+    display: inline;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+  }
+  .content-icon {
+    display: inline;
+    width: 22px;
+    height: 22px;
+    margin: 0 6px;
+  }
+`;
+
 const IntroCompo = () => (
   <ul>
     <IntroItem>
@@ -49,23 +67,5 @@ const IntroCompo = () => (
     </IntroItem>
   </ul>
 );
-
-const IntroItem = styled.li`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  .intro-icon {
-    display: inline;
-    width: 25px;
-    height: 25px;
-    margin-right: 12px;
-  }
-  .content-icon {
-    display: inline;
-    width: 22px;
-    height: 22px;
-    margin: 0 6px;
-  }
-`;
 
 export default IntroCompo;
