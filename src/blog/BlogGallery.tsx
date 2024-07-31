@@ -38,7 +38,7 @@ const TopWrapper = styled.div`
   justify-content: space-between;
   @media screen and (min-width: 0px) and (max-width: 481px) {
     flex-direction: column;
-  } ;
+  }
 `;
 const SearchWrapper = styled.div`
   display: flex;
@@ -73,7 +73,7 @@ const SearchInput = styled.input`
   transition: 0.2s linear;
   @media screen and (min-width: 0px) and (max-width: 481px) {
     width: 80%;
-  } ;
+  }
 `;
 
 interface ITextCancelImg {
@@ -139,9 +139,9 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
           const tags = !isEmpty(data.tags) ? data.tags.toString() : '';
 
           return (
-            title.match(new RegExp(inputVal, 'i')) !== null
-            || desc.match(new RegExp(inputVal, 'i')) !== null
-            || tags.match(new RegExp(inputVal, 'i')) !== null
+            title.match(new RegExp(inputVal, 'i')) !== null ||
+            desc.match(new RegExp(inputVal, 'i')) !== null ||
+            tags.match(new RegExp(inputVal, 'i')) !== null
           );
         }),
       );
@@ -157,7 +157,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
   useEffect(() => {
     searhFiltering(search);
-  }, [router.query.search]);
+  }, [router.query.search, search, searhFiltering]);
 
   return (
     <Layout>

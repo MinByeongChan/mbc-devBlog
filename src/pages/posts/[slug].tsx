@@ -5,7 +5,6 @@ import { Meta } from '../../layout/Meta';
 import PostLayout from '../../layout/PostLayout';
 import { Main } from '../../templates/Main';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
-import { markdownToHtml } from '../../utils/Markdown';
 
 type IPostUrl = {
   slug: string;
@@ -20,30 +19,31 @@ type IPostProps = {
   content: string;
 };
 
-const DisplayPost = (props: IPostProps) => (
-  <Main
-    meta={
-      <Meta
+function DisplayPost(props: IPostProps) {
+  return (
+    <Main
+      meta={
+        <Meta
+          title={props.title}
+          description={props.description}
+          post={{
+            image: props.image,
+            date: props.date,
+            modified_date: props.modified_date,
+          }}
+        />
+      }>
+      <PostLayout
         title={props.title}
-        description={props.description}
-        post={{
-          image: props.image,
-          date: props.date,
-          modified_date: props.modified_date,
-        }}
+        date={props.date}
+        content={props.content}
+        // description={props.description}
+        // image={props.image}
+        // modified_date={props.modified_date}
       />
-    }
-  >
-    <PostLayout
-      title={props.title}
-      description={props.description}
-      image={props.image}
-      date={props.date}
-      modified_date={props.modified_date}
-      content={props.content}
-    />
-  </Main>
-);
+    </Main>
+  );
+}
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   const posts = getAllPosts(['slug']);
@@ -68,7 +68,6 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'content',
     'slug',
   ]);
-  const content = await markdownToHtml(post.content || '');
 
   return {
     props: {
@@ -77,7 +76,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       date: post.date,
       modified_date: post.modified_date !== undefined ? post.modified_date : '',
       image: post.image !== undefined ? post.image : '',
-      content,
+      content: post.content || '',
     },
   };
 };

@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
-import { ITagProps } from '../pages/tags';
 import Link from 'next/link';
+import { color, fontSize, fontWeight } from '../utils/StyleTheme';
 
-interface iTagItemStyle {
+interface ITagItemStyle {
   itemBgColor?: string;
   itemColor?: string;
   itemWeight?: string;
@@ -43,9 +42,9 @@ const TagItem = styled.li`
   float: left;
   padding: 8px 10px;
   margin: 3px 5px;
-  background-color: ${(props: iTagItemStyle) => props.itemBgColor};
-  color: ${(props: iTagItemStyle) => props.itemColor};
-  font-weight: ${(props: iTagItemStyle) => props.itemWeight};
+  background-color: ${(props: ITagItemStyle) => props.itemBgColor};
+  color: ${(props: ITagItemStyle) => props.itemColor};
+  font-weight: ${(props: ITagItemStyle) => props.itemWeight};
   border-radius: 15px;
   transition: 0.1s linear;
   &:hover {
@@ -53,8 +52,43 @@ const TagItem = styled.li`
   }
 `;
 
-const TagLayout: React.FC<ITagProps> = (props: ITagProps) => {
-  const tags = props.tags;
+interface ITag {
+  name: string;
+  cnt: number;
+}
+interface TagLayoutProps {
+  tags: ITag[];
+}
+const TagLayout = (props: TagLayoutProps) => {
+  const { tags } = props;
+
+  const makeColor = (cnt: number) => {
+    let itemBgColor: string;
+    let itemColor: string;
+    let itemWeight: string;
+    if (cnt >= 1 && cnt <= 5) {
+      itemBgColor = color.gainsboro;
+      itemColor = color.black;
+      itemWeight = fontWeight.light;
+    } else if (cnt >= 6 && cnt <= 10) {
+      itemBgColor = color.lightgrey;
+      itemColor = color.black;
+      itemWeight = fontWeight.normal;
+    } else if (cnt >= 11 && cnt <= 15) {
+      itemBgColor = color.darkgray;
+      itemColor = color.black;
+      itemWeight = fontWeight.normal;
+    } else if (cnt >= 16) {
+      itemBgColor = color.lightskyblue;
+      itemColor = color.black;
+      itemWeight = fontWeight.bold;
+    } else {
+      itemBgColor = color.darkWhite;
+      itemColor = color.black;
+      itemWeight = fontWeight.light;
+    }
+    return [itemBgColor, itemColor, itemWeight];
+  };
 
   return (
     <Layout>
@@ -68,48 +102,24 @@ const TagLayout: React.FC<ITagProps> = (props: ITagProps) => {
           const [itemBgColor, itemColor, itemWeight] = makeColor(data.cnt);
 
           return (
-            <TagItem key={index} itemBgColor={itemBgColor} itemColor={itemColor} itemWeight={itemWeight} >
-              <Link href={{
-                pathname: '/',
-                query: { search: `${data.name}` },
-              }}>
-                <a>
-                  <span>{data.name}</span>
-                </a>
+            <TagItem
+              key={index}
+              itemBgColor={itemBgColor}
+              itemColor={itemColor}
+              itemWeight={itemWeight}>
+              <Link
+                href={{
+                  pathname: '/',
+                  query: { search: `${data.name}` },
+                }}>
+                <span>{data.name}</span>
               </Link>
             </TagItem>
-          )})}
+          );
+        })}
       </TagItemList>
     </Layout>
   );
 };
-
-const makeColor = (cnt: number ) => {
-  let itemBgColor: string;
-  let itemColor: string;
-  let itemWeight: string;
-  if(1 <= cnt && cnt <= 5){
-    itemBgColor = color.gainsboro;
-    itemColor = color.black;
-    itemWeight= fontWeight.light;
-  } else if(6 <= cnt && cnt <= 10){
-    itemBgColor = color.lightgrey;
-    itemColor = color.black;
-    itemWeight= fontWeight.normal;
-  } else if(11 <= cnt && cnt <= 15){
-    itemBgColor = color.darkgray;
-    itemColor = color.black;
-    itemWeight= fontWeight.normal;
-  }  else if(16 <= cnt){
-    itemBgColor = color.lightskyblue;
-    itemColor = color.black;
-    itemWeight= fontWeight.bold;
-  } else {
-    itemBgColor = color.darkWhite;
-    itemColor = color.black;
-    itemWeight= fontWeight.light;
-  }
-  return [itemBgColor, itemColor, itemWeight];
-}
 
 export default TagLayout;

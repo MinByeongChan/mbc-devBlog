@@ -2,6 +2,21 @@ import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
 
+const SkillItem = styled.li`
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    flex-direction: column;
+  }
+`;
+const SubItems = styled.ul`
+  padding-left: 10px;
+`;
+const ContentItemLeft = styled.div`
+  min-width: 150px;
+`;
+
 const SkillCompo = () => (
   <ul>
     {/* Front-End - 시작 */}
@@ -96,20 +111,5 @@ const SkillCompo = () => (
     {/* Tools - 끝 */}
   </ul>
 );
-
-const SkillItem = styled.li`
-  display: flex;
-  align-items: start;
-  margin-top: 10px;
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    flex-direction: column;
-  } ;
-`;
-const SubItems = styled.ul`
-  padding-left: 10px;
-`;
-const ContentItemLeft = styled.div`
-  min-width: 150px;
-`;
 
 export default SkillCompo;

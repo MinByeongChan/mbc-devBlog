@@ -2,6 +2,22 @@ import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
 
+const ProjTop = styled.div`
+  margin-top: 50px;
+`;
+const ListItems = styled.ul`
+  padding-left: 10px;
+`;
+const ListItem = styled.li`
+  align-items: start;
+`;
+const HoverLink = styled.a`
+  transition: 0.1s linear;
+  &:hover {
+    box-shadow: 0px 1px 0px;
+  }
+`;
+
 const ProjectCompo = () => (
   <>
     <ProjTop>
@@ -98,21 +114,5 @@ const ProjectCompo = () => (
     {/* 테크넷 - 끝 */}
   </>
 );
-
-const ProjTop = styled.div`
-  margin-top: 50px;
-`;
-const ListItems = styled.ul`
-  padding-left: 10px;
-`;
-const ListItem = styled.li`
-  align-items: start;
-`;
-const HoverLink = styled.a`
-  transition: 0.1s linear;
-  &:hover {
-    box-shadow: 0px 1px 0px;
-  }
-`;
 
 export default ProjectCompo;

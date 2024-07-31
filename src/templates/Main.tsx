@@ -2,14 +2,14 @@ import React, { ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 
-import Navbar from '../navigation/Navbar';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { Provider } from 'react-redux';
-import { store } from '../modules/configureStore';
-import ModalProvider from '../modal/ModalProvider';
+import { color, fontSize, fontWeight } from '../utils/StyleTheme';
+import Navbar from '../navigation/Navbar';
+// import { store } from '../modules/configureStore';
+// import ModalProvider from '../modal/ ';
 
 type IMainProps = {
   meta: ReactNode;
@@ -30,7 +30,7 @@ const BottomWrapper = styled.footer`
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     padding: 40px 20px;
-  } ;
+  }
 `;
 const BottomContainer = styled.div`
   max-width: 1200px;
@@ -72,11 +72,11 @@ const BottomContentEnd = styled.div`
 `;
 
 const Main: React.FC<IMainProps> = (props: IMainProps) => (
-  <Provider store={store}>
+  <>
     {props.meta}
 
     <section>
-      <ModalProvider />
+      {/* <ModalProvider /> */}
       <Navbar />
 
       <LayoutMain>{props.children}</LayoutMain>
@@ -84,7 +84,7 @@ const Main: React.FC<IMainProps> = (props: IMainProps) => (
       <BottomWrapper>
         <BottomContainer>
           <BottomContentTitle>
-            <p className="footer-title">Byeong Chan's 기술 블로그</p>
+            <p className="footer-title">Byeong Chan`s 기술 블로그</p>
             <p className="footer-subtitle">개발했던 것을 정리하기 위한 기술 블로그 입니다.</p>
           </BottomContentTitle>
 
@@ -110,7 +110,7 @@ const Main: React.FC<IMainProps> = (props: IMainProps) => (
         </BottomContainer>
       </BottomWrapper>
     </section>
-  </Provider>
+  </>
 );
 
 export { Main };

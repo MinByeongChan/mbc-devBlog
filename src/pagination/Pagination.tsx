@@ -2,11 +2,16 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { convertUrlToLinkHref } from '../utils/Pagination';
 import styled from '@emotion/styled';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleLeft, faAngleDoubleRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+  faAngleLeft,
+  faAngleRight,
+} from '@fortawesome/free-solid-svg-icons';
+import { color, fontSize, fontWeight } from '../utils/StyleTheme';
+import { convertUrlToLinkHref } from '../utils/Pagination';
 
 export type IPaginationProps = {
   pagingList?: number[];
@@ -37,10 +42,10 @@ const PagingItem = styled.div(() => ({
     opacity: '0.5',
     boxShadow: '0px 1px 0px',
   },
-  ".paging-item-icon": {
-    width:"14px",
+  '.paging-item-icon': {
+    width: '14px',
     height: '14px',
-    transition: "0.2s linear"
+    transition: '0.2s linear',
   },
 }));
 
@@ -58,17 +63,13 @@ const Pagination = (props: IPaginationProps) => {
         {props.previous && (
           <>
             <PagingItem>
-              <Link href={convertUrlToLinkHref(`/`)} as={`/`}>
-                <a>
+              <Link href={convertUrlToLinkHref(`/`)} as="/">
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleDoubleLeft} />
-                </a>
               </Link>
             </PagingItem>
             <PagingItem>
               <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
-                <a>
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleLeft} />
-                </a>
               </Link>
             </PagingItem>
           </>
@@ -76,14 +77,12 @@ const Pagination = (props: IPaginationProps) => {
 
         {props.pagingList?.map((data, index) => {
           const page = data === 1 ? '/' : `page${data}`;
-          const curr = data === Number(props.currPage) ? true : false;
+          const curr = data === Number(props.currPage);
 
           return (
             <PagingItem key={index}>
               <Link href={convertUrlToLinkHref(page)} as={page}>
-                <a>
-                  <ItemText curr={curr}>{data}</ItemText>
-                </a>
+                <ItemText curr={curr}>{data}</ItemText>
               </Link>
             </PagingItem>
           );
@@ -93,18 +92,14 @@ const Pagination = (props: IPaginationProps) => {
           <>
             <PagingItem>
               <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
-                <a>
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleRight} />
-                </a>
               </Link>
             </PagingItem>
             <PagingItem>
               <Link href={convertUrlToLinkHref(`page${props.maxPage}`)} as={`page${props.maxPage}`}>
-                <a>
-                  <FontAwesomeIcon className="paging-item-icon" icon={faAngleDoubleRight} />
-                </a>
+                <FontAwesomeIcon className="paging-item-icon" icon={faAngleDoubleRight} />
               </Link>
-            </PagingItem>          
+            </PagingItem>
           </>
         )}
       </PagingList>

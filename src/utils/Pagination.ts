@@ -22,12 +22,13 @@ export function convertUrlToLinkHref(url: string) {
 
 // 페이지 리스트 생성 함수
 export function createPageList(currPage: number, maxPage: number, pagingIndicator: number) {
-  let resultList = [];
+  const resultList = [];
   const pivot = Math.ceil(pagingIndicator / 2);
   const interval = pivot - 1;
-  var pageStart, pageEnd;
+  let pageStart;
+  let pageEnd;
 
-  if (1 <= currPage && currPage <= pivot) {
+  if (currPage >= 1 && currPage <= pivot) {
     pageStart = 1;
     if (maxPage <= pivot) {
       pageEnd = maxPage;
@@ -42,7 +43,7 @@ export function createPageList(currPage: number, maxPage: number, pagingIndicato
     pageEnd = currPage + interval;
   }
 
-  for (let i = pageStart; i <= pageEnd; i++) {
+  for (let i = pageStart; i <= pageEnd; i += 1) {
     resultList.push(i);
   }
 
