@@ -157,7 +157,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
   useEffect(() => {
     searhFiltering(search);
-  }, [router.query.search]);
+  }, [router.query.search, search, searhFiltering]);
 
   return (
     <Layout>

@@ -1,67 +1,26 @@
 {
   "compilerOptions": {
-    "lib": [
-      "ES2020",
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "allowUnreachableCode": false,
-    "target": "ESNext",
-    "outDir": "dist",
-    "declaration": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "preserve",
-    "noEmit": true,
-    "isolatedModules": true,
-    "incremental": true,
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      // "@/*": ["./src/*"],
-      // "@/services/model": ["./src/services/openapi/src/model"],
-      // "@/services/api/*": ["./src/services/openapi/src/api/*"],
-      // "@public/*": ["./public/*"],
-      // "@assets": ["./src/assets"],
-      // "@assets/*": ["./src/assets/*"],
-      // "@components": ["./src/components"],
-      // "@components/*": ["./src/components/*"],
-      // "@constants": ["./src/constants"],
-      // "@constants/*": ["./src/constants/*"],
-      // "@store": ["./src/store"],
-      // "@store/*": ["./src/store/*"],
-      // "@types": ["./src/types"],
-      // "@types/*": ["./src/types/*"],
-      // "@utils": ["./src/utils"],
-      // "@utils/*": ["./src/utils/*"]
-    },
+      "@/*": ["./src/*"]
+    }
   },
-  "exclude": [
-    "./dist/**/*",
-    "./node_modules/**/*"
-  ],
-  "include": [
-    "src",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
