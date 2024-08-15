@@ -38,7 +38,7 @@ const TopWrapper = styled.div`
   justify-content: space-between;
   @media screen and (min-width: 0px) and (max-width: 481px) {
     flex-direction: column;
-  } ;
+  }
 `;
 const SearchWrapper = styled.div`
   display: flex;
@@ -73,7 +73,7 @@ const SearchInput = styled.input`
   transition: 0.2s linear;
   @media screen and (min-width: 0px) and (max-width: 481px) {
     width: 80%;
-  } ;
+  }
 `;
 
 interface ITextCancelImg {
@@ -121,7 +121,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
   };
 
   // 검색 필터링 함수
-  const searhFiltering = (value: string) => {
+  const searchFiltering = (value: string) => {
     const inputVal = value;
     setSearch(inputVal);
 
@@ -139,9 +139,9 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
           const tags = !isEmpty(data.tags) ? data.tags.toString() : '';
 
           return (
-            title.match(new RegExp(inputVal, 'i')) !== null
-            || desc.match(new RegExp(inputVal, 'i')) !== null
-            || tags.match(new RegExp(inputVal, 'i')) !== null
+            title.match(new RegExp(inputVal, 'i')) !== null ||
+            desc.match(new RegExp(inputVal, 'i')) !== null ||
+            tags.match(new RegExp(inputVal, 'i')) !== null
           );
         }),
       );
@@ -152,12 +152,12 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
   // 검색 필드 onChange
   const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    searhFiltering(e.target.value);
+    searchFiltering(e.target.value);
   };
 
   useEffect(() => {
-    searhFiltering(search);
-  }, [router.query.search]);
+    searchFiltering(search);
+  }, [router.query.search, search]);
 
   return (
     <Layout>

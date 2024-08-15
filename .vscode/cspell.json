@@ -1,0 +1,48 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.2
+    "version": "0.2",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "axios",
+        "coway",
+        "cowayid",
+        "cowaymall",
+        "iocare",
+        "kakao",
+        "pinia",
+        "vueuse",
+        "cwid",
+        "naver",
+        "signup",
+        "Hyosung",
+        "Transcosmos",
+        "KSNET",
+        "Woongjin",
+        "kakaosync",
+        "Homecare",
+        "Neotek",
+        "Buttle",
+        "ibank",
+        "Marino",
+        "Allvit",
+        "UBASE",
+        "healthygru",
+        "Opensurvey",
+        "vite",
+        "gsap",
+        "datepicker",
+        "tanstack",
+        "tsdoc",
+        "svgr",
+        "commitlintsvgr",
+        "openapi",
+        "kanban",
+        "autocomplate",
+        "hookform",
+        "highcharts",
+        "outbounds"
+    ]
+}

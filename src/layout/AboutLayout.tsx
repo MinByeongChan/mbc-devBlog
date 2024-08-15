@@ -12,14 +12,74 @@ import TextDefault from '../components/ui/TextDefault';
 import { fontSize, fontWeight } from '../utils/StyleTheme';
 import ContentTitleWrapper from './about/ContentTitleWrapper';
 
+const Layout = styled.div(() => ({
+  padding: '50px 0',
+}));
+const ContentLayout = styled.div(() => ({
+  width: '100%',
+  maxWidth: '840px',
+  margin: '0 auto',
+  '@media screen and (min-width: 481px) and (max-width: 1080px)': {
+    minWidth: '600px',
+    padding: '0 22px',
+  },
+  '@media screen and (min-width: 0px) and (max-width: 480px)': {
+    minWidth: '0px',
+    padding: '0 22px',
+  },
+}));
+const IntroWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    flex-direction: column-reverse;
+    .content-item2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+`;
+const IntroItem = styled.li`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .intro-icon {
+    display: inline;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+  }
+  .content-icon {
+    display: inline;
+    width: 22px;
+    height: 22px;
+    margin: 0 6px;
+  }
+`;
+const ProfileImg = styled.img`
+  width: 220px;
+  height: 220px;
+  margin-right: 200px;
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    margin: 0 0 20px 0;
+    width: 200px;
+    height: 200px;
+  }
+`;
+const Pre = styled.pre`
+  font-size: ${fontSize.lg};
+  font-weight: ${fontWeight.bold};
+  margin: 0;
+`;
+
 const AboutLayout = () => (
   <main
     className="about"
     style={{
       width: '100%',
       height: '100%',
-    }}
-  >
+    }}>
     {/* About Layout - 시작 */}
     <Layout>
       {/* Content Layout - 시작 */}
@@ -102,66 +162,5 @@ const AboutLayout = () => (
     </Layout>
   </main>
 );
-
-const Layout = styled.div(() => ({
-  padding: '50px 0',
-}));
-const ContentLayout = styled.div(() => ({
-  width: '100%',
-  maxWidth: '840px',
-  margin: '0 auto',
-  '@media screen and (min-width: 481px) and (max-width: 1080px)': {
-    minWidth: '600px',
-    padding: '0 22px',
-  },
-  '@media screen and (min-width: 0px) and (max-width: 480px)': {
-    minWidth: '0px',
-    padding: '0 22px',
-  },
-}));
-const IntroWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    flex-direction: column-reverse;
-    .content-item2 {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  } ;
-`;
-const IntroItem = styled.li`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  .intro-icon {
-    display: inline;
-    width: 25px;
-    height: 25px;
-    margin-right: 12px;
-  }
-  .content-icon {
-    display: inline;
-    width: 22px;
-    height: 22px;
-    margin: 0 6px;
-  }
-`;
-const ProfileImg = styled.img`
-  width: 220px;
-  height: 220px;
-  margin-right: 200px;
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    margin: 0 0 20px 0;
-    width: 200px;
-    height: 200px;
-  } ;
-`;
-const Pre = styled.pre`
-  font-size: ${fontSize.lg};
-  font-weight: ${fontWeight.bold};
-  margin: 0;
-`;
 
 export default AboutLayout;

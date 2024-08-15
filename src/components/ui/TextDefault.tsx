@@ -12,23 +12,6 @@ interface ITextDefault {
   style?: CSSProperties;
 }
 
-const TextDefault = (props: ITextDefault) => {
-  const { children, size, color, weight, lineHeight, letterSpacing, style } = props;
-
-  return (
-    <Text
-      size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
-      color={color ? fontColor[`${color}`] : ''}
-      weight={weight ? fontWeight[`${weight}`] : fontWeight[`${fontWeight.normal}`]}
-      lineHeight={lineHeight ? lh[`${lineHeight}`] : lh[`${lh.md}`]}
-      letterSpacing={letterSpacing}
-      style={style}
-    >
-      {children}
-    </Text>
-  );
-};
-
 const Text = styled.span`
   font-size: ${(props: ITextDefault) => props.size};
   color: ${(props: ITextDefault) => props.color};
@@ -52,7 +35,23 @@ const Text = styled.span`
       (props.size === 'lg' && fontSize.md) ||
       (props.size === 'md' && fontSize.sm) ||
       (props.size === 'sm' && fontSize.xs)};
-  } ;
+  }
 `;
+
+const TextDefault = (props: ITextDefault) => {
+  const { children, size, color, weight, lineHeight, letterSpacing, style } = props;
+
+  return (
+    <Text
+      size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
+      color={color ? fontColor[`${color}`] : ''}
+      weight={weight ? fontWeight[`${weight}`] : fontWeight[`${fontWeight.normal}`]}
+      lineHeight={lineHeight ? lh[`${lineHeight}`] : lh[`${lh.md}`]}
+      letterSpacing={letterSpacing}
+      style={style}>
+      {children}
+    </Text>
+  );
+};
 
 export default TextDefault;

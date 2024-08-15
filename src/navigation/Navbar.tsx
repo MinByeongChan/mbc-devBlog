@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { color, fontSize, fontWeight } from '../utils/StyleTheme';
 
-const NavLayout = styled.nav(() => ({
+const NavLayout = styled.nav({
   position: 'sticky',
   top: '0',
   width: '100%',
@@ -14,14 +14,14 @@ const NavLayout = styled.nav(() => ({
   boxShadow: '0 0 9px 3px rgb(41 41 41 / 25%)',
   backgroundColor: `${color.white}`,
   opacity: '0.9',
-}));
+});
 
-const NavContainer = styled.div(() => ({
+const NavContainer = styled.div({
   width: '100%',
   height: '100%',
   maxWidth: '1200px',
   margin: '0 auto',
-}));
+});
 
 const NavUl = styled.ul(() => ({
   display: 'flex',
@@ -30,7 +30,7 @@ const NavUl = styled.ul(() => ({
   height: '100%',
 }));
 
-const NavLi = styled.li(() => ({
+const NavLi = styled.li({
   position: 'relative',
   height: '100%',
   lineHeight: '68px',
@@ -49,7 +49,7 @@ const NavLi = styled.li(() => ({
   ':hover .bottom-line': {
     height: '4px',
   },
-}));
+});
 
 const Text = styled.span`
   font-size: ${fontSize.md};
@@ -63,41 +63,25 @@ const Navbar = () => (
       <NavUl>
         <NavLi>
           <Link href="/">
-            <a>
-              <Text>Blog</Text>
-            </a>
+            <Text>Blog</Text>
           </Link>
           <div className="bottom-line" />
         </NavLi>
         <NavLi>
           <Link href="/tags">
-            <a>
-              <Text>Tags</Text>
-            </a>
+            <Text>Tags</Text>
           </Link>
           <div className="bottom-line" />
         </NavLi>
         <NavLi>
           <Link href="/portpolio">
-            <a>
-              <Text>Portpolio</Text>
-            </a>
+            <Text>Portpolio</Text>
           </Link>
           <div className="bottom-line" />
         </NavLi>
         <NavLi>
           <Link href="/about">
-            <a>
-              <Text>About</Text>
-            </a>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
-        <NavLi>
-          <Link href="/guestbook">
-            <a>
-              <Text>방명록</Text>
-            </a>
+            <Text>About</Text>
           </Link>
           <div className="bottom-line" />
         </NavLi>
