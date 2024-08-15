@@ -85,12 +85,6 @@ const Navbar = () => (
           </Link>
           <div className="bottom-line" />
         </NavLi>
-        <NavLi>
-          <Link href="/guestbook">
-            <Text>방명록</Text>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
       </NavUl>
     </NavContainer>
   </NavLayout>
