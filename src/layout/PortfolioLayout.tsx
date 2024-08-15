@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import BlogCard from '../components/portpolio/BlogCard';
 import KstaCard from '../components/portpolio/KstaCard';
 
-const PortpolioContainer = styled.section`
+const PortfolioContainer = styled.section`
   width: 100%;
   max-width: 1200px;
   padding: 50px 20px;
@@ -18,13 +18,13 @@ const PortpolioContainer = styled.section`
   }
 `;
 
-const PortpolLayout = () => {
+const PortfolioLayout = () => {
   return (
-    <PortpolioContainer>
+    <PortfolioContainer>
       <KstaCard />
       <BlogCard />
-    </PortpolioContainer>
+    </PortfolioContainer>
   );
 };
 
-export default PortpolLayout;
+export default PortfolioLayout;

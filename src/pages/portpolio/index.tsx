@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta } from '../../layout/Meta';
-import PortpolLayout from '../../layout/PortpolLayout';
+import PortfolioLayout from '../../layout/PortfolioLayout';
 import { Main } from '../../templates/Main';
 
 const index = () => (
   <Main meta={<Meta title="Portpolio" description="MBC Portpolio" />}>
-    <PortpolLayout />
+    <PortfolioLayout />
   </Main>
 );
 
