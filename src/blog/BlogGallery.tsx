@@ -121,7 +121,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
   };
 
   // 검색 필터링 함수
-  const searhFiltering = (value: string) => {
+  const searchFiltering = (value: string) => {
     const inputVal = value;
     setSearch(inputVal);
 
@@ -152,12 +152,12 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
   // 검색 필드 onChange
   const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    searhFiltering(e.target.value);
+    searchFiltering(e.target.value);
   };
 
   useEffect(() => {
-    searhFiltering(search);
-  }, [router.query.search, search, searhFiltering]);
+    searchFiltering(search);
+  }, [router.query.search, search]);
 
   return (
     <Layout>
