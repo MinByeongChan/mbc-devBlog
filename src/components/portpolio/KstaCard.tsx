@@ -32,7 +32,7 @@ const CardItem = styled.div`
   background-position: 88% 100%;
   align-content: center;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/portpolio/ksta.png');
+  background-image: url('/assets/images/portfolio/ksta.png');
 
   @media screen and (min-width: 0px) and (max-width: 768px) {
     min-height: 550px;
@@ -40,7 +40,7 @@ const CardItem = styled.div`
     background-size: 87%;
     background-position: top;
     align-content: flex-end;
-    background-image: url('/assets/images/portpolio/ksta.png');
+    background-image: url('/assets/images/portfolio/ksta.png');
   }
 `;
 const CardItemLeft = styled.div`
@@ -54,7 +54,7 @@ const CardItemLeft = styled.div`
     background-position: top;
     background-repeat: no-repeat;
     align-content: flex-end;
-    background-image: url('/assets/images/portpolio/ksta.png');
+    background-image: url('/assets/images/portfolio/ksta.png');
     background: linear-gradient(180deg, rgba(40, 35, 135, 0), #1e90ff 12%, #1e90ff);
   }
 `;
