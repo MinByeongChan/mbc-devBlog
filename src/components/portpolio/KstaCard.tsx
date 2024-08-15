@@ -5,66 +5,6 @@ import React from 'react';
 import { color } from '../../utils/StyleTheme';
 import TextDefault from '../ui/TextDefault';
 
-const KstaCard = () => {
-  return (
-    <CardContainer>
-      <CardItem>
-        <CardItemLeft>
-          <TextDefault size="h1" weight="bold" color="white">
-            KSTA
-          </TextDefault>
-          <div style={{ margin: '0 0 30px 0' }}>
-            <TextDefault size="xg" color="white">
-              (Webview Android App)
-            </TextDefault>
-          </div>
-
-          <div>
-            <TextDefault size="lg" weight="bold" color="white">
-              KSNET 가맹점 매출내역 및 전표 조회 App
-            </TextDefault>
-
-            <div style={{ margin: '15px 0 0 0' }}>
-              <TextDefault size="md" weight="bold" color="white">
-                앱 페이지와 back-end API와 연동하여 매출 관리 개발을 담당했습니다.
-                <br /> 사용자에게 편의성을 제공하기위해 직관적인 UI/UX를 사용하여 개발을
-                완료했습니다.
-              </TextDefault>
-            </div>
-
-            <DescItems>
-              <DescItem>
-                <IconWrapper>
-                  <FontAwesomeIcon icon={faCheck} />
-                </IconWrapper>
-                <TextDefault size="md" color="white">
-                  Front-End 영역 개발 담당
-                </TextDefault>
-              </DescItem>
-              <DescItem>
-                <IconWrapper>
-                  <FontAwesomeIcon icon={faCheck} />
-                </IconWrapper>
-                <TextDefault size="md" color="white">
-                  Back-End 매출 내역 API 연동 개발
-                </TextDefault>
-              </DescItem>
-              <DescItem>
-                <IconWrapper>
-                  <FontAwesomeIcon icon={faCheck} />
-                </IconWrapper>
-                <TextDefault size="md" color="white">
-                  UI/UX 개발
-                </TextDefault>
-              </DescItem>
-            </DescItems>
-          </div>
-        </CardItemLeft>
-      </CardItem>
-    </CardContainer>
-  );
-};
-
 const CardContainer = styled.div`
   width: 100%;
   max-width: 1200px;
@@ -132,5 +72,65 @@ const IconWrapper = styled.div`
   width: 16px;
   height: 16px;
 `;
+
+const KstaCard = () => {
+  return (
+    <CardContainer>
+      <CardItem>
+        <CardItemLeft>
+          <TextDefault size="h1" weight="bold" color="white">
+            KSTA
+          </TextDefault>
+          <div style={{ margin: '0 0 30px 0' }}>
+            <TextDefault size="xg" color="white">
+              (Webview Android App)
+            </TextDefault>
+          </div>
+
+          <div>
+            <TextDefault size="lg" weight="bold" color="white">
+              KSNET 가맹점 매출내역 및 전표 조회 App
+            </TextDefault>
+
+            <div style={{ margin: '15px 0 0 0' }}>
+              <TextDefault size="md" weight="bold" color="white">
+                앱 페이지와 back-end API와 연동하여 매출 관리 개발을 담당했습니다.
+                <br /> 사용자에게 편의성을 제공하기위해 직관적인 UI/UX를 사용하여 개발을
+                완료했습니다.
+              </TextDefault>
+            </div>
+
+            <DescItems>
+              <DescItem>
+                <IconWrapper>
+                  <FontAwesomeIcon icon={faCheck} />
+                </IconWrapper>
+                <TextDefault size="md" color="white">
+                  Front-End 영역 개발 담당
+                </TextDefault>
+              </DescItem>
+              <DescItem>
+                <IconWrapper>
+                  <FontAwesomeIcon icon={faCheck} />
+                </IconWrapper>
+                <TextDefault size="md" color="white">
+                  Back-End 매출 내역 API 연동 개발
+                </TextDefault>
+              </DescItem>
+              <DescItem>
+                <IconWrapper>
+                  <FontAwesomeIcon icon={faCheck} />
+                </IconWrapper>
+                <TextDefault size="md" color="white">
+                  UI/UX 개발
+                </TextDefault>
+              </DescItem>
+            </DescItems>
+          </div>
+        </CardItemLeft>
+      </CardItem>
+    </CardContainer>
+  );
+};
 
 export default KstaCard;

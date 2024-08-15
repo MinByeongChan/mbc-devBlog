@@ -3,8 +3,8 @@ import React, { ReactNode } from 'react';
 import TextDefault from '../../components/ui/TextDefault';
 
 interface IContentTitleWrapper {
-    title: string;
-    children: ReactNode;
+  title: string;
+  children: ReactNode;
 }
 
 const TitleWrapper = styled.div`
@@ -14,18 +14,18 @@ const TitleWrapper = styled.div`
 `;
 
 const ContentTitleWrapper = (props: IContentTitleWrapper) => {
-    const { title, children } = props;
+  const { title, children } = props;
 
-    return (
-        <>
-            <TitleWrapper>
-                <TextDefault size="xxg" weight="medium" color="orange">
-                    {title}
-                </TextDefault>
-            </TitleWrapper>
-            {children}
-        </>
-    );
+  return (
+    <>
+      <TitleWrapper>
+        <TextDefault size="xxg" weight="medium" color="orange">
+          {title}
+        </TextDefault>
+      </TitleWrapper>
+      {children}
+    </>
+  );
 };
 
 export default ContentTitleWrapper;

@@ -2,6 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
 
+const ListItems = styled.ul`
+  padding-left: 10px;
+`;
+const ListItem = styled.li`
+  display: flex;
+  align-items: start;
+`;
+
 const ExperiCompo = () => (
   <>
     <div>
@@ -81,13 +89,5 @@ const ExperiCompo = () => (
     </ListItems>
   </>
 );
-
-const ListItems = styled.ul`
-  padding-left: 10px;
-`;
-const ListItem = styled.li`
-  display: flex;
-  align-items: start;
-`;
 
 export default ExperiCompo;

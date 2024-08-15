@@ -85,9 +85,7 @@ const GalleryWrapper = (props: IGalleryWrapperProps) => {
           <GalleryItem key={index}>
             <div style={{ padding: '15px 15px 20px 15px' }}>
               <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-                <a>
-                  <h2 className="gallery-item-title">{elt.title}</h2>
-                </a>
+                <h2 className="gallery-item-title">{elt.title}</h2>
               </Link>
               <div className="gallery-item-author">
                 by <a href="https://github.com/MinByeongChan">{Config.author}</a> on{' '}
@@ -97,14 +95,16 @@ const GalleryWrapper = (props: IGalleryWrapperProps) => {
               </div>
               <div className="gallery-item-desc">{elt.description}</div>
               <div className="gallery-item-tags">
-                <FontAwesomeIcon className={'tags-img'} icon={faTags} />
+                <FontAwesomeIcon className="tags-img" icon={faTags} />
                 <div>
                   {elt.tags !== undefined
-                    ? elt.tags.map((item, index) => (
-                        <Link href={`/?search=${item}`} key={index}>
-                          <a className="tag-item" key={index} onClick={() => setSearch(item)}>
-                            {item}
-                          </a>
+                    ? elt.tags.map((item, id) => (
+                        <Link
+                          href={`/?search=${item}`}
+                          key={id}
+                          className="tag-item"
+                          onClick={() => setSearch(item)}>
+                          {item}
                         </Link>
                       ))
                     : '-'}
