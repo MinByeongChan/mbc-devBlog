@@ -50,7 +50,7 @@ const IntroCompo = () => (
 
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
-        o 기술 트렌드를 놓치지 않는 것, 그리고 기본을 중요하게 생각합니다.
+        o 기술 트렌드를 놓치지 않는 것, 그리고 안정성 높은 코드를 지향합니다.
       </TextDefault>
     </IntroItem>
 
@@ -62,7 +62,8 @@ const IntroCompo = () => (
 
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
-        o 직접 내려먹는 커피와 싸이클, 헬스 운동을 좋아합니다.
+        o 아침에 일찍 일어나고 저녁에 일찍 잠듭니다. 아침 운동을 좋아하며 해야할것을 미리 끝낸 후,
+        하루를 시작하는 편입니다.
       </TextDefault>
     </IntroItem>
   </ul>

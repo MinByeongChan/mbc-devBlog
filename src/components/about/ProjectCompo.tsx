@@ -22,7 +22,81 @@ const ProjectCompo = () => (
   <>
     <ProjTop>
       <TextDefault size="md" weight="light" lineHeight="md">
-        2022.04 – 현재
+        2024.04 – 현재
+      </TextDefault>
+    </ProjTop>
+    <TextDefault size="xg" weight="bold" lineHeight="xg">
+      미국 신사업 어드민, 코웨이
+    </TextDefault>
+    <ListItems>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 코웨이 미국 신사업을 위한 내부 어드민 서비스
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 대시보드, 주문, 물류, 결제, 작업, 테크니션(설치기사), 시스템 등 미국 신사업을 위해
+          필요한 모든 어드민 서비스를 제공
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 미국 신사업 어드민 서비스 F/E 담당
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 기술스택: 기술스택: React 18, Typescript, React-Query, Recoil, Mui, Styled-Component,
+          vite, AWS EC2
+        </TextDefault>
+      </ListItem>
+    </ListItems>
+    <div>
+      <TextDefault size="sm" weight="bold" lineHeight="md" color="lightBlue">
+        <HoverLink href="https://abc.coway.blue/">ABC 어드민 사이트</HoverLink>
+      </TextDefault>
+    </div>
+
+    <ProjTop>
+      <TextDefault size="md" weight="light" lineHeight="md">
+        2023.05 – 2024.04
+      </TextDefault>
+    </ProjTop>
+    <TextDefault size="xg" weight="bold" lineHeight="xg">
+      통합회원 코웨이
+    </TextDefault>
+    <ListItems>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 코웨이 구서비스 및 신규 서비스(iocare, 코웨이몰) 회원을 통합하기 위한 서비스
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 각 서비스에 통합회원 공통 회원가입, 계정찾기, 마이페이지 화면 제공.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 통합회원 서비스 F/E 담당
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight="light" lineHeight="md">
+          o 기술스택: Vue 3, Typescript, Pinia, vite, AWS S3, AWS Cloud Front
+        </TextDefault>
+      </ListItem>
+    </ListItems>
+    <div>
+      <TextDefault size="sm" weight="bold" lineHeight="md" color="lightBlue">
+        <HoverLink href="https://coway.com">코웨이몰 사이트</HoverLink>
+      </TextDefault>
+    </div>
+
+    <ProjTop>
+      <TextDefault size="md" weight="light" lineHeight="md">
+        2022.04 – 2023.11
       </TextDefault>
     </ProjTop>
     <TextDefault size="xg" weight="bold" lineHeight="xg">
@@ -36,7 +110,7 @@ const ProjectCompo = () => (
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React.js, Typescript, React-Query, jotai, vite
+          o 기술스택: React.js, Typescript, React-Query, jotai, vite, AWS S3, AWS Cloud Front
         </TextDefault>
       </ListItem>
     </ListItems>
