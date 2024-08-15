@@ -30,22 +30,17 @@ const ExperiCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 프론트엔드개발팀에서 웹페이지 개발
+          o 코웨이에서 제공하는 대내 및 대외 서비스 프론트엔드 개발.
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 통합회원 어드민, 대내에서 사용하는 관리자 웹페이지.
+          o 통합회원, 통합회원 어드민 대내에서 사용하는 관리자 웹페이지 개발.
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
           o 매칭서비스 F/E, 고객이 편리하게 렌탈할 수 있는 매칭서비스의 FE 메인 담당.
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React, TypeScript, vite, webpack, React-Query, jotai
         </TextDefault>
       </ListItem>
     </ListItems>
@@ -79,11 +74,6 @@ const ExperiCompo = () => (
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
           o 테크넷 개발, KSNET 기술본부 개발 이슈관리 및 영업지원 웹 페이지 개발.
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React, CRA, JavaScript
         </TextDefault>
       </ListItem>
     </ListItems>

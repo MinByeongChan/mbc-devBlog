@@ -125,7 +125,7 @@ const AboutLayout = () => (
               </TextDefault>
             </IntroItem>
           </ul>
-          <ProfileImg alt="" src="/assets/images/portpolio/profile_circle_img.png" />
+          <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
         {/* Introduction - 시작 */}
