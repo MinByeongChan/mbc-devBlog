@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
-import { fontWeight } from '@/utils/StyleTheme';
+import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import Image from 'next/image';
 
 const ListItems = styled.ul`
   padding-left: 10px;
@@ -9,6 +10,11 @@ const ListItems = styled.ul`
 const ListItem = styled.li`
   align-items: start;
 `;
+const ComponyItem = styled.div({
+  display: 'flex',
+  alignItems: 'center',
+  gap: 8,
+});
 
 export const AboutExperience = () => (
   <>
@@ -18,13 +24,15 @@ export const AboutExperience = () => (
       </TextDefault>
     </div>
     <div>
-      <TextDefault size="xg" weight={fontWeight.bold} lineHeight="lg">
-        코웨이
-      </TextDefault>
-      <span> </span>
-      <TextDefault size="xg" lineHeight="lg">
-        (서울)
-      </TextDefault>
+      <ComponyItem>
+        <Image alt="coway" src="/assets/images/about/coway_logo.png" width={26} height={26} />
+        <TextDefault size="xg" weight={fontWeight.bold} lineHeight="lg">
+          코웨이
+        </TextDefault>
+        <TextDefault size="xg" lineHeight="lg">
+          (서울)
+        </TextDefault>
+      </ComponyItem>
     </div>
 
     <ListItems>
@@ -89,15 +97,16 @@ export const AboutExperience = () => (
         2020. 02 - 2021.09
       </TextDefault>
     </div>
-    <div>
+
+    <ComponyItem>
+      <Image alt="coway" src="/assets/images/about/ksnet_logo.png" width={26} height={26} />
       <TextDefault size="xg" weight={fontWeight.bold} lineHeight="lg">
         KSNET
       </TextDefault>
-      <span> </span>
       <TextDefault size="xg" lineHeight="lg">
         (서울)
       </TextDefault>
-    </div>
+    </ComponyItem>
 
     <ListItems>
       <ListItem>
