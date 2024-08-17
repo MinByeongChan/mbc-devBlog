@@ -30,6 +30,15 @@ export const AboutExperience = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          국내 정수기 및 생활가전 제조업 기업 코웨이에서 IT 프론트엔드 개발을 수행하고 있습니다.
+          코웨이에서 구축한 통합회원, 통합회원 어드민 회원체계, 그리고 전자결제 서비스,
+          코디매칭서비스, 국내배정 어드민, 미국신사업 어드민 사이트, 미국신사업 배정판과 같은
+          서비스를 만들었습니다.
+        </TextDefault>
+      </ListItem>
+
+      {/* <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 코웨이에서 제공하는 대내외 서비스&nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -72,7 +81,7 @@ export const AboutExperience = () => (
           - 기술스택 : React18 / jotai / Recoil / TanStack Query / Redux(RTK) / Redux-Thunk / Vue3 /
           pinia / AWS S3, CloudFront, EC2
         </TextDefault>
-      </ListItem>
+      </ListItem> */}
     </ListItems>
 
     <div style={{ marginTop: '16px' }}>
@@ -93,10 +102,12 @@ export const AboutExperience = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          - 모바일파트에서 WEB/APP 개발
+          국내 VAN/PG 서비스를 제공하는 KSNET에서 모바일파트에서 WEB/APP 개발을 수행했습니다.
+          KSNET에서 제공하는 앱인 KSTA Mobile, KSNET VAN 가맹점 매출정보 확인 앱, 사내 기술공유
+          사이트인 테크넷을 만들었습니다.
         </TextDefault>
       </ListItem>
-      <ListItem>
+      {/* <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - KSTA Mobile 개발, KSNET VAN 가맹점 매출정보 확인 앱.
         </TextDefault>
@@ -110,7 +121,7 @@ export const AboutExperience = () => (
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 기술스택 : React / Redux / jQuery
         </TextDefault>
-      </ListItem>
+      </ListItem> */}
     </ListItems>
   </>
 );
