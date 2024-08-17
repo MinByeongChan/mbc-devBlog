@@ -70,7 +70,7 @@ export const TagLayout = (props: TagLayoutProps) => {
     if (cnt >= 1 && cnt <= 5) {
       itemBgColor = color.gainsboro;
       itemColor = color.black;
-      itemWeight = fontWeight.light;
+      itemWeight = fontWeight.normal;
     } else if (cnt >= 6 && cnt <= 10) {
       itemBgColor = color.lightgrey;
       itemColor = color.black;
@@ -86,7 +86,7 @@ export const TagLayout = (props: TagLayoutProps) => {
     } else {
       itemBgColor = color.darkWhite;
       itemColor = color.black;
-      itemWeight = fontWeight.light;
+      itemWeight = fontWeight.normal;
     }
     return [itemBgColor, itemColor, itemWeight];
   };

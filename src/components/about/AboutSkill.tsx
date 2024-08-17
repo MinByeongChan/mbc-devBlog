@@ -45,7 +45,7 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               퍼블리싱
             </TextDefault>
           </div>
@@ -55,13 +55,13 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               개발환경
             </TextDefault>
           </div>
           <div>
             <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-              React18 / jotai / Recoil / React-Query / Redux(RTK) / Redux-Thunk / Vue3 / pinia
+              React18 / jotai / Recoil / TanStack Query / Redux(RTK) / Redux-Thunk / Vue3 / pinia
             </TextDefault>
           </div>
           <div>
@@ -75,7 +75,7 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               Package
             </TextDefault>
           </div>

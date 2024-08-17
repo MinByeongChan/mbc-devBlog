@@ -23,7 +23,7 @@ export const AboutExperience = () => (
       </TextDefault>
       <span> </span>
       <TextDefault size="xg" lineHeight="lg">
-        | 서울 (프론트엔드 개발)
+        (서울)
       </TextDefault>
     </div>
 
@@ -32,7 +32,7 @@ export const AboutExperience = () => (
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 코웨이에서 제공하는 대내외 서비스&nbsp;
         </TextDefault>
-        <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
           프론트엔드&nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -40,7 +40,7 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
           - 코웨이 미국 신사업 어드민 FE 개발 &nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -50,7 +50,7 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
           - 통합회원 FE 담당 &nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -59,23 +59,23 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
           - 매칭서비스 FE 담당 &nbsp;
         </TextDefault>
-        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           고객이 코디와 방문판매가 아닌 온라인으로 접근하여 보다 편리하게 렌탈서비스를 제공받을 수
           있는 서비스.
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          - 기술스택 : React18 / jotai / Recoil / React-Query / Redux(RTK) / Redux-Thunk / Vue3 /
+          - 기술스택 : React18 / jotai / Recoil / TanStack Query / Redux(RTK) / Redux-Thunk / Vue3 /
           pinia / AWS S3, CloudFront, EC2
         </TextDefault>
       </ListItem>
     </ListItems>
 
-    <div style={{ marginTop: '20px' }}>
+    <div style={{ marginTop: '16px' }}>
       <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
         2020. 02 - 2021.09
       </TextDefault>
@@ -86,24 +86,29 @@ export const AboutExperience = () => (
       </TextDefault>
       <span> </span>
       <TextDefault size="xg" lineHeight="lg">
-        | 서울 (WEB/APP 개발)
+        (서울)
       </TextDefault>
     </div>
 
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          o 모바일파트에서 웹앱 및 웹페이지 개발
+          - 모바일파트에서 WEB/APP 개발
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          o KSTA Mobile 개발, KSNET VAN 가맹점 매출정보 확인 앱.
+          - KSTA Mobile 개발, KSNET VAN 가맹점 매출정보 확인 앱.
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          o 테크넷 개발, KSNET 기술본부 개발 이슈관리 및 영업지원 웹 페이지 개발.
+          - 테크넷 개발, KSNET 기술본부 개발 이슈관리 및 영업지원 웹 페이지 개발.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          - 기술스택 : React / Redux / jQuery
         </TextDefault>
       </ListItem>
     </ListItems>
