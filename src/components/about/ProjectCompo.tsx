@@ -31,23 +31,23 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 코웨이 미국 신사업을 위한 내부 어드민 서비스
+          - 코웨이 미국 신사업을 위한 내부 어드민 서비스
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 대시보드, 주문, 물류, 결제, 작업, 테크니션(설치기사), 시스템 등 미국 신사업을 위해
+          - 대시보드, 주문, 물류, 결제, 작업, 테크니션(설치기사), 시스템 등 미국 신사업을 위해
           필요한 모든 어드민 서비스를 제공
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 미국 신사업 어드민 서비스 F/E 담당
+          - 미국 신사업 어드민 서비스 F/E 담당
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: 기술스택: React 18, Typescript, React-Query, Recoil, Mui, Styled-Component,
+          - 기술스택: 기술스택: React 18, Typescript, React-Query, Recoil, Mui, Styled-Component,
           vite, AWS EC2
         </TextDefault>
       </ListItem>
@@ -69,22 +69,22 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 코웨이 구서비스 및 신규 서비스(iocare, 코웨이몰) 회원을 통합하기 위한 서비스
+          - 코웨이 구서비스 및 신규 서비스(iocare, 코웨이몰) 회원을 통합하기 위한 서비스
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 각 서비스에 통합회원 공통 회원가입, 계정찾기, 마이페이지 화면 제공.
+          - 각 서비스에 통합회원 공통 회원가입, 계정찾기, 마이페이지 화면 제공.
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 통합회원 서비스 F/E 담당
+          - 통합회원 서비스 F/E 담당
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: Vue 3, Typescript, Pinia, vite, AWS S3, AWS Cloud Front
+          - 기술스택: Vue 3, Typescript, Pinia, vite, AWS S3, AWS Cloud Front
         </TextDefault>
       </ListItem>
     </ListItems>
@@ -105,12 +105,12 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 코웨이 코디매칭 서비스 F/E 담당
+          - 코웨이 코디매칭 서비스 F/E 담당
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React.js, Typescript, React-Query, jotai, vite, AWS S3, AWS Cloud Front
+          - 기술스택: React.js, Typescript, React-Query, jotai, vite, AWS S3, AWS Cloud Front
         </TextDefault>
       </ListItem>
     </ListItems>
@@ -131,12 +131,12 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 코웨이 대내 회원 서비스의 어드민 F/E 담당
+          - 코웨이 대내 회원 서비스의 어드민 F/E 담당
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: React, Typescript, Redux(RTK / redux-thunk), CRA
+          - 기술스택: React, Typescript, Redux(RTK / redux-thunk), CRA
         </TextDefault>
       </ListItem>
     </ListItems>
@@ -153,12 +153,12 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o KSNET VAN/PG 가맹점에 대한 매출정보확인 앱 리뉴얼 및 서비스 유지보수
+          - KSNET VAN/PG 가맹점에 대한 매출정보확인 앱 리뉴얼 및 서비스 유지보수
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: JavaScript, HTML5, CSS, jQuery
+          - 기술스택: JavaScript, HTML5, CSS, jQuery
         </TextDefault>
       </ListItem>
     </ListItems>
@@ -176,12 +176,12 @@ const ProjectCompo = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 사내 개발자 및 영업사원들에게 서비스관련 정보를 제공하기 위한 웹사이트
+          - 사내 개발자 및 영업사원들에게 서비스관련 정보를 제공하기 위한 웹사이트
         </TextDefault>
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight="light" lineHeight="md">
-          o 기술스택: JavaScript (ES6), HTML5, CSS, SCSS, React, Redux-Saga
+          - 기술스택: JavaScript (ES6), HTML5, CSS, SCSS, React, Redux-Saga
         </TextDefault>
       </ListItem>
     </ListItems>

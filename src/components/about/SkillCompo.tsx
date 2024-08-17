@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
+import { fontWeight } from '@/utils/StyleTheme';
 
 const SkillItem = styled.li`
   display: flex;
@@ -13,6 +14,12 @@ const SkillItem = styled.li`
 const SubItems = styled.ul`
   padding-left: 10px;
 `;
+
+const SubItemGridWrapper = styled.div({
+  display: 'grid',
+  gridTemplateColumns: 'minmax(50px, 100px) auto',
+  gap: '16px',
+});
 const ContentItemLeft = styled.div`
   min-width: 150px;
 `;
@@ -26,32 +33,58 @@ const SkillCompo = () => (
         </TextDefault>
       </ContentItemLeft>
       <SubItems>
-        <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
-            o 언어 : JavaScript(ES6+) / Typescript / HTML5 / CSS / SCSS
-          </TextDefault>
-        </li>
-        <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
-            o 퍼블리싱 : HTML5 / CSS / SCSS / emotion / styled-component
-          </TextDefault>
-        </li>
-        <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
-            o 개발환경 : React18 / jotai / Recoil / React-Query / Redux(RTK) / Redux-Thunk / Vue3 /
-            pinia
-          </TextDefault>
-        </li>
-        <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
-            o Bundler : Webpack / vite
-          </TextDefault>
-        </li>
-        <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
-            o Package manager: npm / yarn
-          </TextDefault>
-        </li>
+        <SubItemGridWrapper>
+          <div>
+            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+              언어
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight="light" lineHeight="md">
+              JavaScript(ES6+) / Typescript / HTML5 / CSS / SCSS
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+              퍼블리싱
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight="light" lineHeight="md">
+              HTML5 / CSS / SCSS / emotion / styled-component
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+              개발환경
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight="light" lineHeight="md">
+              React18 / jotai / Recoil / React-Query / Redux(RTK) / Redux-Thunk / Vue3 / pinia
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+              Bundler
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight="light" lineHeight="md">
+              Webpack / vite
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+              Package
+            </TextDefault>
+          </div>
+          <div>
+            <TextDefault size="md" weight="light" lineHeight="md">
+              npm / yarn
+            </TextDefault>
+          </div>
+        </SubItemGridWrapper>
       </SubItems>
     </SkillItem>
 
@@ -64,7 +97,7 @@ const SkillCompo = () => (
       <SubItems>
         <li>
           <TextDefault size="md" weight="light" lineHeight="md">
-            o AWS EC2 / CloudFront / S3
+            AWS EC2 / CloudFront / S3
           </TextDefault>
         </li>
       </SubItems>
@@ -79,7 +112,7 @@ const SkillCompo = () => (
       <SubItems>
         <li>
           <TextDefault size="md" weight="light" lineHeight="md">
-            o Github / Jira
+            Github / Jira
           </TextDefault>
         </li>
       </SubItems>
