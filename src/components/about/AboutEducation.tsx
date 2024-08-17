@@ -10,7 +10,7 @@ const ListItem = styled.li`
   align-items: start;
 `;
 
-const EduCompo = () => {
+export const AboutEducation = () => {
   return (
     <>
       <ListItems>
@@ -33,5 +33,3 @@ const EduCompo = () => {
     </>
   );
 };
-
-export default EduCompo;

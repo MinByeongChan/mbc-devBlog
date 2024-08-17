@@ -13,7 +13,7 @@ const TitleWrapper = styled.div`
   border-bottom: 1px solid #9c9c9c;
 `;
 
-const ContentTitleWrapper = (props: IContentTitleWrapper) => {
+export const ContentTitleWrapper = (props: IContentTitleWrapper) => {
   const { title, children } = props;
 
   return (
@@ -27,5 +27,3 @@ const ContentTitleWrapper = (props: IContentTitleWrapper) => {
     </>
   );
 };
-
-export default ContentTitleWrapper;

@@ -20,7 +20,7 @@ const IntroItem = styled.li`
   }
 `;
 
-const IntroCompo = () => (
+export const AboutIntroduction = () => (
   <ul>
     <IntroItem>
       <TextDefault size="md" lineHeight="md" weight="light">
@@ -67,5 +67,3 @@ const IntroCompo = () => (
     </IntroItem>
   </ul>
 );
-
-export default IntroCompo;

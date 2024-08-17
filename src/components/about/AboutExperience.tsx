@@ -10,7 +10,7 @@ const ListItem = styled.li`
   align-items: start;
 `;
 
-const ExperiCompo = () => (
+export const AboutExperience = () => (
   <>
     <div>
       <TextDefault size="md" weight="light" lineHeight="md">
@@ -79,5 +79,3 @@ const ExperiCompo = () => (
     </ListItems>
   </>
 );
-
-export default ExperiCompo;

@@ -1,10 +1,9 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 
-import { Meta } from '../../layout/Meta';
-import TagLayout from '../../layout/TagLayout';
-import { Main } from '../../templates/Main';
-import { getAllPosts } from '../../utils/Content';
+import { Meta, TagLayout } from '@/layout';
+import { Main } from '@/templates/Main';
+import { getAllPosts } from '@/utils/Content';
 
 export interface ITag {
   name: string;

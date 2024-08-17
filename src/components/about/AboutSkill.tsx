@@ -24,7 +24,7 @@ const ContentItemLeft = styled.div`
   min-width: 150px;
 `;
 
-const SkillCompo = () => (
+export const AboutSkill = () => (
   <ul>
     <SkillItem>
       <ContentItemLeft>
@@ -119,5 +119,3 @@ const SkillCompo = () => (
     </SkillItem>
   </ul>
 );
-
-export default SkillCompo;

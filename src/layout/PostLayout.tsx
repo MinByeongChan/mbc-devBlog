@@ -96,7 +96,7 @@ const CommentTitleContainer = styled.div`
   border-bottom: 1px solid ${color.gray};
 `;
 
-const PostLayout = (props: IPostProps) => {
+export const PostLayout = (props: IPostProps) => {
   return (
     <Layout>
       <ContentLayout>
@@ -130,7 +130,3 @@ const PostLayout = (props: IPostProps) => {
     </Layout>
   );
 };
-
-PostLayout.propTypes = {};
-
-export default PostLayout;

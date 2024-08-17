@@ -3,8 +3,8 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { Config } from '../utils/Config';
-import { addTrailingSlash } from '../utils/Url';
+import { Config } from '@/utils/Config';
+import { addTrailingSlash } from '@/utils/Url';
 
 type IMetaProps = {
   title: string;
@@ -17,7 +17,7 @@ type IMetaProps = {
   };
 };
 
-const Meta: React.FC<IMetaProps> = (props: IMetaProps) => {
+export const Meta: React.FC<IMetaProps> = (props: IMetaProps) => {
   const router = useRouter();
 
   return (
@@ -120,5 +120,3 @@ const Meta: React.FC<IMetaProps> = (props: IMetaProps) => {
     </>
   );
 };
-
-export { Meta };

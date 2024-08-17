@@ -18,7 +18,7 @@ const HoverLink = styled.a`
   }
 `;
 
-const ProjectCompo = () => (
+export const AboutProject = () => (
   <>
     <ProjTop>
       <TextDefault size="md" weight="light" lineHeight="md">
@@ -188,5 +188,3 @@ const ProjectCompo = () => (
     {/* 테크넷 - 끝 */}
   </>
 );
-
-export default ProjectCompo;

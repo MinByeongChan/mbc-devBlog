@@ -59,7 +59,8 @@ interface ITag {
 interface TagLayoutProps {
   tags: ITag[];
 }
-const TagLayout = (props: TagLayoutProps) => {
+
+export const TagLayout = (props: TagLayoutProps) => {
   const { tags } = props;
 
   const makeColor = (cnt: number) => {
@@ -121,5 +122,3 @@ const TagLayout = (props: TagLayoutProps) => {
     </Layout>
   );
 };
-
-export default TagLayout;

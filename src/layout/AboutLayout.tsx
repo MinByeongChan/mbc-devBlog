@@ -3,14 +3,16 @@ import styled from '@emotion/styled';
 
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import EduCompo from '../components/about/EduCompo';
-import ExperiCompo from '../components/about/ExperiCompo';
-import IntroCompo from '../components/about/IntroCompo';
-import ProjectCompo from '../components/about/ProjectCompo';
-import SkillCompo from '../components/about/SkillCompo';
-import TextDefault from '../components/ui/TextDefault';
-import { fontSize, fontWeight } from '../utils/StyleTheme';
-import ContentTitleWrapper from './about/ContentTitleWrapper';
+import {
+  AboutEducation,
+  AboutExperience,
+  AboutIntroduction,
+  AboutProject,
+  AboutSkill,
+} from '@/components/about';
+import TextDefault from '@/components/ui/TextDefault';
+import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { ContentTitleWrapper } from '@/layout/about';
 
 const Layout = styled.div(() => ({
   padding: '50px 0',
@@ -130,31 +132,31 @@ const AboutLayout = () => (
 
         {/* Introduction - 시작 */}
         <ContentTitleWrapper title="Introduction.">
-          <IntroCompo />
+          <AboutIntroduction />
         </ContentTitleWrapper>
         {/* Introduction - 끝 */}
 
         {/* Skill - 시작 */}
         <ContentTitleWrapper title="Skill.">
-          <SkillCompo />
+          <AboutSkill />
         </ContentTitleWrapper>
         {/* Skill - 끝 */}
 
         {/* Experience - 시작 */}
         <ContentTitleWrapper title="Experience.">
-          <ExperiCompo />
+          <AboutExperience />
         </ContentTitleWrapper>
         {/* Experience - 끝 */}
 
         {/* Project - 시작 */}
         <ContentTitleWrapper title="Project.">
-          <ProjectCompo />
+          <AboutProject />
         </ContentTitleWrapper>
         {/* Project - 끝 */}
 
         {/* Education - 시작 */}
         <ContentTitleWrapper title="Education.">
-          <EduCompo />
+          <AboutEducation />
         </ContentTitleWrapper>
         {/* Education - 끝 */}
       </ContentLayout>
