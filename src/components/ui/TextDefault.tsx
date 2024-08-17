@@ -5,7 +5,7 @@ import { color as fontColor, fontSize, fontWeight, lineHeight as lh } from '../.
 interface ITextDefault {
   size?: string;
   color?: string;
-  weight?: string;
+  weight?: '300' | '500' | 'normal' | '700';
   lineHeight?: string;
   letterSpacing?: string;
   children?: ReactNode;
@@ -40,12 +40,11 @@ const Text = styled.span`
 
 const TextDefault = (props: ITextDefault) => {
   const { children, size, color, weight, lineHeight, letterSpacing, style } = props;
-
   return (
     <Text
       size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
       color={color ? fontColor[`${color}`] : ''}
-      weight={weight ? fontWeight[`${weight}`] : fontWeight[`${fontWeight.normal}`]}
+      weight={weight}
       lineHeight={lineHeight ? lh[`${lineHeight}`] : lh[`${lh.md}`]}
       letterSpacing={letterSpacing}
       style={style}>

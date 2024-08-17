@@ -18,7 +18,7 @@ const PortfolioContainer = styled.section`
   }
 `;
 
-const PortfolioLayout = () => {
+export const PortfolioLayout = () => {
   return (
     <PortfolioContainer>
       <KstaCard />
@@ -26,5 +26,3 @@ const PortfolioLayout = () => {
     </PortfolioContainer>
   );
 };
-
-export default PortfolioLayout;

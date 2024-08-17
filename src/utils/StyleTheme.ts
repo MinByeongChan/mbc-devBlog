@@ -32,7 +32,7 @@ export const fontSize: IStyleOptions = {
   xs: '12px',
   sm: '14px',
   regular: '15px',
-  md: '17px',
+  md: '1rem',
   lg: '18px',
   xg: '20px',
   xxg: '28px',
@@ -41,12 +41,12 @@ export const fontSize: IStyleOptions = {
   h1: '52px',
 };
 
-export const fontWeight: IStyleOptions = {
+export const fontWeight = {
   light: '300',
+  normal: 'normal',
   medium: '500',
-  normal: '600',
-  bold: '800',
-};
+  bold: '700',
+} as const;
 
 export const lineHeight: IStyleOptions = {
   md: '30px',

@@ -3,14 +3,16 @@ import styled from '@emotion/styled';
 
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import EduCompo from '../components/about/EduCompo';
-import ExperiCompo from '../components/about/ExperiCompo';
-import IntroCompo from '../components/about/IntroCompo';
-import ProjectCompo from '../components/about/ProjectCompo';
-import SkillCompo from '../components/about/SkillCompo';
-import TextDefault from '../components/ui/TextDefault';
-import { fontSize, fontWeight } from '../utils/StyleTheme';
-import ContentTitleWrapper from './about/ContentTitleWrapper';
+import {
+  AboutEducation,
+  AboutExperience,
+  AboutIntroduction,
+  AboutProject,
+  AboutSkill,
+} from '@/components/about';
+import TextDefault from '@/components/ui/TextDefault';
+import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { ContentTitle } from '@/layout';
 
 const Layout = styled.div(() => ({
   padding: '50px 0',
@@ -80,19 +82,17 @@ const AboutLayout = () => (
       width: '100%',
       height: '100%',
     }}>
-    {/* About Layout - 시작 */}
     <Layout>
-      {/* Content Layout - 시작 */}
       <ContentLayout>
         <IntroWrapper>
           <ul>
             <IntroItem>
-              <TextDefault size="h1" weight="bold" lineHeight="h1" letterSpacing="13">
+              <TextDefault size="h1" weight={fontWeight.bold} lineHeight="h1" letterSpacing="13">
                 민 병 찬
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <TextDefault size="lg" weight="bold" color="orange" lineHeight="lg">
+              <TextDefault size="lg" weight={fontWeight.bold} color="orange" lineHeight="lg">
                 Front-End Developer
               </TextDefault>
             </IntroItem>
@@ -128,37 +128,21 @@ const AboutLayout = () => (
           <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
-        {/* Introduction - 시작 */}
-        <ContentTitleWrapper title="Introduction.">
-          <IntroCompo />
-        </ContentTitleWrapper>
-        {/* Introduction - 끝 */}
+        <ContentTitle title="소개" />
+        <AboutIntroduction />
 
-        {/* Skill - 시작 */}
-        <ContentTitleWrapper title="Skill.">
-          <SkillCompo />
-        </ContentTitleWrapper>
-        {/* Skill - 끝 */}
+        <ContentTitle title="기술스택" />
+        <AboutSkill />
 
-        {/* Experience - 시작 */}
-        <ContentTitleWrapper title="Experience.">
-          <ExperiCompo />
-        </ContentTitleWrapper>
-        {/* Experience - 끝 */}
+        <ContentTitle title="경력" />
+        <AboutExperience />
 
-        {/* Project - 시작 */}
-        <ContentTitleWrapper title="Project.">
-          <ProjectCompo />
-        </ContentTitleWrapper>
-        {/* Project - 끝 */}
+        <ContentTitle title="프로젝트" />
+        <AboutProject />
 
-        {/* Education - 시작 */}
-        <ContentTitleWrapper title="Education.">
-          <EduCompo />
-        </ContentTitleWrapper>
-        {/* Education - 끝 */}
+        <ContentTitle title="학력사항" />
+        <AboutEducation />
       </ContentLayout>
-      {/* Content Layout - 끝 */}
     </Layout>
   </main>
 );

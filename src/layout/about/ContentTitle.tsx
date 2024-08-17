@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import React, { ReactNode } from 'react';
-import TextDefault from '../../components/ui/TextDefault';
+import TextDefault from '@/components/ui/TextDefault';
+import { fontWeight } from '@/utils/StyleTheme';
 
-interface IContentTitleWrapper {
+interface ContentTitleProps {
   title: string;
-  children: ReactNode;
 }
 
 const TitleWrapper = styled.div`
@@ -13,19 +13,14 @@ const TitleWrapper = styled.div`
   border-bottom: 1px solid #9c9c9c;
 `;
 
-const ContentTitleWrapper = (props: IContentTitleWrapper) => {
-  const { title, children } = props;
-
+export const ContentTitle = ({ title }: ContentTitleProps) => {
   return (
     <>
       <TitleWrapper>
-        <TextDefault size="xxg" weight="medium" color="orange">
+        <TextDefault size="xxg" weight={fontWeight.medium} color="orange">
           {title}
         </TextDefault>
       </TitleWrapper>
-      {children}
     </>
   );
 };
-
-export default ContentTitleWrapper;

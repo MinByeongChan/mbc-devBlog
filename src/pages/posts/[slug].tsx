@@ -1,10 +1,9 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { Meta } from '../../layout/Meta';
-import PostLayout from '../../layout/PostLayout';
-import { Main } from '../../templates/Main';
-import { getAllPosts, getPostBySlug } from '../../utils/Content';
+import { Meta, PostLayout } from '@/layout';
+import { Main } from '@/templates/Main';
+import { getAllPosts, getPostBySlug } from '@/utils/Content';
 
 type IPostUrl = {
   slug: string;

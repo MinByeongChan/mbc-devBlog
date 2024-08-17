@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { color } from '../../utils/StyleTheme';
-import TextDefault from '../ui/TextDefault';
+import { color, fontWeight } from '@/utils/StyleTheme';
+import TextDefault from '@/components/ui/TextDefault';
 
 const CardContainer = styled.div`
   width: 100%;
@@ -78,7 +78,7 @@ const KstaCard = () => {
     <CardContainer>
       <CardItem>
         <CardItemLeft>
-          <TextDefault size="h1" weight="bold" color="white">
+          <TextDefault size="h1" weight={fontWeight.bold} color="white">
             KSTA
           </TextDefault>
           <div style={{ margin: '0 0 30px 0' }}>
@@ -88,12 +88,12 @@ const KstaCard = () => {
           </div>
 
           <div>
-            <TextDefault size="lg" weight="bold" color="white">
+            <TextDefault size="lg" weight={fontWeight.bold} color="white">
               KSNET 가맹점 매출내역 및 전표 조회 App
             </TextDefault>
 
             <div style={{ margin: '15px 0 0 0' }}>
-              <TextDefault size="md" weight="bold" color="white">
+              <TextDefault size="md" weight={fontWeight.bold} color="white">
                 앱 페이지와 back-end API와 연동하여 매출 관리 개발을 담당했습니다.
                 <br /> 사용자에게 편의성을 제공하기위해 직관적인 UI/UX를 사용하여 개발을
                 완료했습니다.

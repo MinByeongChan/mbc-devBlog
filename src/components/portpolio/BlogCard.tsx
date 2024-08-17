@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { color } from '../../utils/StyleTheme';
+import { color, fontWeight } from '@/utils/StyleTheme';
 import TextDefault from '../ui/TextDefault';
 
 const CardContainer = styled.div`
@@ -77,7 +77,7 @@ const BlogCard = () => {
     <CardContainer>
       <CardItem>
         <CardItemContent>
-          <TextDefault size="h1" weight="bold" color="white">
+          <TextDefault size="h1" weight={fontWeight.bold} color="white">
             개인 블로그
           </TextDefault>
           <div style={{ margin: '0 0 30px 0' }}>
@@ -86,12 +86,12 @@ const BlogCard = () => {
             </TextDefault>
           </div>
 
-          <TextDefault size="lg" weight="bold" color="white">
+          <TextDefault size="lg" weight={fontWeight.bold} color="white">
             React.js, Next.js을 사용한 기술 블로그
           </TextDefault>
 
           <div style={{ margin: '15px 0 0 0' }}>
-            <TextDefault size="md" weight="bold" color="white">
+            <TextDefault size="md" weight={fontWeight.bold} color="white">
               개인 공부 및 개발했던 것들을 기록하고 공유하기 위해 개발한 블로그입니다.
               <br />
               React.js를 사용하여 웹페이지의 기본적인 틀을 구성하였습니다.
