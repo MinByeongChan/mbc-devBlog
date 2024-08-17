@@ -28,19 +28,19 @@ export const AboutSkill = () => (
   <ul>
     <SkillItem>
       <ContentItemLeft>
-        <TextDefault size="lg" weight="medium" color="orange" lineHeight="md">
+        <TextDefault size="lg" weight={fontWeight.normal} color="orange" lineHeight="md">
           Front-End
         </TextDefault>
       </ContentItemLeft>
       <SubItems>
         <SubItemGridWrapper>
           <div>
-            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               언어
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight="light" lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               JavaScript(ES6+) / Typescript / HTML5 / CSS / SCSS
             </TextDefault>
           </div>
@@ -50,7 +50,7 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight="light" lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               HTML5 / CSS / SCSS / emotion / styled-component
             </TextDefault>
           </div>
@@ -60,17 +60,17 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight="light" lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               React18 / jotai / Recoil / React-Query / Redux(RTK) / Redux-Thunk / Vue3 / pinia
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight={fontWeight.bold} lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               Bundler
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight="light" lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               Webpack / vite
             </TextDefault>
           </div>
@@ -80,7 +80,7 @@ export const AboutSkill = () => (
             </TextDefault>
           </div>
           <div>
-            <TextDefault size="md" weight="light" lineHeight="md">
+            <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
               npm / yarn
             </TextDefault>
           </div>
@@ -90,13 +90,13 @@ export const AboutSkill = () => (
 
     <SkillItem>
       <ContentItemLeft>
-        <TextDefault size="lg" weight="medium" color="orange" lineHeight="md">
+        <TextDefault size="lg" weight={fontWeight.normal} color="orange" lineHeight="md">
           DevOps
         </TextDefault>
       </ContentItemLeft>
       <SubItems>
         <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
+          <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
             AWS EC2 / CloudFront / S3
           </TextDefault>
         </li>
@@ -105,13 +105,13 @@ export const AboutSkill = () => (
 
     <SkillItem>
       <ContentItemLeft>
-        <TextDefault size="lg" weight="medium" color="orange" lineHeight="md">
+        <TextDefault size="lg" weight={fontWeight.normal} color="orange" lineHeight="md">
           Tools
         </TextDefault>
       </ContentItemLeft>
       <SubItems>
         <li>
-          <TextDefault size="md" weight="light" lineHeight="md">
+          <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
             Github / Jira
           </TextDefault>
         </li>

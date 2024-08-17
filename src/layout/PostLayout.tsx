@@ -117,7 +117,7 @@ export const PostLayout = (props: IPostProps) => {
 
         {/* 댓글 컨테이너 - 시작 */}
         <CommentTitleContainer>
-          <TextDefault size="xg" weight="bold">
+          <TextDefault size="xg" weight={fontWeight.bold}>
             Comment
           </TextDefault>
         </CommentTitleContainer>

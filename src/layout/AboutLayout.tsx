@@ -89,12 +89,12 @@ const AboutLayout = () => (
         <IntroWrapper>
           <ul>
             <IntroItem>
-              <TextDefault size="h1" weight="bold" lineHeight="h1" letterSpacing="13">
+              <TextDefault size="h1" weight={fontWeight.bold} lineHeight="h1" letterSpacing="13">
                 민 병 찬
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <TextDefault size="lg" weight="bold" color="orange" lineHeight="lg">
+              <TextDefault size="lg" weight={fontWeight.bold} color="orange" lineHeight="lg">
                 Front-End Developer
               </TextDefault>
             </IntroItem>

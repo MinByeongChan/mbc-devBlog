@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React, { ReactNode } from 'react';
-import TextDefault from '../../components/ui/TextDefault';
+import TextDefault from '@/components/ui/TextDefault';
+import { fontWeight } from '@/utils/StyleTheme';
 
 interface IContentTitleWrapper {
   title: string;
@@ -19,7 +20,7 @@ export const ContentTitleWrapper = (props: IContentTitleWrapper) => {
   return (
     <>
       <TitleWrapper>
-        <TextDefault size="xxg" weight="medium" color="orange">
+        <TextDefault size="xxg" weight={fontWeight.medium} color="orange">
           {title}
         </TextDefault>
       </TitleWrapper>
