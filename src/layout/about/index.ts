@@ -1,1 +1,1 @@
-export * from './ContentTitleWrapper';
+export * from './ContentTitle';

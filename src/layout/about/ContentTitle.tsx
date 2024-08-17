@@ -3,9 +3,8 @@ import React, { ReactNode } from 'react';
 import TextDefault from '@/components/ui/TextDefault';
 import { fontWeight } from '@/utils/StyleTheme';
 
-interface IContentTitleWrapper {
+interface ContentTitleProps {
   title: string;
-  children: ReactNode;
 }
 
 const TitleWrapper = styled.div`
@@ -14,9 +13,7 @@ const TitleWrapper = styled.div`
   border-bottom: 1px solid #9c9c9c;
 `;
 
-export const ContentTitleWrapper = (props: IContentTitleWrapper) => {
-  const { title, children } = props;
-
+export const ContentTitle = ({ title }: ContentTitleProps) => {
   return (
     <>
       <TitleWrapper>
@@ -24,7 +21,6 @@ export const ContentTitleWrapper = (props: IContentTitleWrapper) => {
           {title}
         </TextDefault>
       </TitleWrapper>
-      {children}
     </>
   );
 };

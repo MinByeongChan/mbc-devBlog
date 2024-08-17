@@ -32,7 +32,7 @@ export const AboutExperience = () => (
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 코웨이에서 제공하는 대내외 서비스&nbsp;
         </TextDefault>
-        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           프론트엔드&nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -40,7 +40,7 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 코웨이 미국 신사업 어드민 FE 개발 &nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -50,7 +50,7 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 통합회원 FE 담당 &nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
@@ -59,7 +59,7 @@ export const AboutExperience = () => (
         </TextDefault>
       </ListItem>
       <ListItem>
-        <TextDefault size="md" weight={fontWeight.medium} lineHeight="md">
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           - 매칭서비스 FE 담당 &nbsp;
         </TextDefault>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">

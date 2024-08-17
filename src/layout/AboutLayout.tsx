@@ -12,7 +12,7 @@ import {
 } from '@/components/about';
 import TextDefault from '@/components/ui/TextDefault';
 import { fontSize, fontWeight } from '@/utils/StyleTheme';
-import { ContentTitleWrapper } from '@/layout/about';
+import { ContentTitle } from '@/layout';
 
 const Layout = styled.div(() => ({
   padding: '50px 0',
@@ -82,9 +82,7 @@ const AboutLayout = () => (
       width: '100%',
       height: '100%',
     }}>
-    {/* About Layout - 시작 */}
     <Layout>
-      {/* Content Layout - 시작 */}
       <ContentLayout>
         <IntroWrapper>
           <ul>
@@ -130,37 +128,21 @@ const AboutLayout = () => (
           <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
-        {/* Introduction - 시작 */}
-        <ContentTitleWrapper title="Introduction.">
-          <AboutIntroduction />
-        </ContentTitleWrapper>
-        {/* Introduction - 끝 */}
+        <ContentTitle title="소개" />
+        <AboutIntroduction />
 
-        {/* Skill - 시작 */}
-        <ContentTitleWrapper title="Skill.">
-          <AboutSkill />
-        </ContentTitleWrapper>
-        {/* Skill - 끝 */}
+        <ContentTitle title="기술스택" />
+        <AboutSkill />
 
-        {/* Experience - 시작 */}
-        <ContentTitleWrapper title="Experience.">
-          <AboutExperience />
-        </ContentTitleWrapper>
-        {/* Experience - 끝 */}
+        <ContentTitle title="경력" />
+        <AboutExperience />
 
-        {/* Project - 시작 */}
-        <ContentTitleWrapper title="Project.">
-          <AboutProject />
-        </ContentTitleWrapper>
-        {/* Project - 끝 */}
+        <ContentTitle title="프로젝트" />
+        <AboutProject />
 
-        {/* Education - 시작 */}
-        <ContentTitleWrapper title="Education.">
-          <AboutEducation />
-        </ContentTitleWrapper>
-        {/* Education - 끝 */}
+        <ContentTitle title="학력사항" />
+        <AboutEducation />
       </ContentLayout>
-      {/* Content Layout - 끝 */}
     </Layout>
   </main>
 );
