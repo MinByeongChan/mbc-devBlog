@@ -39,9 +39,23 @@ export const AboutExperience = () => (
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           국내 정수기 및 생활가전 제조업 기업 코웨이에서 IT 프론트엔드 개발을 수행하고 있습니다.
-          코웨이에서 구축한 통합회원, 통합회원 어드민 회원체계, 그리고 전자결제 서비스,
-          코디매칭서비스, 국내배정 어드민, 미국신사업 어드민 사이트, 미국신사업 배정판과 같은
-          서비스를 만들었습니다.
+          코웨이에서 구축한 통합회원, 통합회원 어드민 회원 체계, 그리고 전자결제 서비스, 코디 매칭
+          서비스, 국내 배정 어드민, 미국 신사업 어드민 사이트, 미국 신사업 배정판과 같은 서비스를
+          만들었습니다.
+        </TextDefault>
+      </ListItem>
+
+      <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          팀원들과 이슈들에 대해 소통하며 개발에 참여했습니다. 라이브러리 하나 선정하는 것도 여러
+          토의와 기술 검토를 통해 채택하는 과정을 거쳤습니다.
+        </TextDefault>
+      </ListItem>
+
+      <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          매주 스프린트 개발을 진행하여 애자일 개발 프로세스를 경험했습니다. 해당 기획이나 이슈가
+          있는 사항은 이슈화하여 산출물을 보다 완성도 있게 만들도록 했습니다.
         </TextDefault>
       </ListItem>
 
@@ -111,8 +125,8 @@ export const AboutExperience = () => (
     <ListItems>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          국내 VAN/PG 서비스를 제공하는 KSNET에서 모바일파트에서 WEB/APP 개발을 수행했습니다.
-          KSNET에서 제공하는 앱인 KSTA Mobile, KSNET VAN 가맹점 매출정보 확인 앱, 사내 기술공유
+          국내 VAN/PG 서비스를 제공하는 KSNET에서 모바일 파트에서 WEB/APP 개발을 수행했습니다.
+          KSNET에서 제공하는 앱인 KSTA Mobile, KSNET VAN 가맹점 매출 정보 확인 앱, 사내 기술 공유
           사이트인 테크넷을 만들었습니다.
         </TextDefault>
       </ListItem>
