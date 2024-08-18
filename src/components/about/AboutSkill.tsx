@@ -129,7 +129,8 @@ export const AboutSkill = () => (
       <SkillDetailItems>
         <li>
           <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-            React 사용하는 것을 선호합니다. 컴포넌트 공통화 및 재활용하는 것에 능숙합니다. 상태관리, 비동기 처리, 컴포넌트 로직 제어, 다양한 디자인 패턴을 익히고 적용하며 개발합니다.
+            React 사용하는 것을 선호합니다. 컴포넌트 공통화 및 재활용하는 것에 능숙합니다. 상태관리,
+            비동기 처리, 컴포넌트 로직 제어, 다양한 디자인 패턴을 익히고 적용하며 개발합니다.
           </TextDefault>
         </li>
         <li>
@@ -140,7 +141,8 @@ export const AboutSkill = () => (
         </li>
         <li>
           <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-            타입스크립트 타입 재활용 및 유틸리티 타입을 활용하여 타입을 작성하고, 유니온, 인터섹션 타입 등 활용할 수 있습니다.
+            타입스크립트 타입 재활용 및 유틸리티 타입을 활용하여 타입을 작성하고, 유니온, 인터섹션
+            타입 등 활용할 수 있습니다.
           </TextDefault>
         </li>
         <li>
