@@ -54,8 +54,8 @@ export const AboutExperience = () => (
 
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          매주 스프린트 개발을 진행하여 애자일 개발 프로세스를 경험했습니다. 해당 기획이나 이슈가
-          있는 사항은 이슈화하여 산출물을 보다 완성도 있게 만들도록 했습니다.
+          매주 스프린트 개발하는 애자일 개발 프로세스를 경험했습니다. 해당 프로젝트의 기획이나
+          이슈가 있는 사항은 이슈화하여 산출물을 보다 완성도 있게 만들도록 했습니다.
         </TextDefault>
       </ListItem>
 

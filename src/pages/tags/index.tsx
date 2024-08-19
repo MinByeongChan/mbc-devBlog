@@ -1,9 +1,10 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 
-import { Meta, TagLayout } from '@/layout';
+import { TagLayout } from '@/layout';
 import { Main } from '@/templates/Main';
 import { getAllPosts } from '@/utils/Content';
+import { AboutMeta } from '@/components/about';
 
 export interface ITag {
   name: string;
@@ -14,7 +15,7 @@ export type ITagProps = {
 };
 
 const Tags: React.FC<ITagProps> = (props: ITagProps) => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main meta={<AboutMeta />}>
     <TagLayout tags={props.tags} />
   </Main>
 );

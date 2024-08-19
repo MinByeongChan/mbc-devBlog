@@ -81,7 +81,7 @@ export const AboutProject = () => (
       </TextDefault>
     </ProjTop>
     <TextDefault size="xg" weight={fontWeight.bold} lineHeight="xg">
-      통합회원 코웨이
+      통합회원, 코웨이
     </TextDefault>
     <ListItems>
       <ListItem>
@@ -130,7 +130,7 @@ export const AboutProject = () => (
       </TextDefault>
     </ProjTop>
     <TextDefault size="xg" weight={fontWeight.bold} lineHeight="xg">
-      코디매칭 서비스
+      코디매칭 서비스, 코웨이
     </TextDefault>
     <ListItems>
       <ListItem>
@@ -140,9 +140,8 @@ export const AboutProject = () => (
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          - SPA로 환경으로 빠른 화면전환을 제공하도록 개발. - 데이터독을 연동하여 세션 리플레이 및
-          에러 트래킹을 유연하게 관리. - GA360을 적용하여 마케팅에게 유용한 정보를 제공하도록 적용.
-          - CI/CD를 적용하여 쉽고 안전한 배포 방식 적용 (수동배포 스크립트 개발).
+          기존 Vue.js 로직을 React 환경으로 마이그레이션, 중복되는 화면 및 기능을 최소화하여
+          성공적으로 마이그레이션 수행.
         </TextDefault>
       </ListItem>
       <ListItem>
@@ -164,6 +163,12 @@ export const AboutProject = () => (
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          CI/CD를 적용하여 쉽고 안전한 배포 방식 적용 (수동배포 스크립트 개발). github publishing 을
+          이용하여 배포노트 기록 및 버전관리되도록 설계.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           React.js, Typescript, TanStack Query, jotai, vite, AWS (S3, CloudFront) 사용
         </TextDefault>
       </ListItem>
@@ -180,7 +185,7 @@ export const AboutProject = () => (
       </TextDefault>
     </ProjTop>
     <TextDefault size="xg" weight={fontWeight.bold} lineHeight="xg">
-      통합회원 어드민
+      통합회원 어드민, 코웨이
     </TextDefault>
     <ListItems>
       <ListItem>
@@ -202,6 +207,12 @@ export const AboutProject = () => (
       </ListItem>
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
+          Editor를 커스터마이징 하여 통합회원에서 사용될 스타일을 에디터에 그대로 반영함. 사용자가
+          이용하기에 친숙한 UI를 사용할 수 있도록 함.
+        </TextDefault>
+      </ListItem>
+      <ListItem>
+        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           React, Typescript, Redux(RTK / redux-thunk), vite, AWS (S3, CloudFront) 사용
         </TextDefault>
       </ListItem>
@@ -213,7 +224,7 @@ export const AboutProject = () => (
       </TextDefault>
     </ProjTop>
     <TextDefault size="xg" weight={fontWeight.bold} lineHeight="xg">
-      KSTA
+      KSTA, KSNET
     </TextDefault>
     <ListItems>
       <ListItem>
@@ -224,27 +235,6 @@ export const AboutProject = () => (
       <ListItem>
         <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
           JavaScript, HTML5, CSS, jQuery 사용
-        </TextDefault>
-      </ListItem>
-    </ListItems>
-
-    <ProjTop>
-      <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-        2020.11 – 2021.03
-      </TextDefault>
-    </ProjTop>
-    <TextDefault size="xg" weight={fontWeight.bold} lineHeight="xg">
-      테크넷
-    </TextDefault>
-    <ListItems>
-      <ListItem>
-        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          사내 개발자 및 영업사원들에게 서비스관련 정보를 제공하기 위한 웹사이트
-        </TextDefault>
-      </ListItem>
-      <ListItem>
-        <TextDefault size="md" weight={fontWeight.normal} lineHeight="md">
-          JavaScript (ES6), HTML5, CSS, SCSS, React, Redux-Saga 사용
         </TextDefault>
       </ListItem>
     </ListItems>
