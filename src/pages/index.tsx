@@ -11,7 +11,13 @@ import { getAllPosts } from '../utils/Content';
 import { convertTo2D, createPageList } from '../utils/Pagination';
 
 const Index: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => (
-  <Main meta={<Meta title="WELCOME MY BLOG" description={Config.description} />}>
+  <Main
+    meta={
+      <Meta
+        title="프론트엔드 민병찬 블로그"
+        description=" 프론트엔드 개발은 바로 눈으로 볼 수 있다는 매력에 빠져 개발하고 있습니다."
+      />
+    }>
     <BlogGallery
       galleryPosts={props.galleryPosts}
       posts={props.posts}

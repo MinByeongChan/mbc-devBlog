@@ -3,19 +3,19 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import BlogGallery, { IBlogGalleryProps } from '../blog/BlogGallery';
-import { Meta } from '../layout/Meta';
+import { Meta } from '@/layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
-import { Main } from '../templates/Main';
-import { Config } from '../utils/Config';
-import { getAllPosts } from '../utils/Content';
-import { convertTo2D, createPageList } from '../utils/Pagination';
+import { Main } from '@/templates/Main';
+import { Config } from '@/utils/Config';
+import { getAllPosts } from '@/utils/Content';
+import { convertTo2D, createPageList } from '@/utils/Pagination';
 
 type IPageUrl = {
   page: string;
 };
 
 const PaginatePosts = (props: IBlogGalleryProps) => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main meta={<Meta title="프론트엔드 민병찬" description="프론트엔드 민병찬 블로그" />}>
     <BlogGallery
       galleryPosts={props.galleryPosts}
       posts={props.posts}
