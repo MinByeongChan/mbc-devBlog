@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import BlogCard from '../components/portpolio/BlogCard';
-import KstaCard from '../components/portpolio/KstaCard';
+import BlogCard from '../components/portfolio/BlogCard';
+import KstaCard from '../components/portfolio/KstaCard';
 
 const PortfolioContainer = styled.section`
   width: 100%;
