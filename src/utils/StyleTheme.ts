@@ -1,3 +1,28 @@
+export enum Color {
+  Red = '#ff0000',
+  Fuchsia = '#ff009f',
+  Deeppink = '#ff1493',
+  Orchid = '#da70d6',
+  Black = '#000000',
+  DarkBlack = 'rgb(41,44,50)',
+  LightBlack = 'rgb(60, 71, 86)',
+  White = '#ffffff',
+  Darkslategray = '#2f4f4f',
+  Lightslategray = '#778899 ',
+  Slategray = '#708090',
+  Gray = '#656a77',
+  Gray2 = '#8d8d8d',
+  Darkgray = '#a9a9a9',
+  DarkWhite = 'rgb(237,241,242)',
+  Lightgrey = '#d3d3d3',
+  Gainsboro = '#dcdcdc',
+  Green = 'rgb(14, 128, 64)',
+  Dodgerblue = '#1e90ff',
+  LightBlue = 'rgb(82, 166, 228)',
+  Lightskyblue = '#87cefa',
+  Orange = 'rgb(255,90,0)',
+}
+
 export interface IStyleOptions {
   [key: string]: string;
 }
@@ -56,4 +81,9 @@ export const lineHeight: IStyleOptions = {
   h3: '52px',
   h2: '63px',
   h1: '73px',
+};
+
+export const spacing = (value: number) => {
+  const SPACING = 8;
+  return value * SPACING + 'px';
 };
