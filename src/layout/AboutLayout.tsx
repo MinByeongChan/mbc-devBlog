@@ -48,8 +48,8 @@ const IntroItem = styled.li`
   flex-wrap: wrap;
   .intro-icon {
     display: inline;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-right: 12px;
   }
   .content-icon {
@@ -93,7 +93,7 @@ const AboutLayout = () => (
             </IntroItem>
             <IntroItem>
               <TextDefault size="lg" weight={fontWeight.bold} color="orange" lineHeight="lg">
-                Front-End Developer
+                Frontend Developer
               </TextDefault>
             </IntroItem>
             <IntroItem>
@@ -103,18 +103,17 @@ const AboutLayout = () => (
             </IntroItem>
             <IntroItem>
               <TextDefault size="lg" lineHeight="md">
-                <a href="tel:01077020481">(+82) 010-7702-0481</a>
+                📞 &nbsp;<a href="tel:01077020481">(+82) 010-7702-0481</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <Pre>m </Pre>
               <TextDefault size="lg" lineHeight="md">
-                <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
+                📬&nbsp; <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <Pre>h </Pre>
               <TextDefault size="lg" lineHeight="md">
+                🏠&nbsp;{' '}
                 <a href="https://mbc-dev-blog.vercel.app">https://mbc-dev-blog.vercel.app</a>
               </TextDefault>
             </IntroItem>
