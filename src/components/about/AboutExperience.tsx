@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import TextDefault from '../ui/TextDefault';
-import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { fontWeight } from '@/utils/StyleTheme';
 import Image from 'next/image';
 
 const ListItems = styled.ul`
