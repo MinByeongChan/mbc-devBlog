@@ -10,7 +10,6 @@ export const ObserveText = (props: ObserveTextProps) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log('entries', entries);
         if (entries[0].isIntersecting) {
           setVisible(true);
         }
@@ -39,7 +38,7 @@ export const ObserveText = (props: ObserveTextProps) => {
       {...props}
       style={{
         opacity: visible ? '1' : '0',
-        transition: '1s ease-in-out',
+        transition: '0.6s cubic-bezier(0.36, 0, 0.66, -0.56)',
       }}
     />
   );
