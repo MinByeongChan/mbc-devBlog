@@ -1,8 +1,8 @@
-import React, { CSSProperties, ReactNode } from 'react';
+import React, { CSSProperties, forwardRef, ReactNode, useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import { color as fontColor, fontSize, fontWeight, lineHeight as lh } from '../../utils/StyleTheme';
 
-interface ITextDefault {
+export interface TextDefaultProps {
   size?: string;
   color?: string;
   weight?: '300' | '500' | 'normal' | '700';
@@ -13,14 +13,14 @@ interface ITextDefault {
 }
 
 const Text = styled.span`
-  font-size: ${(props: ITextDefault) => props.size};
-  color: ${(props: ITextDefault) => props.color};
-  font-weight: ${(props: ITextDefault) => props.weight};
-  line-height: ${(props: ITextDefault) => props.lineHeight};
-  letter-spacing: ${(props: ITextDefault) => props.letterSpacing}px;
+  font-size: ${(props: TextDefaultProps) => props.size};
+  color: ${(props: TextDefaultProps) => props.color};
+  font-weight: ${(props: TextDefaultProps) => props.weight};
+  line-height: ${(props: TextDefaultProps) => props.lineHeight};
+  letter-spacing: ${(props: TextDefaultProps) => props.letterSpacing}px;
 
   @media (min-width: 500px) and (max-width: 820px) {
-    font-size: ${(props: ITextDefault) =>
+    font-size: ${(props: TextDefaultProps) =>
       (props.size === 'h1' && fontSize.xxg) ||
       (props.size === 'xxg' && fontSize.xg) ||
       (props.size === 'xg' && fontSize.lg) ||
@@ -28,7 +28,7 @@ const Text = styled.span`
       (props.size === 'md' && fontSize.md)};
   }
   @media (min-width: 0px) and (max-width: 499px) {
-    font-size: ${(props: ITextDefault) =>
+    font-size: ${(props: TextDefaultProps) =>
       (props.size === 'h1' && fontSize.xxg) ||
       (props.size === 'xxg' && fontSize.xg) ||
       (props.size === 'xg' && fontSize.lg) ||
@@ -38,10 +38,13 @@ const Text = styled.span`
   }
 `;
 
-const TextDefault = (props: ITextDefault) => {
-  const { children, size, color, weight, lineHeight, letterSpacing, style } = props;
+const TextDefault = forwardRef<HTMLSpanElement, TextDefaultProps>(function TextDefault(
+  { children, size, color, weight, lineHeight, letterSpacing, style }: TextDefaultProps,
+  ref,
+) {
   return (
     <Text
+      ref={ref}
       size={size ? fontSize[`${size}`] : fontSize[`${fontSize.md}`]}
       color={color ? fontColor[`${color}`] : ''}
       weight={weight}
@@ -51,6 +54,6 @@ const TextDefault = (props: ITextDefault) => {
       {children}
     </Text>
   );
-};
+});
 
 export default TextDefault;
