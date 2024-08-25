@@ -74,8 +74,8 @@ const Navbar = () => (
           <div className="bottom-line" />
         </NavLi>
         <NavLi>
-          <Link href="/portpolio">
-            <Text>Portpolio</Text>
+          <Link href="/portfolio">
+            <Text>portfolio</Text>
           </Link>
           <div className="bottom-line" />
         </NavLi>

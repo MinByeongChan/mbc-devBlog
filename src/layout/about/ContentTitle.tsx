@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
-import React, { ReactNode } from 'react';
+import React, { useEffect, useRef } from 'react';
 import TextDefault from '@/components/ui/TextDefault';
 import { fontWeight } from '@/utils/StyleTheme';
+import { useAnchor } from '@/hooks/useAnchor';
 
 interface ContentTitleProps {
+  id: string;
   title: string;
 }
 
@@ -13,12 +15,17 @@ const TitleWrapper = styled.div`
   border-bottom: 1px solid #9c9c9c;
 `;
 
-export const ContentTitle = ({ title }: ContentTitleProps) => {
+export const ContentTitle = ({ title, id }: ContentTitleProps) => {
+  const ref = useRef<HTMLAnchorElement | null>(null);
+  const { handleClickAnchor } = useAnchor(id);
+
   return (
     <>
       <TitleWrapper>
         <TextDefault size="xxg" weight={fontWeight.medium} color="orange">
-          {title}
+          <a ref={ref} className={id} href={'#' + id} onClick={handleClickAnchor}>
+            {title}
+          </a>
         </TextDefault>
       </TitleWrapper>
     </>

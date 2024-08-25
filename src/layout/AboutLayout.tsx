@@ -7,11 +7,12 @@ import {
   AboutEducation,
   AboutExperience,
   AboutIntroduction,
+  AboutNavigation,
   AboutProject,
   AboutSkill,
 } from '@/components/about';
 import TextDefault from '@/components/ui/TextDefault';
-import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { fontWeight } from '@/utils/StyleTheme';
 import { ContentTitle } from '@/layout';
 
 const Layout = styled.div(() => ({
@@ -48,8 +49,8 @@ const IntroItem = styled.li`
   flex-wrap: wrap;
   .intro-icon {
     display: inline;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-right: 12px;
   }
   .content-icon {
@@ -69,11 +70,6 @@ const ProfileImg = styled.img`
     height: 200px;
   }
 `;
-const Pre = styled.pre`
-  font-size: ${fontSize.lg};
-  font-weight: ${fontWeight.bold};
-  margin: 0;
-`;
 
 const AboutLayout = () => (
   <main
@@ -83,6 +79,7 @@ const AboutLayout = () => (
       height: '100%',
     }}>
     <Layout>
+      <AboutNavigation />
       <ContentLayout>
         <IntroWrapper>
           <ul>
@@ -93,7 +90,7 @@ const AboutLayout = () => (
             </IntroItem>
             <IntroItem>
               <TextDefault size="lg" weight={fontWeight.bold} color="orange" lineHeight="lg">
-                Front-End Developer
+                Frontend Developer
               </TextDefault>
             </IntroItem>
             <IntroItem>
@@ -103,18 +100,17 @@ const AboutLayout = () => (
             </IntroItem>
             <IntroItem>
               <TextDefault size="lg" lineHeight="md">
-                <a href="tel:01077020481">(+82) 010-7702-0481</a>
+                📞 &nbsp;<a href="tel:01077020481">(+82) 010-7702-0481</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <Pre>m </Pre>
               <TextDefault size="lg" lineHeight="md">
-                <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
+                📬&nbsp; <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
               </TextDefault>
             </IntroItem>
             <IntroItem>
-              <Pre>h </Pre>
               <TextDefault size="lg" lineHeight="md">
+                🏠&nbsp;{' '}
                 <a href="https://mbc-dev-blog.vercel.app">https://mbc-dev-blog.vercel.app</a>
               </TextDefault>
             </IntroItem>
@@ -128,19 +124,19 @@ const AboutLayout = () => (
           <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
-        <ContentTitle title="소개" />
+        <ContentTitle title="소개" id="introduction" />
         <AboutIntroduction />
 
-        <ContentTitle title="기술스택" />
+        <ContentTitle title="기술스택" id="skill" />
         <AboutSkill />
 
-        <ContentTitle title="경력" />
+        <ContentTitle title="경력" id="experience" />
         <AboutExperience />
 
-        <ContentTitle title="프로젝트" />
+        <ContentTitle title="프로젝트" id="project" />
         <AboutProject />
 
-        <ContentTitle title="학력사항" />
+        <ContentTitle title="학력사항" id="education" />
         <AboutEducation />
       </ContentLayout>
     </Layout>

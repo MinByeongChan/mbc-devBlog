@@ -17,7 +17,7 @@ export const AboutEducation = () => {
       <ListItems>
         <ListItem>
           <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-            o 2020.03 ~ 2020.02 성결대학교 정보통신공학부 전공
+            o 2014.03 ~ 2020.02 성결대학교 정보통신공학부 전공
           </ObserveText>
         </ListItem>
         <ListItem>
