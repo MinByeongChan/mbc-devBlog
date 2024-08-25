@@ -7,6 +7,7 @@ import {
   AboutEducation,
   AboutExperience,
   AboutIntroduction,
+  AboutNavigation,
   AboutProject,
   AboutSkill,
 } from '@/components/about';
@@ -83,6 +84,7 @@ const AboutLayout = () => (
       height: '100%',
     }}>
     <Layout>
+      <AboutNavigation />
       <ContentLayout>
         <IntroWrapper>
           <ul>
@@ -127,19 +129,19 @@ const AboutLayout = () => (
           <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
-        <ContentTitle title="소개" />
+        <ContentTitle title="소개" link="introduction" />
         <AboutIntroduction />
 
-        <ContentTitle title="기술스택" />
+        <ContentTitle title="기술스택" link="skill" />
         <AboutSkill />
 
-        <ContentTitle title="경력" />
+        <ContentTitle title="경력" link="experience" />
         <AboutExperience />
 
-        <ContentTitle title="프로젝트" />
+        <ContentTitle title="프로젝트" link="project" />
         <AboutProject />
 
-        <ContentTitle title="학력사항" />
+        <ContentTitle title="학력사항" link="education" />
         <AboutEducation />
       </ContentLayout>
     </Layout>
