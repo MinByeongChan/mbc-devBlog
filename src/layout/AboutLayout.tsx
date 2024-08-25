@@ -12,7 +12,7 @@ import {
   AboutSkill,
 } from '@/components/about';
 import TextDefault from '@/components/ui/TextDefault';
-import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { fontWeight } from '@/utils/StyleTheme';
 import { ContentTitle } from '@/layout';
 
 const Layout = styled.div(() => ({
@@ -69,11 +69,6 @@ const ProfileImg = styled.img`
     width: 200px;
     height: 200px;
   }
-`;
-const Pre = styled.pre`
-  font-size: ${fontSize.lg};
-  font-weight: ${fontWeight.bold};
-  margin: 0;
 `;
 
 const AboutLayout = () => (
