@@ -129,19 +129,19 @@ const AboutLayout = () => (
           <ProfileImg alt="" src="/assets/images/portfolio/profile_circle_img.png" />
         </IntroWrapper>
 
-        <ContentTitle title="소개" link="introduction" />
+        <ContentTitle title="소개" id="introduction" />
         <AboutIntroduction />
 
-        <ContentTitle title="기술스택" link="skill" />
+        <ContentTitle title="기술스택" id="skill" />
         <AboutSkill />
 
-        <ContentTitle title="경력" link="experience" />
+        <ContentTitle title="경력" id="experience" />
         <AboutExperience />
 
-        <ContentTitle title="프로젝트" link="project" />
+        <ContentTitle title="프로젝트" id="project" />
         <AboutProject />
 
-        <ContentTitle title="학력사항" link="education" />
+        <ContentTitle title="학력사항" id="education" />
         <AboutEducation />
       </ContentLayout>
     </Layout>
