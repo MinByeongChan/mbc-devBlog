@@ -39,22 +39,25 @@ export const AboutProject = () => (
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
           주문 대시보드, 작업 리스트, 지점장 배정판, 고객용 배정판, 창고이동 화면, 출고, 회계,
-          시스템 등 어드민에서 사용되는 메뉴 개발.
+          시스템 등 미국 작업자들이 사용할 어드민 메뉴 개발.
         </ObserveText>
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          react-hook-form을 사용하여 어드민에서 사용되는 공통 컴포넌트 및 템플릿 개발.
+          react-hook-form에서 제공하는 controller, form 두 기능을 모두 제공하는 템플릿 구조 설계 및
+          개발. 템플릿을 활용하여 각 필드에 대한 form을 전송하도록 함.
         </ObserveText>
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          기획, BE, FE 3팀과 협의하여 BE API 구조, 호출 순서, 페이지 렌더링 이슈 최적화.
+          기획, BE, FE 3팀과 협의하여 BE API 구조, 호출 순서, 페이지 렌더링 이슈 최적화. FE팀 내에서
+          팀원들과 협의하에 공통으로 처리할 수 있는 부분을 추출하여 SRP원칙을 준수할 수 있도록 함.
         </ObserveText>
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          코드 컨벤션 맞추어 각 팀원들이 개발하는 코드의 일관성을 맞춤.
+          프로젝트 코드의 유지보수성을 높이기 위해 코드 컨벤션을 주도적으로 제안하여 맞추고, 각
+          메뉴별로 코드의 일관성을 맞도록 함.
         </ObserveText>
       </ListItem>
       <ListItem>
@@ -65,7 +68,21 @@ export const AboutProject = () => (
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          React, Typescript, TanStack Query, Recoil, Mui, Styled-Component, vite, AWS EC2 사용
+          sentry를 활용하여 stg에서 잡히는 에러를 트래킹 함. 타입에러 또는 비정상적인 api호출에 대한
+          검출 한 이후 jira를 통해 이슈를 팀내 공론화 시키고 주도적으로 에러 수정.
+        </ObserveText>
+      </ListItem>
+      <ListItem>
+        <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
+          유틸함수 관련하여 테스트코드를 작성하여 유틸함수개발 완성도를 높이려고 시도함. 테스트 코드
+          spec과 dummy데이터를 다양하게 만들어 여러 방면으로 테스트를 진행할 수 있도록 함. dev, stg
+          환경에서 에러 발생시, 테스트코드를 수정하여 에러가 재발하지 않도록 함.
+        </ObserveText>
+      </ListItem>
+      <ListItem>
+        <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
+          React, Typescript, TanStack Query, Recoil, Mui, Styled-Component, Sentry, vite, AWS EC2
+          사용
         </ObserveText>
       </ListItem>
     </ListItems>
@@ -146,19 +163,22 @@ export const AboutProject = () => (
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          데이터독 RUM 연동과 cypress를 e2e 테스트코드를 작성하여 운영배포 시, 이슈발생률을 최대한
+          데이터독 RUM 연동과 cypress를 E2E 테스트코드를 작성하여 운영배포 시, 이슈발생률을 최대한
           낮추어 배포시킬 수 있도록 함.
         </ObserveText>
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          기존 매칭 카운팅을 setTimeout으로만 제어했던 방식을 BE와 협업하여 개선하고 매칭 안정성을
-          향상 시킴.
+          기존 매칭 카운팅을 FE에서 setTimeout으로만 제어했던 방식을 BE와 협업하여 개선하고 매칭
+          안정성을 향상 시킴. setTimeout의 카운트로 제어하는 것이 아닌 더 빠른주기로 현재 시간을
+          불러와 카운트하는 방식으로 변경. BE에서는 유효한 카운트를 제공하는 방식으로 매칭하는
+          방식으로 변경하여 매칭 안정성을 높임.
         </ObserveText>
       </ListItem>
       <ListItem>
         <ObserveText size="md" weight={fontWeight.normal} lineHeight="md">
-          GA360을 적용하여 마케팅에게 유용한 정보를 제공하도록 적용.
+          GA360을 이용하여 마케팅에 유용한 정보(제품 정보, 매칭 시도 횟수, 매칭 성공페이지 진입률
+          등)를 제공하도록 적용.
         </ObserveText>
       </ListItem>
       <ListItem>
