@@ -11,7 +11,6 @@ import {
   AboutEducation,
   AboutExperience,
   AboutIntroduction,
-  AboutNavigation,
   AboutProject,
   AboutSkill,
 } from '@/components/about';

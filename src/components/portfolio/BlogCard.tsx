@@ -72,7 +72,7 @@ const IconWrapper = styled.div`
   height: 16px;
 `;
 
-const BlogCard = () => {
+export const BlogCard = () => {
   return (
     <CardContainer>
       <CardItem>
@@ -121,5 +121,3 @@ const BlogCard = () => {
     </CardContainer>
   );
 };
-
-export default BlogCard;
