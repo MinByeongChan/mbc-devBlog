@@ -8,7 +8,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Container = styled.section({
   position: 'fixed',
-  right: spacing(4),
+  right: spacing(15),
 });
 
 const IconContainer = styled.div`
@@ -68,7 +68,7 @@ const AboutNavigationLi = styled.li({
 });
 export const AboutNavigation = () => {
   const animRef = useRef<HTMLDivElement | null>(null);
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(true);
 
   const handleClickTab = () => {
     setOpen((prev) => !prev);
@@ -81,14 +81,14 @@ export const AboutNavigation = () => {
         <AnimTest />
       </AnimContainer> */}
 
-        <IconContainer>
+        {/* <IconContainer>
           <FontAwesomeIcon
             icon={!open ? faBars : faXmark}
             width="30"
             height="30"
             onClick={handleClickTab}
           />
-        </IconContainer>
+        </IconContainer> */}
         {open && (
           <AboutNavigationUl>
             <AboutNavigationLi>

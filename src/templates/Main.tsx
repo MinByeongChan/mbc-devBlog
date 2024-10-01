@@ -11,7 +11,7 @@ import Navbar from '../navigation/Navbar';
 // import { store } from '../modules/configureStore';
 // import ModalProvider from '../modal/ ';
 
-type IMainProps = {
+type MainProps = {
   meta: ReactNode;
   children: ReactNode;
 };
@@ -71,7 +71,7 @@ const BottomContentEnd = styled.div`
   text-align: center;
 `;
 
-const Main: React.FC<IMainProps> = (props: IMainProps) => (
+const Main = (props: MainProps) => (
   <>
     {props.meta}
 
