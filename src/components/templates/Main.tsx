@@ -1,27 +1,24 @@
-import React, { ReactNode } from 'react';
+import React, { PropsWithChildren, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { Footer, NavigationBar } from '@/components/templates';
 
-interface MainProps {
+interface MainProps extends PropsWithChildren {
   meta: ReactNode;
-  children: ReactNode;
 }
 
-const GridSection = styled.section({
-  display: 'grid',
-  gridTemplateRows: '70px auto 1fr',
-});
-
-const LayoutMain = styled.main`
-  min-height: 650px;
+const GridSection = styled.section`
+  display: grid;
+  grid: 80px 1fr auto / repeat(12, 1fr);
+  container-name: section-container;
+  container-type: inline-size;
 `;
 
-const Main = (props: MainProps) => (
+const Main = ({ meta, children }: MainProps) => (
   <>
-    {props.meta}
+    {meta}
     <GridSection>
       <NavigationBar />
-      <LayoutMain>{props.children}</LayoutMain>
+      {children}
       <Footer />
     </GridSection>
   </>

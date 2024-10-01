@@ -8,6 +8,7 @@ import TextDefault from '@/components/ui/TextDefault';
 import { useRouter } from 'next/router';
 
 const NavLayout = styled.nav({
+  gridColumn: 'span 12',
   position: 'sticky',
   top: '0',
   width: '100%',

@@ -6,6 +6,7 @@ import { faEnvelopeOpen, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-ic
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 const BottomWrapper = styled.footer`
+  grid-column: span 12;
   background-color: ${color.black};
   padding: 60px 30px;
   color: ${color.white};
