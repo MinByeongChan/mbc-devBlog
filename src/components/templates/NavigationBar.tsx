@@ -3,7 +3,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-import { color, fontSize, fontWeight } from '../../utils/StyleTheme';
+import { color, fontSize, fontWeight, spacing } from '../../utils/StyleTheme';
+import TextDefault from '@/components/ui/TextDefault';
+import { useRouter } from 'next/router';
 
 const NavLayout = styled.nav({
   position: 'sticky',
@@ -28,64 +30,74 @@ const NavUl = styled.ul(() => ({
   justifyContent: 'flex-end',
   alignItems: 'center',
   height: '100%',
+  gap: spacing(3),
 }));
+const H1 = styled.h1(
+  {
+    fontSize: 20,
+  },
+  (props) => ({ color: props.color }),
+);
 
-const NavLi = styled.li({
-  position: 'relative',
-  height: '100%',
-  lineHeight: '68px',
-  transition: '0.1s linear',
-  '.bottom-line': {
-    position: 'absolute',
-    bottom: '0',
-    width: '100%',
-    height: '0px',
-    backgroundColor: color.darkslategray,
+const NavLi = styled.li<{ initHeight: string }>(
+  {
+    position: 'relative',
+    height: '100%',
+    lineHeight: '68px',
     transition: '0.1s linear',
+    '&::after': {
+      content: `""`,
+      position: 'absolute',
+      left: '0',
+      bottom: '0',
+      width: '100%',
+      backgroundColor: color.darkslategray,
+      transition: '0.1s linear',
+    },
+    '&:hover::after': {
+      opacity: '0.7',
+      height: '4px',
+    },
   },
-  ':hover span': {
-    opacity: '0.7',
-  },
-  ':hover .bottom-line': {
-    height: '4px',
-  },
+  (props) => ({
+    '&::after': {
+      height: props.initHeight ?? '0px',
+    },
+  }),
+);
+const StyledLink = styled(Link)({
+  display: 'inline-block',
+  height: '100%',
 });
 
-const Text = styled.span`
-  font-size: ${fontSize.md};
-  font-weight: ${fontWeight.bold};
-  padding: 0 16px;
-`;
-
-export const NavigationBar = () => (
-  <NavLayout>
-    <NavContainer>
-      <NavUl>
-        <NavLi>
-          <Link href="/">
-            <Text>Blog</Text>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
-        <NavLi>
-          <Link href="/tags">
-            <Text>Tags</Text>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
-        <NavLi>
-          <Link href="/portfolio">
-            <Text>portfolio</Text>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
-        <NavLi>
-          <Link href="/about">
-            <Text>About</Text>
-          </Link>
-          <div className="bottom-line" />
-        </NavLi>
-      </NavUl>
-    </NavContainer>
-  </NavLayout>
-);
+export const NavigationBar = () => {
+  const router = useRouter();
+  return (
+    <NavLayout>
+      <NavContainer>
+        <NavUl>
+          <NavLi initHeight={router.pathname === '/' ? '4px' : '0px'}>
+            <StyledLink href="/">
+              <TextDefault>Blog</TextDefault>
+            </StyledLink>
+          </NavLi>
+          <NavLi initHeight={router.pathname === '/tags' ? '4px' : '0px'}>
+            <StyledLink href="/tags">
+              <TextDefault>Tags</TextDefault>
+            </StyledLink>
+          </NavLi>
+          <NavLi initHeight={router.pathname === '/portfolio' ? '4px' : '0px'}>
+            <StyledLink href="/portfolio">
+              <TextDefault>Portfolio</TextDefault>
+            </StyledLink>
+          </NavLi>
+          <NavLi initHeight={router.pathname === '/about' ? '4px' : '0px'}>
+            <StyledLink href="/about">
+              <TextDefault>About</TextDefault>
+            </StyledLink>
+          </NavLi>
+        </NavUl>
+      </NavContainer>
+    </NavLayout>
+  );
+};
