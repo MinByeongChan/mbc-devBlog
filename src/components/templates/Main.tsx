@@ -7,6 +7,11 @@ interface MainProps {
   children: ReactNode;
 }
 
+const GridSection = styled.section({
+  display: 'grid',
+  gridTemplateRows: '70px auto 1fr',
+});
+
 const LayoutMain = styled.main`
   min-height: 650px;
 `;
@@ -14,11 +19,11 @@ const LayoutMain = styled.main`
 const Main = (props: MainProps) => (
   <>
     {props.meta}
-    <section>
+    <GridSection>
       <NavigationBar />
       <LayoutMain>{props.children}</LayoutMain>
       <Footer />
-    </section>
+    </GridSection>
   </>
 );
 
