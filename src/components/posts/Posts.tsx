@@ -1,30 +1,23 @@
-/* eslint-disable guard-for-in */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-continue */
 import React, { useEffect, useState } from 'react';
-import styled from '@emotion/styled';
-
 import { faEraser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
-import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { PostItems } from '../utils/Content';
-import { fontSize, fontWeight } from '../utils/StyleTheme';
+import { PostItems } from '@/utils/Content';
+import { fontSize, fontWeight } from '@/utils/StyleTheme';
+import { isEmpty } from '@/utils/Utility';
+import { GalleryWrapper } from '@/components/posts/GalleryWrapper';
+import styled from '@emotion/styled';
+import { Pagination, PaginationProps } from '@/components/Pagination';
 
-import { isEmpty } from '../utils/Utility';
-import GalleryWrapper from './GalleryWrapper';
-
-export type IBlogGalleryProps = {
+export interface PostsProps {
   galleryPosts: PostItems[];
   posts: PostItems[];
-  pagination: IPaginationProps;
-};
+  pagination: PaginationProps;
+}
 
-const Layout = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 42px 20px 0 20px;
-`;
+interface TextCancelImgProps {
+  search: string;
+}
 
 const TopText = styled.div`
   font-size: ${fontSize.h1};
@@ -76,11 +69,7 @@ const SearchInput = styled.input`
   }
 `;
 
-interface ITextCancelImg {
-  search: string;
-}
-
-const TextCancelImg = styled.div`
+const TextCancelImg = styled.div<TextCancelImgProps>`
   position: absolute;
   width: 15px;
   height: 15px;
@@ -88,10 +77,10 @@ const TextCancelImg = styled.div`
   right: 5px;
   top: -2px;
   z-index: 1;
-  opacity: ${(props: ITextCancelImg) => (props.search.length === 0 ? '0' : '1')};
+  opacity: ${({ search }) => (search.length === 0 ? '0' : '1')};
 `;
 
-const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
+export const Posts = ({ galleryPosts, posts, pagination }: PostsProps) => {
   const router = useRouter();
 
   const [searchList, setSearchList] = useState<PostItems[]>([]);
@@ -133,7 +122,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
 
     if (inputVal.length > 0) {
       setSearchList(
-        props.galleryPosts.filter((data) => {
+        galleryPosts.filter((data) => {
           const title = data.title.toString();
           const desc = !isEmpty(data.description) ? data.description : '';
           const tags = !isEmpty(data.tags) ? data.tags.toString() : '';
@@ -160,7 +149,7 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
   }, [router.query.search, search]);
 
   return (
-    <Layout>
+    <>
       <TopWrapper>
         <TopText>Post</TopText>
         <SearchWrapper>
@@ -180,22 +169,17 @@ const BlogGallery: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => {
         </SearchWrapper>
       </TopWrapper>
 
-      <GalleryWrapper
-        posts={isEmpty(searchList) ? props.posts : searchList}
-        setSearch={setSearch}
-      />
+      <GalleryWrapper posts={isEmpty(searchList) ? posts : searchList} setSearch={setSearch} />
 
       {search.length === 0 && (
         <Pagination
-          pagingList={props.pagination.pagingList}
-          previous={props.pagination.previous}
-          currPage={props.pagination.currPage}
-          next={props.pagination.next}
-          maxPage={props.pagination.maxPage}
+          pagingList={pagination.pagingList}
+          previous={pagination.previous}
+          currPage={pagination.currPage}
+          next={pagination.next}
+          maxPage={pagination.maxPage}
         />
       )}
-    </Layout>
+    </>
   );
 };
-
-export default BlogGallery;

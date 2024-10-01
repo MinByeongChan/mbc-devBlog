@@ -1,28 +1,18 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled from '@emotion/styled';
-import BlogCard from '../components/portfolio/BlogCard';
-import KstaCard from '../components/portfolio/KstaCard';
 
-const PortfolioContainer = styled.section`
-  width: 100%;
-  max-width: 1200px;
-  padding: 50px 20px;
-  margin: 0 auto;
-  @media screen and (min-width: 481px) and (max-width: 1080px) {
-    max-width: 900px;
-    padding: 22px 20px;
-  }
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    max-width: 480px;
-    padding: 22px 20px;
+const LayoutMain = styled.main`
+  min-height: 650px;
+  grid-column: 3 / span 8;
+  @container section-container (max-width: 1080px) {
+    &.portfolio-main {
+      grid-column: 2 / span 10;
+    }
   }
 `;
 
-export const PortfolioLayout = () => {
-  return (
-    <PortfolioContainer>
-      <KstaCard />
-      <BlogCard />
-    </PortfolioContainer>
-  );
+interface PortfolioLayoutProps extends PropsWithChildren {}
+
+export const PortfolioLayout = ({ children }: PortfolioLayoutProps) => {
+  return <LayoutMain className="portfolio-main">{children}</LayoutMain>;
 };

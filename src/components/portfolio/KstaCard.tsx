@@ -73,7 +73,7 @@ const IconWrapper = styled.div`
   height: 16px;
 `;
 
-const KstaCard = () => {
+export const KstaCard = () => {
   return (
     <CardContainer>
       <CardItem>
@@ -132,5 +132,3 @@ const KstaCard = () => {
     </CardContainer>
   );
 };
-
-export default KstaCard;
