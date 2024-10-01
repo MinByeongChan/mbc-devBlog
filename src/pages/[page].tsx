@@ -1,7 +1,6 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Meta } from '@/layout/Meta';
-import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '@/components/templates';
 import { Config } from '@/utils/Config';
 import { getAllPosts } from '@/utils/Content';
@@ -47,33 +46,21 @@ export const getStaticProps: GetStaticProps<PostsProps, PageUrl> = async ({ para
   const currPage = Number(params!.page.replace('page', ''));
   const currentInd = currPage - 1;
 
-  const pagination: IPaginationProps = {};
-
   const maxPage = pages.length;
   const pagingIndicator = Config.paging_indicator;
-
   const pagingList = createPageList(currPage, maxPage, pagingIndicator);
-
-  // pagination 오브젝트 init
-  pagination.pagingList = pagingList;
-  pagination.maxPage = maxPage.toString();
-  pagination.currPage = currPage.toString();
-
-  if (currPage < pages.length) {
-    pagination.next = `page${currPage + 1}`;
-  }
-
-  if (currPage === 2) {
-    pagination.previous = '/';
-  } else {
-    pagination.previous = `page${currPage - 1}`;
-  }
 
   return {
     props: {
       galleryPosts: posts,
       posts: pages[currentInd],
-      pagination,
+      pagination: {
+        pagingList,
+        maxPage: String(maxPage),
+        currPage: String(currPage),
+        next: currPage < pages.length ? `page${currPage + 1}` : '',
+        previous: currPage === 2 ? '/' : `page${currPage - 1}`,
+      },
     },
   };
 };
