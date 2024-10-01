@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { Meta, PostLayout } from '@/layout';
+import { Meta, PostDetailsLayout } from '@/layout';
 import { Main } from '@/components/templates';
 import { getAllPosts, getPostBySlug } from '@/utils/Content';
 import { format } from 'date-fns';
@@ -85,7 +85,7 @@ function PostDetails({
           }}
         />
       }>
-      <PostLayout>
+      <PostDetailsLayout>
         <TitleContainer>
           <div className="title">{title}</div>
           <div className="date" style={{ marginTop: 15 }}>
@@ -110,7 +110,7 @@ function PostDetails({
         {/* Utterances - 시작 */}
         <Utterances repo="MinByeongChan/mbc-devBlog" theme="github-light" />
         {/* Utterances - 끝 */}
-      </PostLayout>
+      </PostDetailsLayout>
     </Main>
   );
 }

@@ -4,15 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { format } from 'date-fns';
 import React from 'react';
-import { Config } from '../utils/Config';
-import { PostItems } from '../utils/Content';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
-import { isEmpty } from '../utils/Utility';
+import { Config } from '@/utils/Config';
+import { PostItems } from '@/utils/Content';
+import { color, fontSize, fontWeight } from '@/utils/StyleTheme';
+import { isEmpty } from '@/utils/Utility';
 
-export type IGalleryWrapperProps = {
+interface GalleryWrapperProps {
   posts: PostItems[];
   setSearch: Function;
-};
+}
 
 const GalleryContainer = styled.div(() => ({
   display: 'grid',
@@ -75,9 +75,7 @@ const GalleryItem = styled.div`
   }
 `;
 
-const GalleryWrapper = (props: IGalleryWrapperProps) => {
-  const { posts, setSearch } = props;
-
+export const GalleryWrapper = ({ posts, setSearch }: GalleryWrapperProps) => {
   return (
     <GalleryContainer>
       {!isEmpty(posts) &&
@@ -116,5 +114,3 @@ const GalleryWrapper = (props: IGalleryWrapperProps) => {
     </GalleryContainer>
   );
 };
-
-export default GalleryWrapper;
