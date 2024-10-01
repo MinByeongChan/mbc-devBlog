@@ -4,47 +4,118 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Meta, PostLayout } from '@/layout';
 import { Main } from '@/components/templates';
 import { getAllPosts, getPostBySlug } from '@/utils/Content';
+import { format } from 'date-fns';
+import styled from '@emotion/styled';
+import { color, fontSize, fontWeight } from '@/utils/StyleTheme';
+import { Config } from '@/utils/Config';
+import Utterances from '@/components/comment/Utterances';
+import TextDefault from '@/components/ui/TextDefault';
+import Markdown from '@/components/Markdown';
 
-type IPostUrl = {
+type PostUrl = {
   slug: string;
 };
 
-type IPostProps = {
+interface PostDetailsProps {
   title: string;
   description: string;
   date: string;
   modified_date: string;
   image: string;
   content: string;
-};
+}
 
-function DisplayPost(props: IPostProps) {
+const TitleContainer = styled.div`
+  margin-bottom: 12px;
+  .title {
+    font-size: ${fontSize.h2};
+    font-weight: ${fontWeight.bold};
+    color: ${color.darkBlack};
+  }
+  .date {
+    font-size: ${fontSize.sm};
+    font-weight: ${fontWeight.bold};
+    color: ${color.gray};
+  }
+`;
+
+const SubTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  .author-img {
+    width: 30px;
+    height: 30px;
+    background-image: url('/assets/images/mbc_img.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-right: 10px;
+  }
+  .author-name {
+    color: ${color.darkBlack};
+    font-size: ${fontSize.md};
+    font-weight: ${fontWeight.bold};
+  }
+`;
+
+const CommentTitleContainer = styled.div`
+  margin: 50px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ${color.gray};
+`;
+
+function PostDetails({
+  title,
+  description,
+  modified_date,
+  content,
+  date,
+  image,
+}: PostDetailsProps) {
   return (
     <Main
       meta={
         <Meta
-          title={props.title}
-          description={props.description}
+          title={title}
+          description={description}
           post={{
-            image: props.image,
-            date: props.date,
-            modified_date: props.modified_date,
+            image: image,
+            date: date,
+            modified_date: modified_date,
           }}
         />
       }>
-      <PostLayout
-        title={props.title}
-        date={props.date}
-        content={props.content}
-        // description={props.description}
-        // image={props.image}
-        // modified_date={props.modified_date}
-      />
+      <PostLayout>
+        <TitleContainer>
+          <div className="title">{title}</div>
+          <div className="date" style={{ marginTop: 15 }}>
+            {format(new Date(date), 'LLLL d, yyyy')}
+          </div>
+        </TitleContainer>
+        <SubTitleContainer>
+          <div className="author-img" />
+          <span className="author-name">{Config.author}</span>
+        </SubTitleContainer>
+
+        <Markdown content={content} />
+
+        {/* 댓글 컨테이너 - 시작 */}
+        <CommentTitleContainer>
+          <TextDefault size="xg" weight={fontWeight.bold}>
+            Comment
+          </TextDefault>
+        </CommentTitleContainer>
+        {/* 댓글 컨테이너 - 시작 */}
+
+        {/* Utterances - 시작 */}
+        <Utterances repo="MinByeongChan/mbc-devBlog" theme="github-light" />
+        {/* Utterances - 끝 */}
+      </PostLayout>
     </Main>
   );
 }
 
-export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
+export const getStaticPaths: GetStaticPaths<PostUrl> = async () => {
   const posts = getAllPosts(['slug']);
 
   return {
@@ -57,7 +128,7 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<PostDetailsProps, PostUrl> = async ({ params }) => {
   const post = getPostBySlug(params!.slug, [
     'title',
     'description',
@@ -80,4 +151,4 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
   };
 };
 
-export default DisplayPost;
+export default PostDetails;
