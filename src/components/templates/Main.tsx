@@ -5,11 +5,8 @@ import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { Provider } from 'react-redux';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
-import Navbar from '../navigation/Navbar';
-// import { store } from '../modules/configureStore';
-// import ModalProvider from '../modal/ ';
+import { color, fontSize, fontWeight } from '@/utils/StyleTheme';
+import { NavigationBar } from '@/components/templates';
 
 type MainProps = {
   meta: ReactNode;
@@ -74,13 +71,9 @@ const BottomContentEnd = styled.div`
 const Main = (props: MainProps) => (
   <>
     {props.meta}
-
     <section>
-      {/* <ModalProvider /> */}
-      <Navbar />
-
+      <NavigationBar />
       <LayoutMain>{props.children}</LayoutMain>
-
       <BottomWrapper>
         <BottomContainer>
           <BottomContentTitle>

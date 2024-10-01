@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AboutLayout from '@/layout/AboutLayout';
-import { Main } from '@/templates/Main';
+import { Main } from '@/components/templates';
 import { AboutMeta } from '@/components/about';
 import styled from '@emotion/styled';
 

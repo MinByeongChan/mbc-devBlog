@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, PortfolioLayout } from '@/layout';
-import { Main } from '@/templates/Main';
+import { Main } from '@/components/templates';
 
 const index = () => (
   <Main

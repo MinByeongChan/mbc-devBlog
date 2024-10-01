@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 
 import { TagLayout } from '@/layout';
-import { Main } from '@/templates/Main';
+import { Main } from '@/components/templates';
 import { getAllPosts } from '@/utils/Content';
 import { AboutMeta } from '@/components/about';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import { Meta, PostLayout } from '@/layout';
-import { Main } from '@/templates/Main';
+import { Main } from '@/components/templates';
 import { getAllPosts, getPostBySlug } from '@/utils/Content';
 
 type IPostUrl = {

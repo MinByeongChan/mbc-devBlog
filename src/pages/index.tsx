@@ -5,10 +5,10 @@ import { GetStaticProps } from 'next';
 import BlogGallery, { IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
-import { Main } from '../templates/Main';
 import { Config } from '../utils/Config';
 import { getAllPosts } from '../utils/Content';
 import { convertTo2D, createPageList } from '../utils/Pagination';
+import { Main } from '@/components/templates';
 
 const Index: React.FC<IBlogGalleryProps> = (props: IBlogGalleryProps) => (
   <Main

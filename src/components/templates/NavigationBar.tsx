@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
+import { color, fontSize, fontWeight } from '../../utils/StyleTheme';
 
 const NavLayout = styled.nav({
   position: 'sticky',
@@ -57,7 +57,7 @@ const Text = styled.span`
   padding: 0 16px;
 `;
 
-const Navbar = () => (
+export const NavigationBar = () => (
   <NavLayout>
     <NavContainer>
       <NavUl>
@@ -89,5 +89,3 @@ const Navbar = () => (
     </NavContainer>
   </NavLayout>
 );
-
-export default Navbar;
