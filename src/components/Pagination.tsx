@@ -10,18 +10,18 @@ import {
   faAngleLeft,
   faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
-import { color, fontSize, fontWeight } from '../utils/StyleTheme';
-import { convertUrlToLinkHref } from '../utils/Pagination';
+import { color, fontSize, fontWeight } from '@/utils/StyleTheme';
+import { convertUrlToLinkHref } from '@/utils/Pagination';
 
-export type IPaginationProps = {
+export interface PaginationProps {
   pagingList?: number[];
   previous?: string;
   next?: string;
   currPage?: string;
   maxPage?: string;
-};
+}
 
-interface IPagingItem {
+interface PagingItem {
   curr?: boolean;
 }
 
@@ -49,18 +49,18 @@ const PagingItem = styled.div(() => ({
   },
 }));
 
-const ItemText = styled.span`
-  color: ${(props: IPagingItem) => (props.curr ? color.orange : color.darkBlack)};
-  font-weight: ${(props: IPagingItem) => (props.curr ? fontWeight.bold : fontWeight.normal)};
+const ItemText = styled.span<PagingItem>`
+  color: ${({ curr }) => (curr ? color.orange : color.darkBlack)};
+  font-weight: ${({ curr }) => (curr ? fontWeight.bold : fontWeight.normal)};
   font-size: ${fontSize.lg};
   transition: 0.2s linear;
 `;
 
-const Pagination = (props: IPaginationProps) => {
+const Pagination = ({ pagingList, previous, next, currPage, maxPage }: PaginationProps) => {
   return (
     <PagingWrapper>
       <PagingList>
-        {props.previous && (
+        {previous && (
           <>
             <PagingItem>
               <Link href={convertUrlToLinkHref(`/`)} as="/">
@@ -68,16 +68,16 @@ const Pagination = (props: IPaginationProps) => {
               </Link>
             </PagingItem>
             <PagingItem>
-              <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
+              <Link href={convertUrlToLinkHref(previous)} as={previous}>
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleLeft} />
               </Link>
             </PagingItem>
           </>
         )}
 
-        {props.pagingList?.map((data, index) => {
+        {pagingList?.map((data, index) => {
           const page = data === 1 ? '/' : `page${data}`;
-          const curr = data === Number(props.currPage);
+          const curr = data === Number(currPage);
 
           return (
             <PagingItem key={index}>
@@ -88,15 +88,15 @@ const Pagination = (props: IPaginationProps) => {
           );
         })}
 
-        {props.next && (
+        {next && (
           <>
             <PagingItem>
-              <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
+              <Link href={convertUrlToLinkHref(next)} as={next}>
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleRight} />
               </Link>
             </PagingItem>
             <PagingItem>
-              <Link href={convertUrlToLinkHref(`page${props.maxPage}`)} as={`page${props.maxPage}`}>
+              <Link href={convertUrlToLinkHref(`page${maxPage}`)} as={`page${maxPage}`}>
                 <FontAwesomeIcon className="paging-item-icon" icon={faAngleDoubleRight} />
               </Link>
             </PagingItem>

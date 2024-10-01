@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Pagination, IPaginationProps } from '@/pagination/Pagination';
 import { faEraser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
@@ -8,11 +7,12 @@ import { fontSize, fontWeight } from '@/utils/StyleTheme';
 import { isEmpty } from '@/utils/Utility';
 import { GalleryWrapper } from '@/components/posts/GalleryWrapper';
 import styled from '@emotion/styled';
+import { Pagination, PaginationProps } from '@/components/Pagination';
 
 export interface PostsProps {
   galleryPosts: PostItems[];
   posts: PostItems[];
-  pagination: IPaginationProps;
+  pagination: PaginationProps;
 }
 
 interface TextCancelImgProps {
