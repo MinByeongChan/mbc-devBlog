@@ -1,20 +1,21 @@
 import React from 'react';
 import { Meta, PortfolioLayout } from '@/layout';
 import { Main } from '@/components/templates';
-import { BlogCard, KstaCard } from '@/components/portfolio';
+import { Banner } from '@/components/portfolio/Banner';
+import { Introduction } from '@/components/portfolio/Introduction';
 
 const index = () => (
   <Main
     meta={
       <Meta
-        title="민병찬 프론트엔드 주니어 개발자"
-        description="민병찬 프론트엔드 주니어 개발자 포트폴리오입니다."
+        title="Frontend developer 민병찬 포트폴리오"
+        description="Frontend developer 민병찬 포트폴리오입니다"
       />
     }>
-    <PortfolioLayout>
-      <KstaCard />
-      <BlogCard />
-    </PortfolioLayout>
+    <Banner />
+    <Introduction />
+
+    <PortfolioLayout></PortfolioLayout>
   </Main>
 );
 
