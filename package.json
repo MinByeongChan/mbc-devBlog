@@ -15,13 +15,14 @@
     "format ": "prettier"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mapbox/rehype-prism": "^0.9.0",
+    "@mui/material": "^6.1.6",
     "axios": "^1.7.2",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
