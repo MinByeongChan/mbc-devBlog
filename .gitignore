@@ -12,6 +12,8 @@
 /build
 /dist
 /.next
+/.idea
+/.vscode
 /bundles
 
 # misc
