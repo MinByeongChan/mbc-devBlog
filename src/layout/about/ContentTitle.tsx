@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import TextDefault from '@/components/ui/TextDefault';
 import { fontWeight } from '@/utils/StyleTheme';
 import { useAnchor } from '@/hooks/useAnchor';

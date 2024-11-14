@@ -1,11 +1,14 @@
 import React from 'react';
-import { Meta, PortfolioLayout } from '@/layout';
+import { Meta } from '@/layout';
 import { Main } from '@/components/templates';
 import { Banner } from '@/components/portfolio/Banner';
 import { Introduction } from '@/components/portfolio/Introduction';
+import { Strength } from '@/components/portfolio/Strength';
+import { Stack } from '@/components/portfolio/Stack';
 
 const index = () => (
   <Main
+    useNav={false}
     meta={
       <Meta
         title="Frontend developer 민병찬 포트폴리오"
@@ -14,8 +17,8 @@ const index = () => (
     }>
     <Banner />
     <Introduction />
-
-    <PortfolioLayout></PortfolioLayout>
+    <Strength />
+    <Stack />
   </Main>
 );
 
