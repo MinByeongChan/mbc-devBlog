@@ -1,4 +1,4 @@
-import { Box, Button, List, Stack, styled, Typography } from '@mui/material';
+import { Box, List, Stack, styled, Typography } from '@mui/material';
 
 export const CareerBackGroundContainer = styled(Box)({
   backgroundColor: '#EDEDED',
@@ -43,51 +43,4 @@ export const CareerCardItem = styled(Typography)({
   backgroundColor: '#312828',
   color: 'white',
   padding: '4px 16px',
-});
-
-export const ServiceContainerBox = styled(Box)({
-  marginTop: '16px',
-});
-
-export const ServiceTitleContainer = styled(Box)({
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  marginBottom: '8px',
-  marginLeft: '16px',
-});
-
-export const ServiceTitle = styled(Typography)({
-  position: 'relative',
-  '&::before': {
-    content: '""',
-    position: 'absolute',
-    left: '-16px',
-    width: '6px',
-    height: '100%',
-    backgroundColor: '#FF5A00',
-  },
-});
-
-export const ServiceDetailButton = styled(Button)({
-  borderRadius: '10px',
-  textDecoration: 'none',
-  border: '1px solid #000',
-  backgroundColor: 'white',
-  color: 'black',
-  padding: '4px 16px',
-});
-
-export const ServiceList = styled('ol')({
-  listStyle: 'disc',
-  marginTop: '16px',
-  paddingLeft: '24px',
-});
-
-export const ServiceStackBox = styled(Box)({
-  border: '2px solid #FF5A00',
-  borderRadius: '10px',
-  marginTop: '16px',
-  padding: '4px 16px',
-  backgroundColor: 'rgba(255, 90, 0, 0.5)',
 });
