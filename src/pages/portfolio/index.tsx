@@ -5,6 +5,7 @@ import { Banner } from '@/components/portfolio/Banner';
 import { Introduction } from '@/components/portfolio/Introduction';
 import { Strength } from '@/components/portfolio/Strength';
 import { Stack } from '@/components/portfolio/Stack';
+import { Career } from '@/components/portfolio/Career';
 
 const index = () => (
   <Main
@@ -19,6 +20,7 @@ const index = () => (
     <Introduction />
     <Strength />
     <Stack />
+    <Career />
   </Main>
 );
 

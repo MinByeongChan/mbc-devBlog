@@ -1,5 +1,4 @@
 import { Box, List, styled, Typography } from '@mui/material';
-import theme from 'tailwindcss/defaultTheme';
 
 export const StackBackGroundContainer = styled(Box)({
   backgroundColor: '#EDEDED',
