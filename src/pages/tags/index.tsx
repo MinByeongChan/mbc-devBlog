@@ -24,10 +24,6 @@ interface Tag {
   cnt: number;
 }
 
-const Container = styled.div`
-  padding: 50px 0;
-`;
-
 const TopWrapper = styled.div`
   display: flex;
   align-items: center;
