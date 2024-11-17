@@ -29,7 +29,7 @@ export const Career = () => {
     return { yearDiff, monthDiff };
   }, []);
   return (
-    <CareerBackGroundContainer>
+    <CareerBackGroundContainer className="career">
       <CareerContentTitle>Career.</CareerContentTitle>
 
       <CareerFlexContainer>

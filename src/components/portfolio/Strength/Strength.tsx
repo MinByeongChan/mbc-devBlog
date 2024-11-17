@@ -11,7 +11,7 @@ import React from 'react';
 
 export const Strength = () => {
   return (
-    <BackGroundContainer>
+    <BackGroundContainer className="strength">
       <Wrapper>
         <Typography
           fontSize="32px"

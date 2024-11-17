@@ -5,7 +5,7 @@ import React from 'react';
 
 export const Introduction = () => {
   return (
-    <Wrapper>
+    <Wrapper className="introduction">
       <Image
         alt="소개 이미지"
         src="/assets/images/portfolio/portfolio_my.png"

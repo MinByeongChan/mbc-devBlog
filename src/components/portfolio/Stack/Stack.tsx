@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 export const Stack = () => {
   return (
-    <StackBackGroundContainer>
+    <StackBackGroundContainer className="stack">
       <StackContentTitle>Stack.</StackContentTitle>
 
       <StackCardList>
