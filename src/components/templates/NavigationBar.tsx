@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-import { color, fontSize, fontWeight, spacing } from '../../utils/StyleTheme';
+import { color, spacing } from '@/utils/StyleTheme';
 import TextDefault from '@/components/ui/TextDefault';
 import { useRouter } from 'next/router';
 
@@ -32,12 +32,6 @@ const NavUl = styled.ul(() => ({
   height: '100%',
   gap: spacing(3),
 }));
-const H1 = styled.h1(
-  {
-    fontSize: 20,
-  },
-  (props) => ({ color: props.color }),
-);
 
 const NavLi = styled.li<{ initHeight: string }>(
   {

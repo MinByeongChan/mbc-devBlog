@@ -1,6 +1,6 @@
-import React, { CSSProperties, forwardRef, ReactNode, useEffect, useRef, useState } from 'react';
+import React, { CSSProperties, forwardRef, ReactNode } from 'react';
 import styled from '@emotion/styled';
-import { color as fontColor, fontSize, fontWeight, lineHeight as lh } from '../../utils/StyleTheme';
+import { color as fontColor, fontSize, lineHeight as lh } from '../../utils/StyleTheme';
 
 export interface TextDefaultProps {
   size?: string;

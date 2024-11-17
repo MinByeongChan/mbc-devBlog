@@ -2,14 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import { Config } from '@/utils/Config';
 
-type IMetaProps = {
-  post?: {
-    image: string;
-    date: string;
-    modified_date: string;
-  };
-};
-
 export const AboutMeta = () => {
   return (
     <>

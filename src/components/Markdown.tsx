@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { ExtraProps } from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-type Props = {
+interface MarkdownProps {
   content: string;
-};
+}
 
-const Code = (props: any) => {
-  const { children, className, node, ...rest } = props;
+const Code = ({
+  children,
+  className,
+  ...rest
+}: React.ClassAttributes<HTMLElement> & React.HTMLAttributes<HTMLElement> & ExtraProps) => {
   const match = /language-(\w+)/.exec(className || '');
   return match ? (
     <SyntaxHighlighter PreTag="div" language={match[1]}>
@@ -20,7 +23,7 @@ const Code = (props: any) => {
   );
 };
 
-const Markdown = ({ content }: Props) => {
+const Markdown = ({ content }: MarkdownProps) => {
   return (
     <ReactMarkdown
       components={{

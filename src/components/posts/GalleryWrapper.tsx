@@ -11,7 +11,7 @@ import { isEmpty } from '@/utils/Utility';
 
 interface GalleryWrapperProps {
   posts: PostItems[];
-  setSearch: Function;
+  setSearch: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const GalleryContainer = styled.div(() => ({

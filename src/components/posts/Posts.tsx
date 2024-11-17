@@ -89,8 +89,8 @@ export const Posts = ({ galleryPosts, posts, pagination }: PostsProps) => {
   );
 
   // 문자열 검증 함수
-  const textVerify = (input: any) => {
-    for (const i in input) {
+  const textVerify = (input: string) => {
+    for (let i = 0; i < input.length; i++) {
       const ascii = input[i].charCodeAt(0);
       if (ascii >= 48 && ascii <= 57) {
         continue;

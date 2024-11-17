@@ -13,11 +13,11 @@ export const getAxios = (url: string) => {
   return axios.get(BASE_URL + url, config);
 };
 
-export const postAxios = (url: string, data: any) => {
+export const postAxios = (url: string, data: { [key: string]: string }) => {
   return axios.post(BASE_URL + url, data, config);
 };
 
-export const putAxios = (url: string, data: any) => {
+export const putAxios = (url: string, data: { [key: string]: string }) => {
   return axios.put(BASE_URL + url, data, config);
 };
 
