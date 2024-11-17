@@ -10,12 +10,7 @@ import { Career } from '@/components/portfolio/Career';
 const index = () => (
   <Main
     useNav={false}
-    meta={
-      <Meta
-        title="Frontend developer 민병찬 포트폴리오"
-        description="Frontend developer 민병찬 포트폴리오입니다"
-      />
-    }>
+    meta={<Meta title="Frontend developer" description="Frontend developer 민병찬" />}>
     <Banner />
     <Introduction />
     <Strength />

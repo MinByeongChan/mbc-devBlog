@@ -1,28 +1,11 @@
 import { Box, Button, styled } from '@mui/material';
 
-export const Wrapper = styled(Box)({
+export const BannerWrapper = styled(Box)({
   position: 'relative',
   gridColumn: '1 / span 12',
   width: '100%',
   height: '100vh',
-});
-
-export const BannerBackground = styled(Box)({
-  gridColumn: '1 / span 12',
-  width: '100%',
-  height: '100%',
-  backgroundImage: "url('/assets/images/portfolio/portfolio_banner.png')",
-  backgroundSize: 'cover',
-});
-
-export const BannerOpacity = styled(Box)({
-  position: 'absolute',
-  top: '0',
-  gridColumn: '1 / span 12',
-  width: '100%',
-  height: '100%',
-  backgroundColor: '#000',
-  opacity: '0.5',
+  backgroundColor: '#393939',
 });
 
 export const BannerContainer = styled(Box)({

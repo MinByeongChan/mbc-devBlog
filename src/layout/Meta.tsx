@@ -30,7 +30,7 @@ export const Meta: React.FC<IMetaProps> = (props: IMetaProps) => {
         <link rel="icon" type="image/png" sizes="16x16" href={`/favicon-16x16.png`} key="icon16" />
         <link rel="icon" href={`/favicon.ico`} key="favicon" />
 
-        <title>{`${props.title} | ${Config.title}`}</title>
+        <title>{`${props.title} | ${Config.author}`}</title>
         <meta
           name="description"
           content={props.description ? props.description : Config.description}

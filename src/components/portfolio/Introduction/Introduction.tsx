@@ -1,28 +1,52 @@
-import { Wrapper } from '@/components/portfolio/Introduction';
-import { Box, Typography } from '@mui/material';
+import {
+  IntroductionAnchor,
+  IntroductionDescList,
+  IntroductionDescListItem,
+  IntroductionFlexContainer,
+  Wrapper,
+} from '@/components/portfolio/Introduction';
+import { Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 
 export const Introduction = () => {
   return (
     <Wrapper className="introduction">
-      <Image
-        alt="소개 이미지"
-        src="/assets/images/portfolio/portfolio_my.png"
-        width={250}
-        height={250}
-      />
-      <Box>
-        <Typography component="span" color="black">
-          꾸준함이 강점인 Javascript 개발자,&nbsp;
-        </Typography>
-        <Typography component="span" color="#FF5A00" fontWeight="bold">
-          민병찬&nbsp;
-        </Typography>
-        <Typography component="span" color="black">
-          입니다.
-        </Typography>
-      </Box>
+      <IntroductionFlexContainer>
+        <Image
+          alt="소개 이미지"
+          src="/assets/images/portfolio/introduction_me.png"
+          width={250}
+          height={250}
+        />
+        <IntroductionDescList>
+          <IntroductionDescListItem>
+            <Typography color="black" fontWeight="bold">
+              Birth.
+            </Typography>
+            <Typography color="black">1995.02.15</Typography>
+          </IntroductionDescListItem>
+          <IntroductionDescListItem>
+            <Typography color="black" fontWeight="bold">
+              Address.
+            </Typography>
+            <Typography color="black">Seoul, South Korea</Typography>
+          </IntroductionDescListItem>
+          <IntroductionDescListItem>
+            <Typography color="black" fontWeight="bold">
+              Email.
+            </Typography>
+            <Typography color="black">mbc0481@naver.com</Typography>
+          </IntroductionDescListItem>
+          <IntroductionDescListItem sx={{ marginTop: '16px' }}>
+            <IntroductionAnchor href="https://mbc-dev-blog.vercel.app">Blog</IntroductionAnchor>
+            <IntroductionAnchor href="https://mbc-dev-blog.vercel.app/about">
+              Resume
+            </IntroductionAnchor>
+            <IntroductionAnchor href="https://github.com/MinByeongChan">Github</IntroductionAnchor>
+          </IntroductionDescListItem>
+        </IntroductionDescList>
+      </IntroductionFlexContainer>
     </Wrapper>
   );
 };
