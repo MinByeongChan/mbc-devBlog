@@ -1,4 +1,4 @@
-import { Box, Button, styled } from '@mui/material';
+import { Box, Button, styled, Typography } from '@mui/material';
 
 export const BannerWrapper = styled(Box)({
   position: 'relative',
@@ -32,3 +32,39 @@ export const StyledButton = styled(Button)({
     color: 'white',
   },
 });
+
+export const StyledText = styled(Typography)<{ animWidth: number }>`
+  border-right: solid 3px white;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  span {
+    color: #ff5a00;
+    font-weight: bold;
+  }
+
+  /* Animation */
+  animation:
+    animated-text 3s steps(29, end) 1s 1 normal both,
+    animated-cursor 1500ms steps(2) infinite;
+
+  /* text animation */
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: ${(props) => props.animWidth}px;
+    }
+  }
+
+  /* cursor animations */
+  @keyframes animated-cursor {
+    from {
+      border-right: solid 3px white;
+    }
+    to {
+      border-right: solid 3px rgba(0, 0, 0, 0);
+    }
+  }
+`;

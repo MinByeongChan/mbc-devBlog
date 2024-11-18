@@ -2,6 +2,7 @@ import {
   BannerContainer,
   StyledButton,
   BannerWrapper,
+  StyledText,
 } from '@/components/portfolio/Banner/Banner.style';
 import { Typography } from '@mui/material';
 import React, { useEffect, useRef } from 'react';
@@ -32,13 +33,9 @@ export const Banner = () => {
   return (
     <BannerWrapper className="banner" ref={ref}>
       <BannerContainer>
-        <Typography variant="h5" color="white" gutterBottom>
-          안녕하세요.
-        </Typography>
-        <Typography variant="h5" color="white" gutterBottom>
-          Front-end Developer &nbsp;
-          <span style={{ color: '#FF5A00', fontWeight: 'bold' }}>민병찬</span>&nbsp;입니다.
-        </Typography>
+        <StyledText variant="h5" color="white" animWidth={490}>
+          안녕하세요. Front-end Developer <span>민병찬</span> 입니다.
+        </StyledText>
 
         <StyledButton>
           <Typography variant="h5" onClick={handleClickViewButton}>
