@@ -5,6 +5,7 @@ import { Footer, NavigationBar } from '@/components/templates';
 interface MainProps extends PropsWithChildren {
   meta: ReactNode;
   useNav?: boolean;
+  useFooter?: boolean;
 }
 
 const GridSection = styled.section<{ useNav: boolean }>`
@@ -15,13 +16,13 @@ const GridSection = styled.section<{ useNav: boolean }>`
   container-type: inline-size;
 `;
 
-const Main = ({ meta, useNav = true, children }: MainProps) => (
+const Main = ({ meta, useNav = true, useFooter = true, children }: MainProps) => (
   <>
     {meta}
     <GridSection useNav={useNav}>
       {useNav && <NavigationBar />}
       {children}
-      <Footer />
+      {useFooter && <Footer />}
     </GridSection>
   </>
 );

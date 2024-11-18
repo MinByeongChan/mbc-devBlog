@@ -36,7 +36,9 @@ export const Introduction = () => {
             <Typography color="black" fontWeight="bold">
               Email.
             </Typography>
-            <Typography color="black">mbc0481@naver.com</Typography>
+            <Typography color="black">
+              <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
+            </Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem sx={{ marginTop: '16px' }}>
             <IntroductionAnchor href="https://mbc-dev-blog.vercel.app">Blog</IntroductionAnchor>
