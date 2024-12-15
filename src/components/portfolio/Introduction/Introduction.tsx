@@ -1,5 +1,6 @@
 import {
   IntroductionAnchor,
+  IntroductionAnchorListItem,
   IntroductionDescList,
   IntroductionDescListItem,
   IntroductionFlexContainer,
@@ -21,32 +22,38 @@ export const Introduction = () => {
         />
         <IntroductionDescList>
           <IntroductionDescListItem>
-            <Typography color="black" fontWeight="bold">
+            <Typography color="#F7F5F2" fontSize='20px' fontWeight="bold">
+              Name.
+            </Typography>
+            <Typography color="#F7F5F2" fontSize='20px'>민병찬</Typography>
+          </IntroductionDescListItem>
+          <IntroductionDescListItem>
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
               Birth.
             </Typography>
-            <Typography color="black">1995.02.15</Typography>
+            <Typography color="#F7F5F2" fontSize='20px'>1995.02.15</Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem>
-            <Typography color="black" fontWeight="bold">
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
               Address.
             </Typography>
-            <Typography color="black">Seoul, South Korea</Typography>
+            <Typography color="#F7F5F2" fontSize='20px'>Seoul, South Korea</Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem>
-            <Typography color="black" fontWeight="bold">
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
               Email.
             </Typography>
-            <Typography color="black">
+            <Typography color="#F7F5F2" fontSize='20px'>
               <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
             </Typography>
           </IntroductionDescListItem>
-          <IntroductionDescListItem sx={{ marginTop: '16px' }}>
+          <IntroductionAnchorListItem>
             <IntroductionAnchor href="https://mbc-dev-blog.vercel.app">Blog</IntroductionAnchor>
             <IntroductionAnchor href="https://mbc-dev-blog.vercel.app/about">
               Resume
             </IntroductionAnchor>
             <IntroductionAnchor href="https://github.com/MinByeongChan">Github</IntroductionAnchor>
-          </IntroductionDescListItem>
+          </IntroductionAnchorListItem>
         </IntroductionDescList>
       </IntroductionFlexContainer>
     </Wrapper>

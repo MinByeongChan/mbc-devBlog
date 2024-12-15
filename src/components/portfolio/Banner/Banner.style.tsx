@@ -5,7 +5,7 @@ export const BannerWrapper = styled(Box)({
   gridColumn: '1 / span 12',
   width: '100%',
   height: '100vh',
-  backgroundColor: '#393939',
+  backgroundColor: '#2D2D2D',
 });
 
 export const BannerContainer = styled(Box)({

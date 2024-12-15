@@ -8,7 +8,7 @@ export const Wrapper = styled(Box)({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '#EDEDED',
+  backgroundColor: '#1E293B',
 });
 
 export const IntroductionFlexContainer = styled(Box)({
@@ -25,7 +25,15 @@ export const IntroductionDescList = styled(List)({
 });
 
 export const IntroductionDescListItem = styled(ListItem)({
+  display: 'grid',
+  gridTemplateColumns: '100px auto',
   gap: '16px',
+});
+
+export const IntroductionAnchorListItem = styled(ListItem)({
+  display: 'flex',
+  gap: '16px',
+  marginTop: '16px'
 });
 
 export const IntroductionAnchor = styled('a')({
@@ -33,14 +41,16 @@ export const IntroductionAnchor = styled('a')({
   color: '#FF5A00',
   position: 'relative',
   transition: '0.2s all ease-in-out',
+  fontWeight: 700,
+  fontSize: '20px',
   '&:before': {
     content: '""',
     position: 'absolute',
-    bottom: 0,
+    bottom: '-5px',
     backgroundColor: '#FF5A00',
     width: '0%',
-    height: '2px',
-    transition: '0.3s all ease-in-out',
+    height: '4px',
+    transition: '0.1s all ease-in-out',
   },
   '&:hover': {
     opacity: '0.5',

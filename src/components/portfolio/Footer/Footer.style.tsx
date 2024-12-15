@@ -4,7 +4,7 @@ export const FooterWrapper = styled(Box)({
   position: 'relative',
   gridColumn: '1 / span 12',
   width: '100%',
-  backgroundColor: '#393939',
+  backgroundColor: '#1E293B',
 });
 
 export const FooterFlexContainer = styled(Box)({

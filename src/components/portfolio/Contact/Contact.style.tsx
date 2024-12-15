@@ -1,7 +1,7 @@
 import { Box, styled, Typography } from '@mui/material';
 
 export const ContactWrapper = styled(Box)({
-  backgroundColor: '#EDEDED',
+  backgroundColor: '#1E293B',
   gridColumn: '1 / span 12',
   minHeight: '300px',
   padding: '40px 80px',

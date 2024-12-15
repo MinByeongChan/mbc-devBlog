@@ -1,7 +1,7 @@
 import { Box, styled, Typography } from '@mui/material';
 
 export const BackGroundContainer = styled(Box)({
-  backgroundColor: '#EDEDED',
+  backgroundColor: '#1E293B',
   gridColumn: '1 / span 12',
 });
 
@@ -19,7 +19,7 @@ export const GridLayout = styled(Box)({
 
 export const ShadowContainer = styled(Box)({
   position: 'relative',
-  backgroundColor: 'white',
+  backgroundColor: '#F7F5F2',
   borderRadius: '10px',
   boxShadow: '0px 0px 12px 3px rgba(0, 0, 0, 0.5)',
   width: '100%',
@@ -35,7 +35,7 @@ export const TitleWrapper = styled(Box)({
   border: '1px solid #000',
   borderRadius: '10px',
   padding: '4px 16px',
-  backgroundColor: 'white',
+  backgroundColor: '#F7F5F2',
 });
 
 export const Title = styled(Typography)({

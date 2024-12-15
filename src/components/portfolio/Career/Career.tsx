@@ -9,7 +9,7 @@ import {
 } from '@/components/portfolio/Career';
 import React, { useMemo } from 'react';
 import Image from 'next/image';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { CareerServiceInfo } from '@/components/portfolio/Career/CareerServiceInfo';
 
@@ -31,6 +31,8 @@ export const Career = () => {
   return (
     <CareerBackGroundContainer className="career">
       <CareerContentTitle>Career.</CareerContentTitle>
+
+      <Box sx={{display: 'flex', flexDirection: 'column', gap:'16px', marginTop:'16px'}}>
 
       <CareerFlexContainer>
         <CareerLogoBox>
@@ -144,6 +146,8 @@ export const Career = () => {
           />
         </CareerLogoRemarkStack>
       </CareerFlexContainer>
+      </Box>
+
     </CareerBackGroundContainer>
   );
 };
