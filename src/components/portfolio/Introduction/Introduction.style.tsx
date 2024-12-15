@@ -33,7 +33,7 @@ export const IntroductionDescListItem = styled(ListItem)({
 export const IntroductionAnchorListItem = styled(ListItem)({
   display: 'flex',
   gap: '16px',
-  marginTop: '16px'
+  marginTop: '16px',
 });
 
 export const IntroductionAnchor = styled('a')({

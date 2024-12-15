@@ -18,7 +18,7 @@ export const CareerFlexContainer = styled(List)({
   display: 'flex',
   flexDirection: 'row',
   backgroundColor: '#F7F5F2',
-  borderRadius: '24px'
+  borderRadius: '24px',
 });
 
 export const CareerLogoBox = styled(Box)({

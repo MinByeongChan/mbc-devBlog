@@ -22,28 +22,34 @@ export const Introduction = () => {
         />
         <IntroductionDescList>
           <IntroductionDescListItem>
-            <Typography color="#F7F5F2" fontSize='20px' fontWeight="bold">
+            <Typography color="#F7F5F2" fontSize="20px" fontWeight="bold">
               Name.
             </Typography>
-            <Typography color="#F7F5F2" fontSize='20px'>민병찬</Typography>
+            <Typography color="#F7F5F2" fontSize="20px">
+              민병찬
+            </Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem>
-            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize="20px">
               Birth.
             </Typography>
-            <Typography color="#F7F5F2" fontSize='20px'>1995.02.15</Typography>
+            <Typography color="#F7F5F2" fontSize="20px">
+              1995.02.15
+            </Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem>
-            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize="20px">
               Address.
             </Typography>
-            <Typography color="#F7F5F2" fontSize='20px'>Seoul, South Korea</Typography>
+            <Typography color="#F7F5F2" fontSize="20px">
+              Seoul, South Korea
+            </Typography>
           </IntroductionDescListItem>
           <IntroductionDescListItem>
-            <Typography color="#F7F5F2" fontWeight="bold" fontSize='20px'>
+            <Typography color="#F7F5F2" fontWeight="bold" fontSize="20px">
               Email.
             </Typography>
-            <Typography color="#F7F5F2" fontSize='20px'>
+            <Typography color="#F7F5F2" fontSize="20px">
               <a href="mailto:mbc0481@naver.com">mbc0481@naver.com</a>
             </Typography>
           </IntroductionDescListItem>
