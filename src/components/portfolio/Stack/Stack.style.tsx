@@ -1,4 +1,4 @@
-import { Box, List, styled, Typography } from '@mui/material';
+import { Accordion, Box, List, styled, Typography } from '@mui/material';
 
 export const StackBackGroundContainer = styled(Box)({
   backgroundColor: '#1E293B',
@@ -31,9 +31,15 @@ export const StackCardImageBox = styled(Box)({
   width: '100%',
   display: 'flex',
   flexDirection: 'row',
-  gap: '8px',
 });
 
 export const StackCardTextBox = styled(Box)({
   marginTop: '16px',
+});
+
+export const AccordionContainer = styled(Accordion)({
+  width: '100%',
+  backgroundColor: '#F7F5F2',
+  borderRadius: '10px !important',
+  boxShadow: '0px 0px 12px 3px rgba(0, 0, 0, 0.5)',
 });
