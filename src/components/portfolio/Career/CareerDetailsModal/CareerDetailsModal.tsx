@@ -25,7 +25,7 @@ export const CareerDetailsModal = ({ isOpen, onClose, content }: CareerDetailsMo
         <DialogHeader>
           <DialogTitle>서비스 상세보기</DialogTitle>
           <IconButton sx={{ marginRight: '16px' }} onClick={onClose}>
-            <Close onClick={onClose} />
+            <Close />
           </IconButton>
         </DialogHeader>
         <DetailsContent dividers>
