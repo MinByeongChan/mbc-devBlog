@@ -18,7 +18,7 @@ export const Stack = () => {
 
       <StackCardList>
         <ListItem>
-          <AccordionContainer>
+          <AccordionContainer defaultExpanded>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="language-content"
@@ -64,7 +64,7 @@ export const Stack = () => {
         </ListItem>
 
         <ListItem>
-          <AccordionContainer>
+          <AccordionContainer defaultExpanded>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="frontend-content"
@@ -101,7 +101,7 @@ export const Stack = () => {
         </ListItem>
 
         <ListItem>
-          <AccordionContainer>
+          <AccordionContainer defaultExpanded>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="aws-content" id="aws">
               <StackCardImageBox>
                 <TooltipButton
