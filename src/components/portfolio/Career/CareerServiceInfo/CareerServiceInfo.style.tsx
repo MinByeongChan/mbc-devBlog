@@ -2,6 +2,9 @@ import { Box, Button, styled, Typography } from '@mui/material';
 
 export const ServiceContainerBox = styled(Box)({
   marginTop: '16px',
+  '&:not(:first-child)': {
+    marginTop: '40px',
+  },
 });
 
 export const ServiceTitleContainer = styled(Box)({
