@@ -31,7 +31,6 @@ export const ServiceDetailButton = styled(Button)({
   borderRadius: '10px',
   textDecoration: 'none',
   border: '1px solid #000',
-  backgroundColor: 'white',
   color: 'black',
   padding: '4px 16px',
 });
