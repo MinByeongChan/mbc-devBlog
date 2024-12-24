@@ -19,8 +19,8 @@ export const CareerDetailsModal = ({ isOpen, onClose, content }: CareerDetailsMo
     <Modal
       open={isOpen}
       onClose={onClose}
-      aria-labelledby="modal-modal-title"
-      aria-describedby="modal-modal-description">
+      aria-labelledby="career-details-title"
+      aria-describedby="career-details-description">
       <DetailsArticleContainer>
         <DialogHeader>
           <DialogTitle>서비스 상세보기</DialogTitle>
