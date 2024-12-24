@@ -2,10 +2,10 @@ import React from 'react';
 
 import { GetStaticProps } from 'next';
 
-import { Meta } from '../layout/Meta';
-import { Config } from '../utils/Config';
-import { getAllPosts } from '../utils/Content';
-import { convertTo2D, createPageList } from '../utils/Pagination';
+import { Meta } from '@/layout';
+import { Config } from '@/utils/Config';
+import { getAllPosts } from '@/utils/Content';
+import { convertTo2D, createPageList } from '@/utils/Pagination';
 import { Main } from '@/components/templates';
 import { PostLayout } from '@/layout/PostLayout';
 import { Posts, PostsProps } from '@/components/posts';

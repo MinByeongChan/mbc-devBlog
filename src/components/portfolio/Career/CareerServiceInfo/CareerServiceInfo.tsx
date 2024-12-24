@@ -7,6 +7,7 @@ import {
   ServiceContainerBox,
 } from '@/components/portfolio/Career/CareerServiceInfo';
 import { Typography } from '@mui/material';
+import React from 'react';
 
 interface CareerServiceInfoProps {
   title: string;
@@ -28,8 +29,9 @@ export const CareerServiceInfo = ({
     <ServiceContainerBox>
       <ServiceTitleContainer>
         <ServiceTitle variant="h6">{title}</ServiceTitle>
+
         {handleClickDetails && (
-          <ServiceDetailButton onClick={() => handleClickDetails()}>Details</ServiceDetailButton>
+          <ServiceDetailButton onClick={handleClickDetails}>Details</ServiceDetailButton>
         )}
       </ServiceTitleContainer>
       <Typography color="#5D5D5D" gutterBottom>

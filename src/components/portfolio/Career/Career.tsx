@@ -7,12 +7,24 @@ import {
   CareerCardItem,
   CareerLogoRemarkStack,
 } from '@/components/portfolio/Career';
-import React, { useMemo } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { CareerServiceInfo } from '@/components/portfolio/Career/CareerServiceInfo';
-export const Career = () => {
+import { ModalContent, PortfolioDetails } from '@/types';
+import { CareerDetailsModal } from '@/components/portfolio/Career/CareerDetailsModal/CareerDetailsModal';
+
+interface CareerProps {
+  careerDetails: PortfolioDetails[];
+}
+
+export const Career = ({ careerDetails }: CareerProps) => {
+  const [modalContent, setModalContent] = useState<ModalContent>({
+    isOpen: false,
+    content: '',
+  });
+
   const cowayCareer = useMemo(() => {
     const target = dayjs('2021-09-01');
     const yearDiff = dayjs().diff(target, 'year');
@@ -27,6 +39,19 @@ export const Career = () => {
     const monthDiff = to.diff(from.add(yearDiff, 'year'), 'month');
     return { yearDiff, monthDiff };
   }, []);
+
+  const handleClickDetailsButton = useCallback(
+    (argId: string) => {
+      const target = careerDetails.find(({ id }) => id === argId);
+      if (!target) return;
+      setModalContent({ isOpen: true, content: target?.content });
+    },
+    [setModalContent, careerDetails],
+  );
+
+  const handleModalClose = () => {
+    setModalContent({ isOpen: false, content: '' });
+  };
 
   return (
     <>
@@ -48,12 +73,6 @@ export const Career = () => {
                 <Typography variant="h5" fontWeight="bold">
                   (주) 코웨이
                 </Typography>
-
-                {/*<Tooltip title="상세보기">*/}
-                {/*  <IconButton>*/}
-                {/*    <ArticleIcon />*/}
-                {/*  </IconButton>*/}
-                {/*</Tooltip>*/}
               </Box>
 
               <Typography variant="subtitle1" fontWeight="bold" color="#5D5D5D">
@@ -77,6 +96,7 @@ export const Career = () => {
                   '시스템: 공통 코드 관리, 권한관리 등의 서비스를 제공합니다. 또한 넷마블의 챗봇 연동이 되어 직원들에게 업무 가이드를 보다 편리하게 제공합니다.',
                 ]}
                 serviceStack="React, Typescript, TanStack Query, Recoil, Mui, Emotion, Sentry, Vitest, Vite, AWS(EC2), ArgoCD"
+                onClickDetailsButton={() => handleClickDetailsButton('portfolioDetailsAbcAdmin')}
               />
               <CareerServiceInfo
                 title="통합회원"
@@ -88,6 +108,7 @@ export const Career = () => {
                   '미국 신사업 프로젝트의 회원체계를 동일한 구조로 제공합니다.',
                 ]}
                 serviceStack="Vue3, Typescript, Pinia, vite, SCSS, AWS(S3, CloudFront), Jest, Storybook, Cypress"
+                onClickDetailsButton={() => handleClickDetailsButton('portfolioDetailsAccounts')}
               />
               <CareerServiceInfo
                 title="실시간 코디매칭 서비스"
@@ -99,6 +120,9 @@ export const Career = () => {
                   '매칭이 완료된 후, 고객은 완료되었다는 메세지를 받게되며, 코디에게 제품에 대한 설명을 듣고 렌탈 및 구매하는 프로세스로 진행됩니다.',
                 ]}
                 serviceStack="React, Typescript, TanStack Query, jotai, vite, AWS (S3, CloudFront)"
+                onClickDetailsButton={() =>
+                  handleClickDetailsButton('portfolioDetailsCodyMatching')
+                }
               />
               <CareerServiceInfo
                 title="통합회원 어드민"
@@ -109,6 +133,9 @@ export const Career = () => {
                   '수시로 변경되는 이용약관을 에디터를 통해 관리할 수 있습니다.',
                 ]}
                 serviceStack="React, Typescript, Redux(RTK / redux-thunk), Mui, vite, AWS (S3, CloudFront)"
+                onClickDetailsButton={() =>
+                  handleClickDetailsButton('portfolioDetailsAccountsAdmin')
+                }
               />
             </CareerLogoRemarkStack>
           </CareerFlexContainer>
@@ -150,6 +177,8 @@ export const Career = () => {
           </CareerFlexContainer>
         </Box>
       </CareerBackGroundContainer>
+
+      <CareerDetailsModal onClose={handleModalClose} {...modalContent} />
     </>
   );
 };
