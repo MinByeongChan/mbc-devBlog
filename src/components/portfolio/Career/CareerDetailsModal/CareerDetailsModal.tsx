@@ -1,32 +1,12 @@
 import React from 'react';
-import { DialogContent, DialogTitle, IconButton, Modal, Paper } from '@mui/material';
+import { DialogTitle, IconButton, Modal } from '@mui/material';
 import Markdown from '@/components/Markdown';
-import styled from '@emotion/styled';
 import { Close } from '@mui/icons-material';
-
-const DetailsArticleContainer = styled(Paper)({
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  minWidth: '300',
-  maxWidth: '700px',
-  width: '100%',
-  backgroundColor: 'white',
-  maxHeight: '90vh',
-});
-
-const DetailsContent = styled(DialogContent)({
-  width: '100%',
-  height: '550px',
-  overflowY: 'auto',
-});
-
-const DialogHeader = styled.header({
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-});
+import {
+  DetailsArticleContainer,
+  DetailsContent,
+  DialogHeader,
+} from '@/components/portfolio/Career/CareerDetailsModal/CareerDetailsModal.style';
 
 interface CareerDetailsModalProps {
   isOpen: boolean;
