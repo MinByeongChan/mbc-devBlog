@@ -57,6 +57,7 @@ const TagItem = styled.li`
   font-weight: ${(props: ITagItemStyle) => props.itemWeight};
   border-radius: 15px;
   transition: 0.1s linear;
+  list-style: none;
   &:hover {
     opacity: 0.7;
   }

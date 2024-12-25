@@ -31,6 +31,7 @@ const NavUl = styled.ul(() => ({
   alignItems: 'center',
   height: '100%',
   gap: spacing(3),
+  margin: '0',
 }));
 
 const NavLi = styled.li<{ initHeight: string }>(
@@ -39,6 +40,7 @@ const NavLi = styled.li<{ initHeight: string }>(
     height: '100%',
     lineHeight: '68px',
     transition: '0.1s linear',
+    listStyle: 'none',
     '&::after': {
       content: `""`,
       position: 'absolute',
