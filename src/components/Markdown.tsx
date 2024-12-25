@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactMarkdown, { ExtraProps } from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 interface MarkdownProps {
   content: string;
@@ -26,6 +28,8 @@ const Code = ({
 const Markdown = ({ content }: MarkdownProps) => {
   return (
     <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
       components={{
         code: Code,
       }}>
