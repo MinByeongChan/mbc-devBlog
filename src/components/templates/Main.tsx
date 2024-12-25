@@ -8,7 +8,7 @@ interface MainProps extends PropsWithChildren {
   useFooter?: boolean;
 }
 
-const GridSection = styled.section<{ useNav: boolean }>`
+export const GridSection = styled.section<{ useNav: boolean }>`
   display: grid;
   grid: ${(props) =>
     props.useNav ? '80px 1fr auto / repeat(12, 1fr)' : '1fr auto / repeat(12, 1fr)'};

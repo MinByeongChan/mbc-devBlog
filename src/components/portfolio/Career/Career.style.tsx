@@ -1,10 +1,8 @@
 import { Box, List, Stack, styled, Typography } from '@mui/material';
 
 export const CareerBackGroundContainer = styled(Box)({
-  backgroundColor: '#1E293B',
-  gridColumn: '1 / span 12',
+  gridColumn: '2 / span 10',
   minHeight: '300px',
-  padding: '40px 80px',
 });
 
 export const CareerContentTitle = styled(Typography)({

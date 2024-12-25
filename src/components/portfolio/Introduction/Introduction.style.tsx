@@ -1,14 +1,13 @@
 import { Box, List, ListItem, styled } from '@mui/material';
 
 export const Wrapper = styled(Box)({
-  gridColumn: '1 / span 12',
+  gridColumn: '2 / span 10',
   width: '100%',
   height: '100vh',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '#1E293B',
 });
 
 export const IntroductionFlexContainer = styled(Box)({

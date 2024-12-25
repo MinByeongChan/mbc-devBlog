@@ -1,13 +1,8 @@
 import { Box, styled, Typography } from '@mui/material';
 
 export const BackGroundContainer = styled(Box)({
-  backgroundColor: '#1E293B',
-  gridColumn: '1 / span 12',
-});
-
-export const Wrapper = styled(Box)({
+  gridColumn: '2 / span 10',
   minHeight: '300px',
-  padding: '0 80px',
 });
 
 export const GridLayout = styled(Box)({

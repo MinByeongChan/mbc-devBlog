@@ -10,24 +10,33 @@ import { Footer } from '@/components/portfolio/Footer';
 import { GetStaticProps } from 'next';
 import { getAllPortfolio } from '@/components/portfolio/CareerDetails';
 import { PortfolioDetails } from '@/types';
+import styled from '@emotion/styled';
 
 interface PortfolioProps {
   portfolioDetails: PortfolioDetails[];
 }
 
+export const GridSection = styled.section`
+  display: grid;
+  grid: 1fr auto / repeat(12, 1fr);
+  container-name: section-container;
+  container-type: inline-size;
+  background-color: #1e293b;
+`;
+
 const index = ({ portfolioDetails }: PortfolioProps) => {
   return (
-    <Main
-      useNav={false}
-      useFooter={false}
-      meta={<Meta title="Frontend developer" description="Frontend developer 민병찬" />}>
-      <Banner />
-      <Introduction />
-      <Strength />
-      <Stack />
-      <Career careerDetails={portfolioDetails} />
-      <Footer />
-    </Main>
+    <>
+      <Meta title="Frontend developer" description="Frontend developer 민병찬" />
+      <GridSection>
+        <Banner />
+        <Introduction />
+        <Strength />
+        <Stack />
+        <Career careerDetails={portfolioDetails} />
+        <Footer />
+      </GridSection>
+    </>
   );
 };
 

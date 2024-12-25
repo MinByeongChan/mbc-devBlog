@@ -9,10 +9,10 @@ export const ServiceContainerBox = styled(Box)({
 
 export const ServiceTitleContainer = styled(Box)({
   display: 'flex',
-  justifyContent: 'space-between',
   alignItems: 'center',
   marginBottom: '8px',
   marginLeft: '16px',
+  gap: '16px',
 });
 
 export const ServiceTitle = styled(Typography)({
