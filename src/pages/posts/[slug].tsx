@@ -116,7 +116,7 @@ function PostDetails({
 }
 
 export const getStaticPaths: GetStaticPaths<PostUrl> = async () => {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts();
 
   return {
     paths: posts.map((post) => ({
@@ -129,15 +129,7 @@ export const getStaticPaths: GetStaticPaths<PostUrl> = async () => {
 };
 
 export const getStaticProps: GetStaticProps<PostDetailsProps, PostUrl> = async ({ params }) => {
-  const post = getPostBySlug(params!.slug, [
-    'title',
-    'description',
-    'date',
-    'modified_date',
-    'image',
-    'content',
-    'slug',
-  ]);
+  const post = getPostBySlug(params!.slug);
 
   return {
     props: {

@@ -23,7 +23,7 @@ const PaginatePosts = ({ galleryPosts, pagination, posts }: PostsProps) => {
 };
 
 export const getStaticPaths: GetStaticPaths<PageUrl> = async () => {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts();
 
   const pages = convertTo2D(posts, Config.pagination_size);
 
@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths<PageUrl> = async () => {
 };
 
 export const getStaticProps: GetStaticProps<PostsProps, PageUrl> = async ({ params }) => {
-  const posts = getAllPosts(['title', 'date', 'description', 'slug', 'tags']);
+  const posts = getAllPosts();
   const pages = convertTo2D(posts, Config.pagination_size);
   const currPage = Number(params!.page.replace('page', ''));
   const currentInd = currPage - 1;
