@@ -27,7 +27,7 @@ const BlogPostMain = ({ posts }: BlogPostMainProps) => {
       meta={
         <Meta
           title="프론트엔드 민병찬 블로그"
-          description=" 프론트엔드 개발은 바로 눈으로 볼 수 있다는 매력에 빠져 개발하고 있습니다."
+          description="개발했던 것을 정리하기 위한 기술 블로그 입니다."
         />
       }>
       <BlogMainContainer>
