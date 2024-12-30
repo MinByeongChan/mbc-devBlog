@@ -1,4 +1,7 @@
+import { ArticleContainer, LnbContainer } from '@/components/blog/BlogMain/BlogMain.style';
+import { LnbList } from '@/components/blog/LnbList/LnbList';
 import { FrontMatter } from '@/types';
+import { tagItems } from '@/utils/utils';
 import React from 'react';
 
 interface BlogMainProps {
@@ -6,5 +9,14 @@ interface BlogMainProps {
 }
 
 export const BlogMain = ({ totalPostList }: BlogMainProps) => {
-  return <div>BlogMain</div>;
+  const items = tagItems(totalPostList);
+
+  return (
+    <>
+      <LnbContainer>
+        <LnbList items={items} />
+      </LnbContainer>
+      <ArticleContainer>Main</ArticleContainer>
+    </>
+  );
 };
