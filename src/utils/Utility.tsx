@@ -1,11 +1,3 @@
-export const removeAllCookies = () => {
-  document.cookie.split(';').forEach((c) => {
-    document.cookie = c
-      .replace(/^ +/, '')
-      .replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`);
-  });
-};
-
 export const isEmpty = (value: number | string | object) => {
   if (value === null) return true;
   if (typeof value === 'undefined') return true;
