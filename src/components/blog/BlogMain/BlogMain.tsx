@@ -6,6 +6,5 @@ interface BlogMainProps {
 }
 
 export const BlogMain = ({ totalPostList }: BlogMainProps) => {
-  console.log(totalPostList);
   return <div>BlogMain</div>;
 };

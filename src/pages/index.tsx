@@ -7,7 +7,11 @@ import { getAllPosts } from '@/utils/Content';
 import { Main } from '@/components/templates';
 import { FrontMatter } from '@/types';
 import { BlogMain } from '@/components/blog/BlogMain/BlogMain';
-import { BlogMainContainer, BlogMainLayout } from '@/components/blog/BlogMain/BlogMain.style';
+import {
+  BlogMainContainer,
+  BlogMainLayout,
+  BlogMainMargin,
+} from '@/components/blog/BlogMain/BlogMain.style';
 
 interface BlogPostMainProps {
   posts: FrontMatter[];
@@ -27,9 +31,11 @@ const BlogPostMain = ({ posts }: BlogPostMainProps) => {
         />
       }>
       <BlogMainContainer>
-        <BlogMainLayout>
-          <BlogMain totalPostList={posts} />
-        </BlogMainLayout>
+        <BlogMainMargin>
+          <BlogMainLayout>
+            <BlogMain totalPostList={posts} />
+          </BlogMainLayout>
+        </BlogMainMargin>
       </BlogMainContainer>
     </Main>
   );
