@@ -1,5 +1,6 @@
 import { BlogListItem, FrontMatter } from '@/types';
 import { getTagItems } from '@/utils/utils';
+import dayjs from 'dayjs';
 import { useSearchParams } from 'next/navigation';
 
 export const useBlogMain = (totalPostList: FrontMatter[]) => {
@@ -19,7 +20,8 @@ export const useBlogMain = (totalPostList: FrontMatter[]) => {
       if (!tag) return true;
       const lowerCaseList = data.tags?.map((data) => data.toLowerCase()) ?? [];
       return lowerCaseList.includes(tag.toLowerCase());
-    });
+    })
+    .sort((a, b) => (dayjs(a.date).valueOf() < dayjs(b.date).valueOf() ? 1 : -1));
 
   return {
     tagItems,
