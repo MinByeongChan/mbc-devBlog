@@ -115,7 +115,7 @@ const Tags = ({ tags }: TagProps) => {
                 <Link
                   href={{
                     pathname: '/',
-                    query: { search: `${data.name}` },
+                    query: { tag: `${data.name}` },
                   }}>
                   <span>{data.name}</span>
                 </Link>
