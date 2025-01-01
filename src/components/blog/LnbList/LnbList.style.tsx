@@ -1,4 +1,5 @@
-import { Box, styled } from '@mui/material';
+import { Color } from '@/utils/StyleTheme';
+import { Box, styled, Typography } from '@mui/material';
 
 export const LnbWrapper = styled(Box)({
   padding: '16px 0',
@@ -9,4 +10,11 @@ export const LnbWrapper = styled(Box)({
 
 export const LnbListWrapper = styled(Box)({
   padding: '20px 24px',
+});
+
+export const ListItemText = styled(Typography)({
+  transition: '0.1s ease-in-out',
+  '&:hover': {
+    color: Color.Deeppink,
+  },
 });

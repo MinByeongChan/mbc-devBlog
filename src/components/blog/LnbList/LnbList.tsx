@@ -1,5 +1,6 @@
-import { LnbListWrapper, LnbWrapper } from '@/components/blog/LnbList/LnbList.style';
-import { List, ListItem, Typography } from '@mui/material';
+import { ListItemText, LnbListWrapper, LnbWrapper } from '@/components/blog/LnbList/LnbList.style';
+import { List, ListItem } from '@mui/material';
+import Link from 'next/link';
 import React from 'react';
 
 interface LnbListProps {
@@ -14,11 +15,17 @@ export const LnbList = ({ items }: LnbListProps) => {
   return (
     <LnbWrapper>
       <LnbListWrapper>
-        <Typography variant="h6">All Posts</Typography>
+        <Link href="/">
+          <ListItemText variant="h6">All Posts</ListItemText>
+        </Link>
         <List>
           {tagList.map(([title, count]) => (
             <ListItem key={title}>
-              {title} ({count})
+              <Link href={'/?tag=' + title}>
+                <ListItemText>
+                  {title} ({count})
+                </ListItemText>
+              </Link>
             </ListItem>
           ))}
         </List>
