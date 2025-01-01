@@ -1,21 +1,31 @@
 @font-face {
-  font-family: 'NexonLv2Gothic';
+  font-family: 'MaruBuri';
   font-weight: 700;
-  src: url('../../fonts/NEXON_Lv2_Gothic_Bold.ttf');
+  src: url('../../fonts/MaruBuri-Bold.otf');
 }
 @font-face {
-  font-family: 'NexonLv2Gothic';
+  font-family: 'MaruBuri';
+  font-weight: 600;
+  src: url('../../fonts/MaruBuri-SemiBold.otf');
+}
+@font-face {
+  font-family: 'MaruBuri';
   font-weight: 500;
-  src: url('../../fonts/NEXON_Lv2_Gothic_Medium.ttf');
+  src: url('../../fonts/MaruBuri-Regular.otf');
 }
 @font-face {
-  font-family: 'NexonLv2Gothic';
+  font-family: 'MaruBuri';
   font-weight: normal;
-  src: url('../../fonts/NEXON_Lv2_Gothic.ttf');
+  src: url('../../fonts/MaruBuri-Regular.otf');
 }
 @font-face {
-  font-family: 'NexonLv2Gothic';
+  font-family: 'MaruBuri';
+  font-weight: 400;
+  src: url('../../fonts/MaruBuri-Light.otf');
+}
+@font-face {
+  font-family: 'MaruBuri';
   font-weight: 300;
-  src: url('../../fonts/NEXON_Lv2_Gothic_Light.ttf');
+ src: url('../../fonts/MaruBuri-ExtraLight.otf');
 }
 
