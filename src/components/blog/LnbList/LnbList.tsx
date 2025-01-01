@@ -1,4 +1,5 @@
-import { Box, List, ListItem, Typography } from '@mui/material';
+import { LnbListWrapper, LnbWrapper } from '@/components/blog/LnbList/LnbList.style';
+import { List, ListItem, Typography } from '@mui/material';
 import React from 'react';
 
 interface LnbListProps {
@@ -6,16 +7,22 @@ interface LnbListProps {
 }
 
 export const LnbList = ({ items }: LnbListProps) => {
+  const tagList = Object.entries(items).sort(([, count1], [, count2]) =>
+    count1 < count2 ? 1 : -1,
+  );
+
   return (
-    <Box sx={{ padding: '20px', bgcolor: '#ededed', borderRadius: '8px' }}>
-      <Typography variant="h6">All Posts</Typography>
-      <List sx={{}}>
-        {Object.entries(items).map(([title, count]) => (
-          <ListItem key={title}>
-            {title} ({count})
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+    <LnbWrapper>
+      <LnbListWrapper>
+        <Typography variant="h6">All Posts</Typography>
+        <List sx={{}}>
+          {tagList.map(([title, count]) => (
+            <ListItem key={title}>
+              {title} ({count})
+            </ListItem>
+          ))}
+        </List>
+      </LnbListWrapper>
+    </LnbWrapper>
   );
 };
