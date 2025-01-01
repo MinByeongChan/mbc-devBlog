@@ -12,7 +12,7 @@ export const BlogMainLayout = styled(Box)`
   grid-gap: 32px;
   grid-column: 2 / span 10;
   grid-template-columns: repeat(12, 1fr);
-  padding-top: 32px;
+  padding: 32px 0;
   @container blog-main-container (max-width: 768px) {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 24px;
