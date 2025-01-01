@@ -24,7 +24,7 @@ export function BlogList({ listItem }: BlogContentListProps) {
             <Typography color="textSecondary">{dayjs(data.date).format('MMMM D, YYYY')}</Typography>
             <Box mt="8px">
               <Typography variant="h5" fontWeight="700">
-                {data.title}
+                <Link href={'/posts/' + data.id}>{data.title}</Link>
               </Typography>
             </Box>
             <TagListWrapper>
