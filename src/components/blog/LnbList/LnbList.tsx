@@ -15,7 +15,7 @@ export const LnbList = ({ items }: LnbListProps) => {
     <LnbWrapper>
       <LnbListWrapper>
         <Typography variant="h6">All Posts</Typography>
-        <List sx={{}}>
+        <List>
           {tagList.map(([title, count]) => (
             <ListItem key={title}>
               {title} ({count})

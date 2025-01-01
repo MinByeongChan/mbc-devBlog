@@ -1,7 +1,8 @@
+import { BlogList } from '@/components/blog/BlogList/BlogList';
 import { ArticleContainer, LnbContainer } from '@/components/blog/BlogMain/BlogMain.style';
 import { LnbList } from '@/components/blog/LnbList/LnbList';
-import { FrontMatter } from '@/types';
-import { tagItems } from '@/utils/utils';
+import { BlogListItem, FrontMatter } from '@/types';
+import { getTagItems } from '@/utils/utils';
 import React from 'react';
 
 interface BlogMainProps {
@@ -9,14 +10,23 @@ interface BlogMainProps {
 }
 
 export const BlogMain = ({ totalPostList }: BlogMainProps) => {
-  const items = tagItems(totalPostList);
+  const tagItems = getTagItems(totalPostList);
+  const blogListItem = totalPostList.map<BlogListItem>((data) => ({
+    id: data.slug,
+    date: data.date,
+    title: data.title,
+    tags: data.tags,
+    description: data.description,
+  }));
 
   return (
     <>
       <LnbContainer>
-        <LnbList items={items} />
+        <LnbList items={tagItems} />
       </LnbContainer>
-      <ArticleContainer>Main</ArticleContainer>
+      <ArticleContainer>
+        <BlogList listItem={blogListItem} />
+      </ArticleContainer>
     </>
   );
 };

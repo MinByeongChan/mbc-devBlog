@@ -1,6 +1,6 @@
 import { FrontMatter } from '@/types';
 
-export const tagItems = (postList: FrontMatter[]) => {
+export const getTagItems = (postList: FrontMatter[]) => {
   return postList.reduce<Record<string, number>>((prev, curr) => {
     curr.tags?.forEach((data) => {
       if (!prev[data]) prev[data] = 1;

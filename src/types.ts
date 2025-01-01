@@ -19,3 +19,7 @@ export interface FrontMatter {
 }
 
 export type FuncPostBySlug = (slug: string) => FrontMatter;
+
+export type BlogListItem = Pick<FrontMatter, 'title' | 'date' | 'tags' | 'description'> & {
+  id: string;
+};
