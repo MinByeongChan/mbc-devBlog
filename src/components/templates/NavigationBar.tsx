@@ -16,6 +16,7 @@ const NavLayout = styled.nav({
   boxShadow: '0 0 9px 3px rgb(41 41 41 / 25%)',
   backgroundColor: `${color.white}`,
   opacity: '0.9',
+  zIndex: 1,
 });
 
 const NavContainer = styled.div({
