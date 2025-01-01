@@ -8,6 +8,7 @@ import { BlogListItem } from '@/types';
 import { Color } from '@/utils/StyleTheme';
 import { Box, List, Typography } from '@mui/material';
 import dayjs from 'dayjs';
+import Link from 'next/link';
 import React from 'react';
 
 interface BlogContentListProps {
@@ -29,7 +30,7 @@ export function BlogList({ listItem }: BlogContentListProps) {
             <TagListWrapper>
               {data.tags?.map((tag) => (
                 <Typography key={tag} color={Color.Deeppink}>
-                  {tag}
+                  <Link href={'/?tag=' + tag}>{tag}</Link>
                 </Typography>
               ))}
             </TagListWrapper>
