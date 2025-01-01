@@ -32,7 +32,7 @@ export function BlogList({ listItem }: BlogContentListProps) {
             </Box>
             <TagListWrapper>
               {data.tags?.map((tag) => (
-                <Typography key={tag} color={Color.Deeppink} fontSize="1rem">
+                <Typography key={tag} color={Color.LightPink} fontSize="1rem">
                   <Link href={'/?tag=' + tag}>{tag}</Link>
                 </Typography>
               ))}

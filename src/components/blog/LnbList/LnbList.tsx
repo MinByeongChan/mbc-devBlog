@@ -4,10 +4,11 @@ import Link from 'next/link';
 import React from 'react';
 
 interface LnbListProps {
+  totalItemNumber: number;
   items: Record<string, number>;
 }
 
-export const LnbList = ({ items }: LnbListProps) => {
+export const LnbList = ({ totalItemNumber, items }: LnbListProps) => {
   const tagList = Object.entries(items).sort(([, count1], [, count2]) =>
     count1 < count2 ? 1 : -1,
   );
@@ -16,7 +17,9 @@ export const LnbList = ({ items }: LnbListProps) => {
     <LnbWrapper>
       <LnbListWrapper>
         <Link href="/">
-          <ListItemText variant="h6">All Posts</ListItemText>
+          <ListItemText variant="h6" fontWeight="700">
+            All Posts ({totalItemNumber})
+          </ListItemText>
         </Link>
         <List>
           {tagList.map(([title, count]) => (

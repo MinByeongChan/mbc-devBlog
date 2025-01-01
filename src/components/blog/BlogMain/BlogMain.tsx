@@ -15,7 +15,7 @@ export const BlogMain = ({ totalPostList }: BlogMainProps) => {
   return (
     <>
       <LnbContainer>
-        <LnbList items={tagItems} />
+        <LnbList totalItemNumber={totalPostList.length} items={tagItems} />
       </LnbContainer>
       <ArticleContainer>
         <BlogList listItem={blogListItem} />
