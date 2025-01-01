@@ -1,6 +1,7 @@
 import {
   ArticleContainer,
   ArticleSubTitle,
+  ArticleTitle,
   ListItem,
   TagListWrapper,
 } from '@/components/blog/BlogList/BlogList.style';
@@ -21,21 +22,25 @@ export function BlogList({ listItem }: BlogContentListProps) {
       {listItem.map((data) => (
         <ListItem key={data.id}>
           <ArticleContainer>
-            <Typography color="textSecondary">{dayjs(data.date).format('MMMM D, YYYY')}</Typography>
+            <Typography color="textSecondary" fontSize="1rem">
+              {dayjs(data.date).format('MMMM D, YYYY')}
+            </Typography>
             <Box mt="8px">
-              <Typography variant="h5" fontWeight="700">
+              <ArticleTitle variant="h5">
                 <Link href={'/posts/' + data.id}>{data.title}</Link>
-              </Typography>
+              </ArticleTitle>
             </Box>
             <TagListWrapper>
               {data.tags?.map((tag) => (
-                <Typography key={tag} color={Color.Deeppink}>
+                <Typography key={tag} color={Color.Deeppink} fontSize="1rem">
                   <Link href={'/?tag=' + tag}>{tag}</Link>
                 </Typography>
               ))}
             </TagListWrapper>
             <Box mt="8px">
-              <ArticleSubTitle variant="subtitle1">{data.description}</ArticleSubTitle>
+              <ArticleSubTitle variant="subtitle1" fontSize="1rem">
+                {data.description}
+              </ArticleSubTitle>
             </Box>
           </ArticleContainer>
         </ListItem>

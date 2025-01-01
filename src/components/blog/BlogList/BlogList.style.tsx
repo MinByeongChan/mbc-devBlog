@@ -22,3 +22,11 @@ export const ArticleSubTitle = styled(Typography)({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
 });
+
+export const ArticleTitle = styled(Typography)({
+  fontWeight: '700',
+  transition: '0.1s ease-in-out',
+  '&:hover': {
+    opacity: '0.5',
+  },
+});

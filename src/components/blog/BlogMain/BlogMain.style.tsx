@@ -34,7 +34,7 @@ export const BlogMainMargin = styled(Box)`
 `;
 
 export const LnbContainer = styled('aside')`
-  grid-column: 2 / span 4;
+  grid-column: 3 / span 3;
   @container blog-main-container (max-width: 768px) {
     grid-column: 1 / span 4;
   }
@@ -45,7 +45,7 @@ export const LnbContainer = styled('aside')`
 `;
 
 export const ArticleContainer = styled('article')`
-  grid-column: 7 / span 5;
+  grid-column: 6 / span 5;
   @container blog-main-container (max-width: 768px) {
     grid-column: 5 / span 5;
   }
