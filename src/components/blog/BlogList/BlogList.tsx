@@ -1,5 +1,12 @@
+import {
+  ArticleContainer,
+  ArticleSubTitle,
+  ListItem,
+  TagListWrapper,
+} from '@/components/blog/BlogList/BlogList.style';
 import { BlogListItem } from '@/types';
-import { Box, List, ListItem, Typography } from '@mui/material';
+import { Color } from '@/utils/StyleTheme';
+import { Box, List, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import React from 'react';
 
@@ -12,16 +19,24 @@ export function BlogList({ listItem }: BlogContentListProps) {
     <List>
       {listItem.map((data) => (
         <ListItem key={data.id}>
-          <Box>
-            <Typography>{dayjs(data.date).format('MMMM D, YYYY')}</Typography>
-            <Typography>{data.title}</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '16px' }}>
-              {data.tags?.map((tag) => <Typography key={tag}>{tag}</Typography>)}
+          <ArticleContainer>
+            <Typography color="textSecondary">{dayjs(data.date).format('MMMM D, YYYY')}</Typography>
+            <Box mt="8px">
+              <Typography variant="h5" fontWeight="700">
+                {data.title}
+              </Typography>
             </Box>
-            <Box>
-              <Typography>{data.description}</Typography>
+            <TagListWrapper>
+              {data.tags?.map((tag) => (
+                <Typography key={tag} color={Color.Deeppink}>
+                  {tag}
+                </Typography>
+              ))}
+            </TagListWrapper>
+            <Box mt="8px">
+              <ArticleSubTitle variant="subtitle1">{data.description}</ArticleSubTitle>
             </Box>
-          </Box>
+          </ArticleContainer>
         </ListItem>
       ))}
     </List>

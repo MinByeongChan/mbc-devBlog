@@ -16,7 +16,7 @@ export const BlogMain = ({ totalPostList }: BlogMainProps) => {
     date: data.date,
     title: data.title,
     tags: data.tags,
-    description: data.description,
+    description: data.description || data.content.substring(0, 200),
   }));
 
   return (
