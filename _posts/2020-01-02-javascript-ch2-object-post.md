@@ -1,6 +1,6 @@
 ---
 title: "[Javascript] 변수선언 방식의 차이(const, var, let)"
-description: ''
+description: ""
 date: "2020-01-02"
 modified_date: "2020-01-02"
 tags: [Javascript, Object, 배열]
@@ -16,12 +16,10 @@ JS에서도 Object가 사용되는데, Java와 C++과는 조큼 다른 형식으
 
 ## 배열 선언 방법
 
----
-
 ```html
 <script>
-  var arr = [1, 2, 3, 4]
-  document.write(arr[0])
+  var arr = [1, 2, 3, 4];
+  document.write(arr[0]);
 </script>
 ```
 
@@ -39,8 +37,8 @@ Key는 어떤 자료를 불러올 때 부르는 **호칭**이고, value는 부�
 
 ```html
 <script>
-  var arr = { a: 1, b: 2, c: 3 }
-  document.write(arr["a"]) // a호출시 1출력
+  var arr = { a: 1, b: 2, c: 3 };
+  document.write(arr["a"]); // a호출시 1출력
 </script>
 ```
 
@@ -56,16 +54,16 @@ arr안에서 "a"는 key에 해당하고, 1은 value에 해당한다. **:**를 �
     list: { a: 1, b: 2, c: 3 },
     show: function () {
       for (var key in this.list) {
-        document.write(key + ":" + this.list[key] + "<br/>")
+        document.write(key + ":" + this.list[key] + "<br/>");
       }
     },
-  }
+  };
 
-  document.write(arr.list["a"] + "<br/>")
-  document.write(arr.list["b"] + "<br/>")
-  document.write(arr.list["c"] + "<br/>")
+  document.write(arr.list["a"] + "<br/>");
+  document.write(arr.list["b"] + "<br/>");
+  document.write(arr.list["c"] + "<br/>");
 
-  grades.show()
+  grades.show();
 </script>
 ```
 

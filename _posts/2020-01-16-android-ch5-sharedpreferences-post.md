@@ -1,6 +1,6 @@
 ---
 title: "[Android] SharedPreferences, 앱 내부 데이터 저장"
-description: '앱 개발을 하다보면 token과 같이 데이터를 저장해야하는 상황이 닥칠 수 있다.'
+description: "앱 개발을 하다보면 token과 같이 데이터를 저장해야하는 상황이 닥칠 수 있다."
 date: "2020-01-16"
 modified_date: "2020-01-16"
 tags: [Android, SharedPreferences]
@@ -17,8 +17,6 @@ tags: [Android, SharedPreferences]
 앱 개발을 하다보면 token과 같이 데이터를 저장해야하는 상황이 닥칠 수 있다. `SharedPredferences`는 **일련의 데이터를 앱 내부에 계속 저장시키는 기능**을 한다. 앱이 삭제되지 않는 이상 SharedPreferences로 저장된 데이터는 앱 내부에 남아있게 된다.
 
 처음에 SQLite를 사용해 DB를 구축해서 저장하면 되지 않을까 싶었는데, 작은 데이터 때문에 DB를 구축해야하는 것은 상당히 비효율 적일 수 있다 생각해서 찾게 되었다.
-
----
 
 ## 초기 설정
 
@@ -65,8 +63,6 @@ GlobalApplication 클래스는 Preferences 객체가 담겨있는 클래스이�
 
 onCreate() 안에 prefs는 SharedPreferences의 객체를 의미한다. Context를 매개변수로 처음 시작될 때의 Activity를 넘겨준다.
 
----
-
 ## 데이터 가져오기
 
 ```kotlin
@@ -105,8 +101,6 @@ getString은 인자가 두개 존재하는데 첫번째는 Key를 의미하고, 
 
 key를 가져오려 하는데 key가 존재하지 않으면 ""를 불러오게된다.
 
----
-
 ## 데이터 저장하기
 
 ```kotlin
@@ -126,8 +120,6 @@ editor를 생성하고 editor에 putString을 하여 저장한다. getString과 
 
 마지막에는 commit을 반드시 해줘야 editor에 등록된 데이터가 저장된다.
 
----
-
 ## Key 삭제하기
 
 ```kotlin
@@ -141,8 +133,6 @@ private fun removePreferences() {
 
 마찬가지로 editor를 사용하고 remove()에서 삭제하려는 key를 지정한다.
 
----
-
 ## 모든 데이터 삭제하기
 
 ```kotlin
@@ -155,8 +145,6 @@ private fun removeAllPreferences() {
 ```
 
 나머지는 다 동일하고 clear()를 사용한다.
-
----
 
 앱이 시작될 때 SharedPredferences를 등록해야하는 것을 너무 늦게 깨달았다. 이것땜에 몇번을 삽질했는지 ...
 

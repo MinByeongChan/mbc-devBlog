@@ -2,6 +2,8 @@ export enum Color {
   Red = '#ff0000',
   Fuchsia = '#ff009f',
   Deeppink = '#ff1493',
+  LightBeige = '#F9F6E6',
+  LightPink = '#C30E59',
   Orchid = '#da70d6',
   Black = '#000000',
   DarkBlack = 'rgb(41,44,50)',

@@ -1,12 +1,10 @@
 ---
-title: '[개발일지] 2024-07-29'
-description: ''
-date: '2024-07-29'
-modified_date: '2024-07-29'
+title: "[개발일지] 2024-07-29(월)"
+description: ""
+date: "2024-07-29"
+modified_date: "2024-07-29"
 tags: [개발일지]
 ---
-
-## 개발일지 2024-07-29 
 
 체크박스 상태값을 트래킹하여 체크여부에 따라 테이블 컬럼을 변경하는 로직을 짰다. react-hook-form을 사용하고 있는터라, useForm의 객체를 binding하여 상태가 변경된 이후 columns을 변경하는 로직으로 구조를 설계했다.
 

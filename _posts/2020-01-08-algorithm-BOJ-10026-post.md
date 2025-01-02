@@ -1,7 +1,7 @@
 ---
 author: Byeong Chan
 title: "[백준] 10026 적록색약"
-desc: ''
+desc: ""
 date: "2020-01-08"
 modified_date: "2020-01-08"
 categories: [Algorithm]
@@ -42,8 +42,6 @@ RRRRR
 3. 첫번째 영역을 구해준 뒤, main에서 R을 G로 변경하여 풀이
 
 ## 문제 풀이
-
----
 
 ### DFS 함수
 

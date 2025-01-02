@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { format } from 'date-fns';
 import React from 'react';
 import { Config } from '@/utils/Config';
-import { PostItems } from '@/utils/Content';
 import { color, fontSize, fontWeight } from '@/utils/StyleTheme';
 import { isEmpty } from '@/utils/Utility';
+import { FrontMatter } from '@/types';
 
 interface GalleryWrapperProps {
-  posts: PostItems[];
+  posts: FrontMatter[];
   setSearch: React.Dispatch<React.SetStateAction<string>>;
 }
 

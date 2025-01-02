@@ -1,7 +1,7 @@
 ---
 author: Byeong Chan
 title: "[백준] 11403 경로 찾기"
-description: ''
+description: ""
 date: "2020-01-01"
 modified_date: "2020-01-01"
 categories: [Algorithm]
@@ -27,8 +27,6 @@ comments: true
 4. 그나마 경로찾는데 효율 좋은 bfs 선택 (사실 비슷할 것 같았다. 나중에 dfs로 해봐야지)
 
 ## 문제 풀이
-
----
 
 ### 단방향 그래프
 

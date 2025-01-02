@@ -16,13 +16,15 @@ const NavLayout = styled.nav({
   boxShadow: '0 0 9px 3px rgb(41 41 41 / 25%)',
   backgroundColor: `${color.white}`,
   opacity: '0.9',
+  zIndex: 1,
 });
 
 const NavContainer = styled.div({
-  width: '100%',
   height: '100%',
-  maxWidth: '1200px',
-  margin: '0 auto',
+  margin: '0 40px',
+  '@container section-container (min-width: 0px) and (max-width: 768px)': {
+    margin: '0 20px',
+  },
 });
 
 const NavUl = styled.ul(() => ({
@@ -32,6 +34,7 @@ const NavUl = styled.ul(() => ({
   height: '100%',
   gap: spacing(3),
   margin: '0',
+  padding: 0,
 }));
 
 const NavLi = styled.li<{ initHeight: string }>(

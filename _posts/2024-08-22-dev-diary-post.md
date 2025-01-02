@@ -1,12 +1,10 @@
 ---
-title: '[개발일지] 2024-08-22'
-description: ''
-date: '2024-08-22'
-modified_date: '2024-08-22'
+title: "[개발일지] 2024-08-22(목)"
+description: ""
+date: "2024-08-22"
+modified_date: "2024-08-22"
 tags: [개발일지]
 ---
-
-## 개발일지 2024-08-22(목)
 
 google token을 갱신하는 로직을 개발했다. google api 에서는 token 유효시간 1시간만을 제공하기 때문에 refresh를 하기 위해서는 FE에서 직접 로직을 제어할 필요가 있었다.
 

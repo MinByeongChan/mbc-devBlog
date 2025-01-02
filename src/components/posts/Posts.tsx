@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { faEraser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
-import { PostItems } from '@/utils/Content';
 import { fontSize, fontWeight } from '@/utils/StyleTheme';
 import { isEmpty } from '@/utils/Utility';
 import { GalleryWrapper } from '@/components/posts/GalleryWrapper';
 import styled from '@emotion/styled';
 import { Pagination, PaginationProps } from '@/components/Pagination';
+import { FrontMatter } from '@/types';
 
 export interface PostsProps {
-  galleryPosts: PostItems[];
-  posts: PostItems[];
+  galleryPosts: FrontMatter[];
+  posts: FrontMatter[];
   pagination: PaginationProps;
 }
 
@@ -83,7 +83,7 @@ const TextCancelImg = styled.div<TextCancelImgProps>`
 export const Posts = ({ galleryPosts, posts, pagination }: PostsProps) => {
   const router = useRouter();
 
-  const [searchList, setSearchList] = useState<PostItems[]>([]);
+  const [searchList, setSearchList] = useState<FrontMatter[]>([]);
   const [search, setSearch] = useState(
     router.query.search !== undefined ? router.query.search.toString() : '',
   );

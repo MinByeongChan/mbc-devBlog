@@ -1,8 +1,8 @@
 ---
 title: "[React hook] hook에 대한 정리, hook에서의 state관리 useState"
-description: '리액트를 `do it 리액트 프로그래밍`으로 시작했다. 근데 이건 hook에 대해 전혀 다루지 않아서 hook에 대한 개념 조차 알지 못했다.'
+description: "리액트를 `do it 리액트 프로그래밍`으로 시작했다. 근데 이건 hook에 대해 전혀 다루지 않아서 hook에 대한 개념 조차 알지 못했다."
 date: "2020-12-21"
-modified_date: '2020-12-21'
+modified_date: "2020-12-21"
 tags: [React, useState, Hook]
 ---
 
@@ -23,33 +23,33 @@ hook은 기본적으로 함수 컴포넌트로 구성되어야한다. 함수컴�
 ### Class Component Example
 
 ```js
-import React, { Component } from "react"
+import React, { Component } from "react";
 
 class Redux03Class extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       car: "KIA",
-    }
+    };
   }
   componentDidMount() {
     this.setState({
       car: "HYUNDAI",
-    })
+    });
   }
   render() {
-    const { state } = this.state
+    const { state } = this.state;
     return (
       <div>
         <h1>Ths is Class Component</h1>
         <h2>My car is {this.state.car}.</h2>
       </div>
-    )
+    );
   }
 }
 
-export default Redux03Class
+export default Redux03Class;
 ```
 
 state를 간단히 출력하는 예제이다. contructor, componentDidMount(), render() 3개의 함수가 사용되었다. 근데 단순히 state하나만 선언하고, 변경시켜준것밖에 없는데 저렇게 길게 작성해야한다. 위 예제는 간단해서 그렇지 복잡한 코드들은 더욱더 코드가 길어지게 된다. 이러한 것을 보완하기 위해 hook을 사용한다.
@@ -57,32 +57,30 @@ state를 간단히 출력하는 예제이다. contructor, componentDidMount(), r
 ### Function Component Example
 
 ```js
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 const Redux03 = () => {
-  const [car, setCar] = useState("KIA")
+  const [car, setCar] = useState("KIA");
 
-  setCar("HYUNDAI")
+  setCar("HYUNDAI");
 
   return (
     <div>
       <h1>Ths is Class Component</h1>
       <h2>My car is {car}.</h2>
     </div>
-  )
-}
+  );
+};
 
-export default Redux03
+export default Redux03;
 ```
 
 함수형 컴포넌트를 사용한 예제이다. useState()만을 사용해서 state를 관리한다. useState의 사용법은 다음과 같다.
 
 ```js
-const [상태값, 상태변경함수] = useState(초기값)
+const [상태값, 상태변경함수] = useState(초기값);
 ```
 
 `[]`안에 state값과 state를 변경시킬 함수를 정의한다. 그리고 useState에 파라미터는 초기값으로 값을 넣어준다. 위 예제는 `car`라는 **상태값**과 `setCar`라는 **상태변경함수**, `KIA`라는 **초기값**을 넣어줬다.
-
----
 
 이렇게 useState를 사용하는 법을 알아봤다. 클래스 컴포넌트 대비 코드가 간결해졌고, 필요 이상의 코드들이 많이 줄어든것을 확인할 수 있었다. 또한 성능 역시 클래스 컴포넌트 보다 더 뛰어나다고 하니 사용하지 않을 수가 없다. 리액트에서도 hook의 사용을 권장하고 현재 대부분 변경하는 과정에 있다고 한다. 그렇다고 해서 현재 클래스 컴포넌트로 작성되어있는 것들을 함수형 컴포넌트로 변경시킬 필요까진 없다. 완벽 호환이 가능하기 때문이다. 앞으로 짜는 코드들은 hook으로 짜는것이 좋을 것 같다.

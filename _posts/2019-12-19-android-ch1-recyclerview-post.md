@@ -1,6 +1,6 @@
 ---
 title: "[Android] RecyclerView의 개념 및 사용법"
-description: 'recyclerview는 ListView를 보완하기 위해 나온것이다.'
+description: "recyclerview는 ListView를 보완하기 위해 나온것이다."
 date: "2019-12-19"
 modified_date: "2019-12-19"
 tags: [Android, RecyclerView]
@@ -13,8 +13,6 @@ recyclerview는 ListView를 보완하기 위해 나온것이다. ListView는 모
 이런 메모리 낭비를 보완하기 위해 나온 개념이 recyclerview이다. **recycler**라는 이름에서 알 수 있듯이 recyclerview는 리스트 크기가 커져도 **보이지 않는 리스트**에 대해서는 **메모리 할당을 취소**하여 메모리를 절약할 수 있게 한다.
 
 ## recyclerView 생성
-
----
 
 우선 recyclerView 뷰 객체를 사용하기 위해 build.gradle에 implementation을 해야한다.
 
