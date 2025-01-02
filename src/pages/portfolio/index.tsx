@@ -10,6 +10,7 @@ import { GetStaticProps } from 'next';
 import { getAllPortfolio } from '@/components/portfolio/CareerDetails';
 import { PortfolioDetails } from '@/types';
 import styled from '@emotion/styled';
+import 'github-markdown-css/github-markdown-light.css';
 
 interface PortfolioProps {
   portfolioDetails: PortfolioDetails[];

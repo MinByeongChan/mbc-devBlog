@@ -14,6 +14,7 @@ import { Avatar, Box, Divider, Icon, Tooltip, Typography } from '@mui/material';
 import { FrontMatter } from '@/types';
 import { Email, Instagram } from '@mui/icons-material';
 import Link from 'next/link';
+import 'github-markdown-css/github-markdown-light.css';
 
 type PostUrl = {
   slug: string;

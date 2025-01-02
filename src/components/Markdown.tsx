@@ -27,14 +27,16 @@ const Code = ({
 
 const Markdown = ({ content }: MarkdownProps) => {
   return (
-    <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw]}
-      components={{
-        code: Code,
-      }}>
-      {content}
-    </ReactMarkdown>
+    <article className="markdown-body">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          code: Code,
+        }}>
+        {content}
+      </ReactMarkdown>
+    </article>
   );
 };
 

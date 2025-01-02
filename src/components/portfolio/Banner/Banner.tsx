@@ -33,7 +33,7 @@ export const Banner = () => {
   return (
     <BannerWrapper className="banner" ref={ref}>
       <BannerContainer>
-        <StyledText variant="h5" color="white" animWidth={490}>
+        <StyledText variant="h5" color="white" animWidth={550}>
           안녕하세요. Front-end Developer <span>민병찬</span> 입니다.
         </StyledText>
 
