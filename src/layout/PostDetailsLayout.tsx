@@ -5,7 +5,7 @@ interface PostDetailsLayoutProps extends PropsWithChildren {}
 
 const LayoutMain = styled.main`
   min-height: 650px;
-  grid-column: 4 / span 7;
+  grid-column: 4 / span 6;
   @container section-container (max-width: 600px) {
     &.post-details-main {
       grid-column: 2 / span 10;
