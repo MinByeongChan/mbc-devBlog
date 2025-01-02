@@ -1,6 +1,6 @@
 ---
 title: "[React] Redux, 스토어에 데이터 저장하는 방법"
-description: '리덕스는 크게 액션, 리듀서, 스토어 3개로 구분된다. 앞서 동작 원리를 알아봤으니, 실제 사용 방법을 다시한번 복기하자.'
+description: "리덕스는 크게 액션, 리듀서, 스토어 3개로 구분된다. 앞서 동작 원리를 알아봤으니, 실제 사용 방법을 다시한번 복기하자."
 date: "2020-12-17"
 modified_date: "2020-12-17"
 tags: [React, Redux]
@@ -52,15 +52,15 @@ yarn add redux react-redux
 
 ```js
 // 액션
-export const ADD_FOOD = "ADD_FOOD"
+export const ADD_FOOD = "ADD_FOOD";
 
 // 액션 동작 함수
-export const addFood = food => {
+export const addFood = (food) => {
   return {
     type: ADD_FOOD,
     payload: food,
-  }
-}
+  };
+};
 ```
 
 액션은 기본적으로 타입과 동작 함수로 구성된다. 먹을것을 더해주는 `ADD_FOOD`타입과 payload로 food 파라미터를 받아 넘겨주도록 구성된다.
@@ -68,7 +68,7 @@ export const addFood = food => {
 ### src/actions/index.js
 
 ```js
-export { ADD_FOOD, addFood } from "./FoodAction"
+export { ADD_FOOD, addFood } from "./FoodAction";
 ```
 
 지금은 액션이 음식에 대한 액션밖에 없지만 다른 액션이 여러개 존재할 수 있다. 액션들이 많아짐에 따라 묶어주기 위해 index.js에 액션들을 모아주자.
@@ -79,29 +79,29 @@ export { ADD_FOOD, addFood } from "./FoodAction"
 
 ```js
 // 액션
-import { ADD_FOOD, addFood } from "../action/FoodAction"
+import { ADD_FOOD, addFood } from "../action/FoodAction";
 
 const initState = {
   foods: [],
-}
+};
 
 // 리듀서(reducer)
 const foodReducer = (state = initState, action) => {
-  const { type, payload } = action
+  const { type, payload } = action;
 
   switch (type) {
     case ADD_FOOD:
       return {
         ...state,
         foods: [...state.foods, payload],
-      }
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default foodReducer
+export default foodReducer;
 ```
 
 리듀서는 액션을 받아 동작을 실행시켜준다고 언급했다. 어떻게 동작하는지 아라보자.
@@ -115,17 +115,15 @@ export default foodReducer
 ### src/reducers/index.js
 
 ```js
-import { combineReducers } from "redux"
-import foodReducer from "./FoodReducer"
+import { combineReducers } from "redux";
+import foodReducer from "./FoodReducer";
 
-const rootReducer = combineReducers({ foodReducer })
+const rootReducer = combineReducers({ foodReducer });
 
-export default rootReducer
+export default rootReducer;
 ```
 
 액션에서와 마찬가지로 여러개의 리듀서를 reducers/index.js에서 묶어주자. 묶어줄 떄, redux에서 제공하는 `combineReducers` 함수를 사용한다.
-
----
 
 액션과 리듀서 설정을 모두 마쳤다. 이제 스토어를 등록해야한다.
 
@@ -134,11 +132,11 @@ export default rootReducer
 ### /configureStore.js
 
 ```js
-import { createStore } from "redux"
-import { composeWithDevTools } from "redux-devtools-extension"
-import rootReducer from "./Redux/reducer"
+import { createStore } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import rootReducer from "./Redux/reducer";
 
-export const store = createStore(rootReducer, composeWithDevTools())
+export const store = createStore(rootReducer, composeWithDevTools());
 ```
 
 redux에서 제공하는 `createStroe`함수를 사용해서 스토어를 생성한다.
@@ -150,11 +148,11 @@ F12 -> redux를 확인해보면 리덕스의 액션, 스토어의 히스토리 �
 ### /App.js
 
 ```js
-import logo from "./logo.svg"
-import "./App.css"
-import Redux02 from "./Redux/Redux02"
-import { store } from "./configureStore"
-import { Provider } from "react-redux"
+import logo from "./logo.svg";
+import "./App.css";
+import Redux02 from "./Redux/Redux02";
+import { store } from "./configureStore";
+import { Provider } from "react-redux";
 
 const App = () => {
   return (
@@ -163,15 +161,13 @@ const App = () => {
         <Redux02></Redux02>
       </div>
     </Provider>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 ```
 
 설정한 스토어를 `Provider`에 넣으면 내부 App 내부에 쌓여있는 Component들은 스토어를 사용할 수 있게 된다.
-
----
 
 모든 설정이 끝났다. 이제 설정한 액션 및 리듀서를 갖고 컴포넌트에서 스토어를 활용하면 된다. 근데 너무 힘들다. 나머진 내일해야지.
 

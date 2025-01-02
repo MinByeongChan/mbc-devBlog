@@ -1,8 +1,8 @@
 ---
-title: '[WEB] 프론트엔드 기술면접 대비 질문 정리'
+title: "[WEB] 프론트엔드 기술면접 대비 질문 정리"
 description: "프론트엔드 주니어 개발자로서 기본적으로 알아야할 것들, 또는 질문 들어올만한 개념들을 정리하려고한다."
-date: '2021-05-30'
-modified_date: '2021-05-30'
+date: "2021-05-30"
+modified_date: "2021-05-30"
 tags: [WEB, 프론트엔드, 기술면접]
 ---
 
@@ -20,14 +20,13 @@ HTML문서의 <head>와 </head> 사이에 들어가며 현재 HTML문서가 어�
 
 meta데이터를 강화시키므로서 SEO를 향상시킬 수 있다.
 
----
 # CSS
 
 ## grid vs flex
 
-### flex 
+### flex
 
-flex속성은 html 태그 컨텐츠를 수평적 또는 수직적으로 정렬시킬 수 있다. 수평 또는 수직 둘 중 하나만 가능하다는 것이 특징이다. 
+flex속성은 html 태그 컨텐츠를 수평적 또는 수직적으로 정렬시킬 수 있다. 수평 또는 수직 둘 중 하나만 가능하다는 것이 특징이다.
 flex-direction으로 row 또는 column 방향을 설정할 수 있다. 또한 justify-content로 flex 컨테이너 자식 컴포넌트 위치를 제어할 수 있다.
 
 ### grid
@@ -46,7 +45,6 @@ grid-template-columns로 열의 갯수를 제어하고, grid-template-rows로 �
 
 [TCPSCHOOL.COM 이미지 참조](http://tcpschool.com/css/css_boxmodel_boxmodel)
 
-
 ## CSS를 head에 위치시키는 이유
 
 [CSS를 head에 놓는 이유](https://medium.com/@schizdazzle/whats-with-putting-the-css-in-the-head-24888fbbd2e2)
@@ -56,8 +54,6 @@ grid-template-columns로 열의 갯수를 제어하고, grid-template-rows로 �
 자바스크립트 태그가 읽혀지면 브라우저는 수많은 동작들을 중단시킨다. CDN과 같이 외부 파일을 다운로드하고 난 후, DOM을 빌딩을 수행한다. 또한, CSS가 불러와지지 않은 상태(CSSOM이 생성되지 않은 상태)에서는 자바스크립트 코드를 실행시키지 않게 되어있다. 자바스크립트 코드에서 CSS파일을 참조할 수 있기 때문에 사전에 차단한다.
 
 그래서 CSS를 head에 위에 놓는 이유는 CSS파일을 가능한 빨리 불러오기 위해서이다. HTML소스 안에서 아래에 놓을 경우 컴파일러에 의해 늦게 읽히고 그만큼 다른 리소스에 비해 늦게 불러오게 될 수 있다. 가능한 빨리 읽어와 렌더링 시키고, 이후 자바스크립트 소스까지 읽어오기 위해 불러오기 위해 위치시킨다.
-
----
 
 # Javascript
 
@@ -80,11 +76,8 @@ let name = "mbc";
 name = "Min Byeong Chan"; // OK
 
 const age = 27;
-age = 20;                  // 에러 발생
+age = 20; // 에러 발생
 ```
-
----
-
 
 ### scope에서 동작 차이
 
@@ -94,9 +87,9 @@ age = 20;                  // 에러 발생
 
 function-scoped는 함수를 선언할 때 항상 마주하게 된다. 또한, top-level scope의 global scope로도 보게 된다. global 변수는 window객체에 의해 제어된다는 뜻이기도 하다.
 
-block-scoped는 for, while, if 문을 사용 할 때 사용되는 block을 말한다. 
+block-scoped는 for, while, if 문을 사용 할 때 사용되는 block을 말한다.
 
-function-scoped는 함수를 호출할 때 사용되는 block을 말한다. 함수 안에서 사용되는 변수를 `var`으로 선언하느냐 또는 `let`으로 선언하느냐에 따라 호이스팅 여부가 갈린다. 
+function-scoped는 함수를 호출할 때 사용되는 block을 말한다. 함수 안에서 사용되는 변수를 `var`으로 선언하느냐 또는 `let`으로 선언하느냐에 따라 호이스팅 여부가 갈린다.
 
 ## 이벤트 버블링(Bubbling) vs 이벤트 캡처링(Capturing)
 
@@ -106,12 +99,12 @@ function-scoped는 함수를 호출할 때 사용되는 block을 말한다. 함�
 
 ```html
 <form onClick="alert('form')">
-    Form
-    <div onClick="alert('div')">
-        Div
-        <p onClick="alert('p')">P</p>
-        <p onClick="alert('p2')">P2</p>
-    </div>
+  Form
+  <div onClick="alert('div')">
+    Div
+    <p onClick="alert('p')">P</p>
+    <p onClick="alert('p2')">P2</p>
+  </div>
 </form>
 ```
 
@@ -127,18 +120,14 @@ function-scoped는 함수를 호출할 때 사용되는 block을 말한다. 함�
 
 event.propagation()을 사용하면 해당 엘리먼트는 이벤트가 발생하지 않도록 제어할 수 있다.
 
-
-
-
-
-## IIFE(Immediately Invoked Function Expression) 
+## IIFE(Immediately Invoked Function Expression)
 
 함수를 선언함과 동시에 실행시키는 기능을 말한다. 호이스팅을 피하거나 사이드 이펙트에 의한 변수의 취약성을 노출시키는 것을 방지하기 위해 사용된다.
 
 ```js
-void function() {
-// do something 
-}()
+void (function () {
+  // do something
+})();
 ```
 
 ## closure란?
@@ -151,15 +140,15 @@ void function() {
 
 ```js
 function sayHelloTo(name) {
-    var sentence = "Hello, My name is "+ name;
-    // Closure
-    return function() {
-        console.log(sentence);
-    }
+  var sentence = "Hello, My name is " + name;
+  // Closure
+  return function () {
+    console.log(sentence);
+  };
 }
 
-const func1 = sayHelloTo('Byeong Chan');
-const func2 = sayHelloTo('Cheol Soo');
+const func1 = sayHelloTo("Byeong Chan");
+const func2 = sayHelloTo("Cheol Soo");
 
 func1();
 func2();
@@ -167,11 +156,9 @@ func2();
 
 ### closure는 코드의 은닉화를 보장
 
-위 예제에서 바라보면 sayHelloTo()에서 sentence라는 변수가 선언되어 있다. 여기서 sentence를 다른 변수로 재할당 할수 있는 방법은 존재하지 않는다. name이라는 파라미터로 변경 할수 있지 않냐 라고 할 수 있는데 이것은 변수의 재할당이라고 할 수 없다. `sentence = "Hello";` 라는게 성립 되어야 재할당이 가능하다고 할 수 있다. 
+위 예제에서 바라보면 sayHelloTo()에서 sentence라는 변수가 선언되어 있다. 여기서 sentence를 다른 변수로 재할당 할수 있는 방법은 존재하지 않는다. name이라는 파라미터로 변경 할수 있지 않냐 라고 할 수 있는데 이것은 변수의 재할당이라고 할 수 없다. `sentence = "Hello";` 라는게 성립 되어야 재할당이 가능하다고 할 수 있다.
 
 이렇게 클로저는 변수 또는 함수의 은닉화를 보장한다.
-
-
 
 # WEB
 
@@ -184,6 +171,7 @@ func2();
 이후 자바스크립트 해석기를 통해 JS 동작과정을 그리고 UI 백엔드, 통신 관련된 서비스를 수행하게 된다.
 
 ## CSR vs SSR
+
 ### CSR(Client Side Rendering)
 
 CSR은 모든 HTML소스, static파일들을 한번에 받아온 후, data 요청이 있을 때 비동기 통신을 통해 데이터를 가져온다. 데이터를 가져오고 DOM을 수정하여 화면을 렌더링 하는 방법이다.
@@ -213,5 +201,3 @@ SPA는 첫 HTML을 로드할 때, **관련된 모든 소스를 가져온다**. �
 MPA는 **여러 개의 페이지로 구성된 어플리케이션**이다. SSR방식으로 렌더링 되어 새로운 페이지에 접근할 때마다 페이지와 관련된 문서 및 리소스를 요청한다.
 
 그렇기 때문에 페이지 전환시 새로고침이 발생하는 등 **SSR 특징을 대표한다.**
-
-

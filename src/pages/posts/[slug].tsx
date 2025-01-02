@@ -105,9 +105,9 @@ function PostDetails({
           </Box>
         </SubTitleContainer>
 
-        <Divider />
-
-        <Markdown content={content} />
+        <Box pt={4} pb={4}>
+          <Markdown content={content} />
+        </Box>
 
         <Typography variant="h5" fontWeight="700" margin="50px 0 20px 0">
           Comment

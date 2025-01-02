@@ -1,6 +1,6 @@
 ---
 title: "[Android] SnackBar의 개념, 사용법"
-description: 'snackbar는 앱 사용자에게 알림메세지, 경고창 등을 나타내게 하는 기능이다.'
+description: "snackbar는 앱 사용자에게 알림메세지, 경고창 등을 나타내게 하는 기능이다."
 date: "2019-12-31"
 modified_date: "2019-12-31"
 tags: [Android, Snackbar]
@@ -20,8 +20,6 @@ snackbar는 앱 사용자에게 알림메세지, 경고창 등을 나타내게 �
 
 ## depenencies 등록
 
----
-
 사용하기 전에 <a class="android">**안드로이드**</a> SDK에서 지원하는 라이브러리를 등록해야한다.
 
 [build.gradle]
@@ -39,8 +37,6 @@ dependencies{
 이외에 `Lctrl+alt+Lshift+s`단축기를 누르면 dependencies를 설정할 수 있다.
 
 ## Snackbar xml
-
----
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -66,8 +62,6 @@ dependencies{
 "SnackBar" Button을 누르면 팝업창이 출력되는 구조이다. onClick을 사용하여 구현하였다.
 
 ## MainActivity
-
----
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -97,8 +91,6 @@ make메서드를 사용하여 snackbar를 생성하고 차례대로 `layout`, `�
 마지막으로 show()메서드를 사용하여 출력한다.
 
 ## 명시적으로 팝업창 제거
-
----
 
 ```kotlin
 fun ClickHandler (view: View) {

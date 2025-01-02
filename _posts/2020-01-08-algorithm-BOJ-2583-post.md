@@ -1,6 +1,6 @@
 ---
 title: "[백준] 2583 영역 구하기"
-description: ''
+description: ""
 date: "2020-01-08"
 modified_date: "2020-01-08"
 categories: [Algorithm]
@@ -27,8 +27,6 @@ comments: true
 3. 이외 영역을 DFS 또는 BFS를 사용하여 각각의 영역의 개수, 크기를 구함.
 
 ## 문제 풀이
-
----
 
 ### DFS 함수
 

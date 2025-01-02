@@ -1,7 +1,7 @@
 ---
 author: Byeong Chan
 title: "[백준] 9466 팀 프로젝트"
-description: ''
+description: ""
 date: "2020-01-07"
 modified_date: "2020-01-07"
 categories: [Algorithm]
@@ -37,8 +37,6 @@ comments: true
 4. 싸이클(노드가 팀이 형성)이 형성된 노드들은 check배열로 구분.
 
 ## 문제 풀이
-
----
 
 ### 시간 초과 풀이(실패)
 

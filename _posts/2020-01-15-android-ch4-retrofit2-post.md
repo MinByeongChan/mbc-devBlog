@@ -1,8 +1,8 @@
 ---
 title: "[Android] Retrofit2 GET 사용해서 데이터 조회"
-description: 'Retrofit2라이브러리는 안드로이드에서 RestAPI를 사용할 수 있게 하는 기능이다.'
+description: "Retrofit2라이브러리는 안드로이드에서 RestAPI를 사용할 수 있게 하는 기능이다."
 date: "2020-01-15"
-modified_date: '2020-01-15'
+modified_date: "2020-01-15"
 tags: [Android, Retrofit2, RestAPI]
 ---
 
@@ -15,8 +15,6 @@ tags: [Android, Retrofit2, RestAPI]
 # Retrofit2란?
 
 Retrofit2라이브러리는 안드로이드에서 RestAPI를 사용할 수 있게 하는 기능이다.
-
----
 
 ## 사전 등록
 
@@ -41,8 +39,6 @@ retrofit2 버전은 [Restrofit](https://square.github.io/retrofit)에서 자세�
 
 에서 검색하고 등록할 수 있다.
 
----
-
 ### manifest 설정
 
 ```kotlin
@@ -55,13 +51,9 @@ retrofit2 버전은 [Restrofit](https://square.github.io/retrofit)에서 자세�
 
 `<application>`태그 위에 인터넷 permission을 설정한다.
 
----
-
 ## 적용 방법
 
 먼저 내가 사용했던 예제는 JSON형식을 GSON변환을 하고 retrofit2에 적용하여 사용했다.
-
----
 
 ### JSON 형식?
 
@@ -76,8 +68,6 @@ retrofit2 버전은 [Restrofit](https://square.github.io/retrofit)에서 자세�
 2번째 인자는 특이하다. JSON Array이다. JSON도 데이터를 리스트 형식으로 받을 수 있게 구성되어있다. 이 부분에서 많이 헤맸다...
 
 body는 id와 name인자가 존재한다. 안드로이드에서 구현할 때에도 이 부분을 유념하고 코드를 작성해야한다.
-
----
 
 ### 안드로이드 데이터 클래스(VOClass)
 
@@ -108,8 +98,6 @@ Body는 아래 데이터클래스로 id와 name을 갖는 인자를 포함한다
 
 `@SerializeName` : JSON에서 키값에 접근하기 위한 어노테이션이다. GSON에서 제공하며 키를 갖고 JSON과 비교한다.
 
----
-
 ### RestAPI 인터페이스
 
 ```kotlin
@@ -124,8 +112,6 @@ GET으로 데이터를 조회만 할 것이기 때문에 리턴 값만을 수정
 Body형식은 각 프로젝트마다 다를 수 있으니 잘 알아보고 주의해야한다. 이것땜에 시간 엄청 걸렸다.
 
 json형식이 array인지 단일 인자인지 정확히 인지하고 body를 구성해야한다.
-
----
 
 ### okhttp interceptor 추가
 
