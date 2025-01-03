@@ -30,6 +30,12 @@ export const Meta: React.FC<IMetaProps> = (props: IMetaProps) => {
         <link rel="icon" type="image/png" sizes="16x16" href={`/favicon-16x16.png`} key="icon16" />
         <link rel="icon" href={`/favicon.ico`} key="favicon" />
 
+        <link rel="preload" href="/fonts/MaruBuri-Bold.otf" as="font" type="font/otf" />
+        <link rel="preload" href="/fonts/MaruBuri-SemiBold.otf" as="font" type="font/otf" />
+        <link rel="preload" href="/fonts/MaruBuri-Regular.otf" as="font" type="font/otf" />
+        <link rel="preload" href="/fonts/MaruBuri-Light.otf" as="font" type="font/otf" />
+        <link rel="preload" href="/fonts/MaruBuri-ExtraLight.otf" as="font" type="font/otf" />
+
         <title>{`${props.title} | ${Config.author}`}</title>
         <meta
           name="description"
