@@ -1,3 +1,11 @@
+---
+title: "React hook에 대한 이해하기"
+description: "React hook에서 몰랐던 상세한 내용들에 대해 공부하고 정리한 내용을 공유한다."
+date: "2025-03-08"
+modified_date: "2025-03-08"
+tags: [WEB, React]
+---
+
 ## useActionState
 
 uesActionState는 폼 액션의 결과를 기반으로 State를 업데이트 할 수 있도록 제공하는 Hook이다.
